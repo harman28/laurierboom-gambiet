@@ -40,3 +40,4 @@ header:has(#sub:empty){padding-bottom:8px}
 @media(max-width:520px){.tabs{justify-content:flex-start}.tab{padding:3px 7px}}
 @media(max-width:520px){.tab small{display:none}.tabs{gap:3px}.tab{padding:5px 7px;font-size:.8rem}}
 .links{margin:.4em 0 0;padding-left:1.2em}.links li{margin:.2em 0}.card .links{margin-top:.3em}
+.brand{display:flex;align-items:center;gap:9px}.brand img{display:block;border-radius:7px}
