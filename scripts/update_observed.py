@@ -39,8 +39,7 @@ def main():
     text = DATA.read_text(encoding="utf-8")
     data = json.loads(text[len(PREFIX):].strip().rstrip(";"))
     by_netstand = {str(t["id"]): (slug, {str(p["id"]): p["knsb"] for p in t["players"]}) for slug, t in data["teams"].items()}
-    division = get(f"/divisions/view/{data['divisionId']}")
-    pairing_ids = sorted(set(re.findall(r"/pairings/view/(\d+)", division)), key=int)
+    pairing_ids = sorted({x for did in data["divisions"] for x in re.findall(r"/pairings/view/(\d+)", get(f"/divisions/view/{did}"))}, key=int)
     observed = {slug: [] for slug in data["teams"]}
     for pid in pairing_ids:
         parsed = parse_pairing(get(f"/pairings/view/{pid}"))
