@@ -19,6 +19,8 @@ const venueHtml=(us,m)=>{const t=venueOf(us,m);return t.venue?`<a href="${mapsUr
 const link=(view,arg,us=cur)=>`#${us}~${view}${arg?'~'+arg:''}`;
 const tag=m=>`<span class="tag ${m.home?'':'away'}">${m.home?'Home':'Away'}</span>`;
 const ORD=n=>n+(n%100>=11&&n%100<=13?'th':({1:'st',2:'nd',3:'rd'})[n%10]||'th');
+const noRoster=t=>!t.players.length;
+const NOROSTER='<p><b>No roster yet.</b> This team has not registered its players on Netstand. Their line-up and board order will appear here once they do.</p>';
 const unrated='<span class="mut">unrated</span>';
 
 /* ---------- board-order guess ----------
@@ -94,12 +96,12 @@ const views={
   return `<h1>Squad</h1><p class="mut">${me.name} · average rating ${avg(me)}. Sorted by rating.</p>${squad(me)}
   ${(me.lineups||[]).map(l=>`<h2>Line-up, round ${l.round}</h2>${ourLineup(l)}`).join('')}
   ${!(me.lineups||[]).length?`<h2>Expected line-up</h2><p>${guessBasis(me)}</p><p class="mut">${GUESS_HOW}</p>${board(me)}`:''}`},
- opponents(){const ts=FIX.filter(m=>m.opp);return `<h1>Opponents</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="${link('opp',m.opp)}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>Avg rating ${avg(t)} · top player ${ord(t)[0].r}</div></div>`}).join('')}</div>`},
+ opponents(){const ts=FIX.filter(m=>m.opp);return `<h1>Opponents</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="${link('opp',m.opp)}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>${noRoster(t)?'<span class="mut">Roster not registered yet</span>':`Avg rating ${avg(t)} · top player ${ord(t)[0].r}`}</div></div>`}).join('')}</div>`},
  opp(s){const t=T(s),m=FIX.find(x=>x.opp===s);if(!t||!m)return '<p>Unknown team.</p>';
   return `<h1>${t.name}</h1>${matchCard(m,`Round ${m.round}`)}
-  <p>Average rating ${avg(t)} (ours: ${avg(me)}) · <a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
-  <h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}
-  <h2>Expected board order</h2><p>${guessBasis(t)}</p><p class="mut">${GUESS_HOW}</p>${board(t)}
+  <p>${noRoster(t)?'':`Average rating ${avg(t)} (ours: ${avg(me)}) · `}<a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
+  ${noRoster(t)?`<h2>Expected board order</h2>${NOROSTER}`:`<h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}
+  <h2>Expected board order</h2><p>${guessBasis(t)}</p><p class="mut">${GUESS_HOW}</p>${board(t)}`}
   ${t.note?`<h2>Notes</h2><p>${t.note}</p>`:''}`}
 };
 const SUB=[['home','Overview'],['calendar','Calendar'],['team','Squad'],['opponents','Opponents']];

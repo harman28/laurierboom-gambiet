@@ -11,7 +11,7 @@ Plain HTML/CSS/JS, no build step. All content lives in `data.js`.
   sgaschaken.nl (venues). Hand-edited fields are kept: `venueName`, `note`, `lineups`.
 - `scripts/build_history.py` adds last season's board record (`last`) to each player.
 - `scripts/update_observed.py` records line-ups that opponents (and we) actually fielded, once results
-  are reported on Netstand. It runs daily in GitHub Actions (`.github/workflows/update-lineups.yml`).
+  are reported on Netstand. It runs daily in GitHub Actions (`.github/workflows/update-data.yml`).
 
 ## Board-order guesses
 

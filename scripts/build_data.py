@@ -90,9 +90,10 @@ def main():
     opp_ids = {tid for t in teams_raw.values() for f in t["fixtures"] for tid in (f["home_id"], f["away_id"])} - set(OURS)
     for tid in sorted(opp_ids):
         teams_raw[tid] = parse_team(tid)
-    ids = [p["id"] for t in teams_raw.values() for p in t["players"]]
+    old_knsb = {pl["id"]: pl["knsb"] for t in old.values() for pl in t["players"] if pl.get("knsb")}  # a KNSB number never changes
+    ids = [p["id"] for t in teams_raw.values() for p in t["players"] if p["id"] not in old_knsb]
     with ThreadPoolExecutor(8) as ex:
-        kn = dict(zip(ids, ex.map(knsb, ids)))
+        kn = {**old_knsb, **dict(zip(ids, ex.map(knsb, ids)))}
     venues = sga_venues()
     teams, missing = {}, []
     for tid, t in teams_raw.items():
