@@ -21,3 +21,4 @@ header,main,footer{padding-inline:16px}main{padding-block:16px}
 .cal td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}.cal .rd{font-weight:700;color:var(--mut);width:2rem}
 .cal .sub{font-size:.85rem;color:var(--mut)}.cal .tag{margin:0}.cal tr.bye td{padding:10px}.cal tbody tr:hover{background:var(--card)}
 .col{font-size:.75rem;padding:1px 10px;border-radius:99px;border:1px solid #888;white-space:nowrap}.col.w{background:#fff;color:#111}.col.b{background:#111;color:#fff}
+.cal{min-width:0}.cal td{padding:7px 10px;vertical-align:middle}.cal th{padding:6px 10px}.cal .dt{white-space:nowrap}.cal tr.bye td{padding:7px 10px}

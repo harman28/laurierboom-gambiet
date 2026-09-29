@@ -17,7 +17,7 @@ const next=DATA.matches.find(m=>m.date&&m.date>=today);
 const mapsUrl=v=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}`;
 const row=m=>{if(!m.opp)return `<tr class="bye"><td>${m.round}</td><td colspan="4" class="mut">Bye, no match this round</td></tr>`;
  const v=venue(m),o=T(m.opp);
- return `<tr><td class="rd">${m.round}</td><td><div>${fmt(m.date)}</div><div class="sub">${KICKOFF}</div></td>
+ return `<tr><td class="rd">${m.round}</td><td class="dt">${fmt(m.date)}</td>
  <td><a href="#tegenstander~${m.opp}">${o.name}</a></td><td><span class="tag ${m.home?'':'away'}">${m.home?'Home':'Away'}</span></td>
  <td>${venueHtml(m)}</td></tr>`};
 function matchCard(m,label){const o=T(m.opp);return `<div class="card next"><div class="mut">${label}</div><div class="big">${m.home?me.name+' – '+o.name:o.name+' – '+me.name}</div>
@@ -62,8 +62,8 @@ const views={
   <div class="card"><b>Our team</b> · average rating ${avg(me)}<br><a href="#team">See the squad →</a></div>
   <div class="card"><b>Opponents</b> · 6 teams in our division<br><a href="#tegenstanders">See the opponents →</a></div>
   <p><a href="https://sga.netstand.nl/divisions/view/${DATA.divisionId}">Standings & results on Netstand</a></p>`},
- kalender(){return `<h1>Calendar</h1><div class="scroll"><table class="cal"><thead><tr><th>Rd</th><th>Date &amp; kick-off</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${DATA.matches.map(row).join('')}</tbody></table></div>
-  <p class="mut">Dates as listed on Netstand. Kick-off is always 20:00.</p>`},
+ kalender(){return `<h1>Calendar</h1><div class="scroll"><table class="cal"><thead><tr><th>Rd</th><th>Date</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${DATA.matches.map(row).join('')}</tbody></table></div>
+  <p class="mut">All matches start at 20:00. Dates as listed on Netstand.</p>`},
  team(){return `<h1>Our team</h1><p class="mut">Average rating ${avg(me)}. Squad sorted by rating.</p>${ourBoard(me)}${(me.lineups||[]).map(l=>`<h2>Line-up, round ${l.round}</h2>${ourLineup(l)}`).join('')}`},
  tegenstanders(){const ts=DATA.matches.filter(m=>m.opp);return `<h1>Opponents</h1><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="#tegenstander~${m.opp}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>Avg rating ${avg(t)} · top player ${ord(t)[0].r}</div></div>`}).join('')}</div>`},
  tegenstander(s){const t=T(s),m=DATA.matches.find(x=>x.opp===s);if(!t)return '<p>Unknown team.</p>';
