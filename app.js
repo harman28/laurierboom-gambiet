@@ -83,8 +83,10 @@ const clubRow=m=>`<tr><td class="dt">${fmtShort(m.date)}</td><td><a href="${link
 const LIBS=typeof GAME_LIBRARIES==='undefined'?{}:GAME_LIBRARIES;
 const libUrl=l=>LIBRARY_BASE+l.id;
 const legacyLink=l=>l.legacy?`<a href="${l.legacy}">earlier collection</a>`:'';
+const OWN=typeof OWN_LIBRARY==='undefined'?null:OWN_LIBRARY;
+const ownCard=()=>OWN?`<div class="card"><b>Our own games</b><p><a href="${libUrl(OWN)}">Open the ${OWN.name} game library</a><span class="mut"> · add your games so the whole club can learn from them. Anyone with the link can view and add games.</span></p></div>`:'';
 const gamesCard=club=>{const l=LIBS[club];return l?`<div class="card"><b>Games against ${l.name}</b><p><a href="${libUrl(l)}">Open the game library</a><span class="mut"> · anyone with the link can view and add games, no account needed</span></p>${l.legacy?`<p class="mut">Games are being moved here from an ${legacyLink(l)}.</p>`:''}</div>`:''};
-const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCompare(b.name));return ls.length?`<h2>Game library</h2><p class="mut">One shared library per opponent club. Anyone with a link can view and add games, no account needed. Each library is also linked from the opponent's page.</p><ul class="links cols">${ls.map(l=>`<li><a href="${libUrl(l)}">${l.name}</a>${l.legacy?` <span class="mut">· ${legacyLink(l)}</span>`:''}</li>`).join('')}</ul>`:''};
+const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCompare(b.name));return ls.length||OWN?`<h2>Game library</h2>${ownCard()}<p class="mut">One shared library per opponent club. Anyone with a link can view and add games, no account needed. Each library is also linked from the opponent's page.</p><ul class="links cols">${ls.map(l=>`<li><a href="${libUrl(l)}">${l.name}</a>${l.legacy?` <span class="mut">· ${legacyLink(l)}</span>`:''}</li>`).join('')}</ul>`:''};
 
 /* ---------- views ---------- */
 const views={
@@ -98,6 +100,7 @@ const views={
   return `<h1>${me.name}</h1><p class="mut">${divName(cur)} · season 2026–2027 · average rating ${avg(me)}${FIX.some(m=>!m.opp)?` · bye in round ${FIX.find(m=>!m.opp).round}`:''}</p>
   ${nx?matchCard(nx,'Next match'):'<div class="card">The season is over.</div>'}
   ${nx?(l?`<h2>Our line-up, round ${nx.round}</h2>${ourLineup(l)}`:`<h2>Expected line-up, round ${nx.round}</h2>${ourExpected()}`):''}
+  ${ownCard()}
   <p><a href="https://sga.netstand.nl/divisions/view/${me.divisionId}">Standings &amp; results on Netstand</a></p>`},
  calendar(){return `<h1>Calendar</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="scroll"><table class="cal"><thead><tr><th class="rd">Rd</th><th>Date</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${FIX.map(row).join('')}</tbody></table></div>
   <p class="mut">All matches start at 20:00. Dates as listed on Netstand.</p>`},

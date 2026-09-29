@@ -21,3 +21,6 @@ const GAME_LIBRARIES = {
   25382: { name: "Zukertort Amstelveen", id: "6KX8y_mB0SAaDtdG1ffmkXQ0" },
   26007: { name: "Zwart op Wit", id: "ajfHvRguj14e-OALtbzPOduf" },
 };
+
+// Our own club's games (Laurierboom-Gambiet), shown on the All teams page and on each team's overview.
+const OWN_LIBRARY = { name: "Laurierboom-Gambiet", id: "XpsbyaFmkhn_8autsZnWPTen" };
