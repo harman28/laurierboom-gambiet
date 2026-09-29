@@ -77,6 +77,12 @@ const row=m=>{if(!m.opp)return `<tr class="bye"><td class="rd">${m.round}</td><t
 const allMatches=()=>OURS.flatMap(s=>DATA.fixtures[s].filter(m=>m.opp).map(m=>({...m,us:s}))).sort((a,b)=>a.date.localeCompare(b.date)||a.us.localeCompare(b.us));
 const clubRow=m=>`<tr><td class="dt">${fmtShort(m.date)}</td><td><a href="${link('home','',m.us)}">Team ${teamNo(m.us)}</a></td><td><a href="${link('opp',m.opp,m.us)}">${T(m.opp).name}</a></td><td>${tag(m)}</td><td>${venueHtml(m.us,m)}</td></tr>`;
 
+/* ---------- game library (links.js, edited by hand) ---------- */
+const GAMES=typeof GAME_LINKS==='undefined'?[]:GAME_LINKS;
+const gameLink=g=>`<a href="${g.url}">${g.title}</a>${g.note?` <span class="mut">· ${g.note}</span>`:''}`;
+const gamesCard=club=>{const gs=GAMES.filter(g=>g.club===club);return gs.length?`<div class="card"><b>Games against this club</b><ul class="links">${gs.map(g=>`<li>${gameLink(g)}</li>`).join('')}</ul></div>`:''};
+const gameLibrary=()=>GAMES.length?`<h2>Game library</h2><p class="mut">Games played by our players against opponents this season. They also appear on the opponent pages.</p><ul class="links">${GAMES.map(g=>`<li>${gameLink(g)}</li>`).join('')}</ul>`:'';
+
 /* ---------- views ---------- */
 const views={
  club(){const nx=OURS.map(s=>({us:s,m:nextOf(s)})).filter(x=>x.m).map(x=>({...x.m,us:x.us})).sort((a,b)=>a.date.localeCompare(b.date));
@@ -84,7 +90,7 @@ const views={
   const rows=all.map(m=>{const mo=MONTHS[+m.date.slice(5,7)-1]+' '+m.date.slice(0,4);const sep=mo!==last?`<tr class="mon"><th colspan="5">${mo}</th></tr>`:'';last=mo;return sep+clubRow(m)}).join('');
   return `<h1>Laurierboom-Gambiet</h1><p class="mut">All four teams, season 2026–2027. Kick-off is 20:00.</p>
   <h2>Next match per team</h2><div class="scroll"><table class="cal"><thead><tr><th>Date</th><th>Team</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${nx.map(clubRow).join('')}</tbody></table></div>
-  <h2>All matches</h2><div class="scroll"><table class="cal"><thead><tr><th>Date</th><th>Team</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${rows}</tbody></table></div>`},
+  <h2>All matches</h2><div class="scroll"><table class="cal"><thead><tr><th>Date</th><th>Team</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${rows}</tbody></table></div>${gameLibrary()}`},
  home(){const nx=nextOf(cur),l=nx&&lineupFor(nx.round);
   return `<h1>${me.name}</h1><p class="mut">${divName(cur)} · season 2026–2027 · average rating ${avg(me)}${FIX.some(m=>!m.opp)?` · bye in round ${FIX.find(m=>!m.opp).round}`:''}</p>
   ${nx?matchCard(nx,'Next match'):'<div class="card">The season is over.</div>'}
@@ -100,6 +106,7 @@ const views={
  opp(s){const t=T(s),m=FIX.find(x=>x.opp===s);if(!t||!m)return '<p>Unknown team.</p>';
   return `<h1>${t.name}</h1>${matchCard(m,`Round ${m.round}`)}
   <p>${noRoster(t)?'':`Average rating ${avg(t)} (ours: ${avg(me)}) · `}<a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
+  ${gamesCard(t.club)}
   ${noRoster(t)?`<h2>Expected board order</h2>${NOROSTER}`:`<h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}
   <h2>Expected board order</h2><p>${guessBasis(t)}</p><p class="mut">${GUESS_HOW}</p>${board(t)}`}
   ${t.note?`<h2>Notes</h2><p>${t.note}</p>`:''}`}
