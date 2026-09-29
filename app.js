@@ -12,7 +12,14 @@ const venue=m=>m.home?me.venue:T(m.opp).venue;
 const venueHtml=m=>{const v=venue(m);return v?`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}">${v}</a>`:'<span class="todo">address TBC</span>'};
 const today=new Date().toISOString().slice(0,10);
 const next=DATA.matches.find(m=>m.date&&m.date>=today);
-const row=m=>m.opp?`<tr><td>Round ${m.round}</td><td>${fmt(m.date)}, ${KICKOFF}</td><td><a href="#tegenstander~${m.opp}">${T(m.opp).name}</a></td><td>${m.home?'home':'away'}</td><td>${venueHtml(m)}</td></tr>`:`<tr><td>Round ${m.round}</td><td colspan=4 class="mut">Bye, no match this round</td></tr>`;
+const venueShort=v=>v.includes('Gebouw De Poort')?'Gebouw De Poort':v.split(',')[0];
+const venueAddr=v=>v.includes('Gebouw De Poort')?v.split(', ').slice(2).join(', '):v.split(', ').slice(1).join(', ');
+const mapsUrl=v=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}`;
+const row=m=>{if(!m.opp)return `<tr class="bye"><td>${m.round}</td><td colspan="4" class="mut">Bye, no match this round</td></tr>`;
+ const v=venue(m),o=T(m.opp);
+ return `<tr><td class="rd">${m.round}</td><td><div>${fmt(m.date)}</div><div class="sub">${KICKOFF}</div></td>
+ <td><a href="#tegenstander~${m.opp}">${o.name}</a></td><td><span class="tag ${m.home?'':'away'}">${m.home?'Home':'Away'}</span></td>
+ <td>${v?`<a href="${mapsUrl(v)}">${venueShort(v)}</a><div class="sub">${venueAddr(v)}</div>`:'<span class="todo">TBC</span>'}</td></tr>`};
 function matchCard(m,label){const o=T(m.opp);return `<div class="card next"><div class="mut">${label}</div><div class="big">${m.home?me.name+' – '+o.name:o.name+' – '+me.name}</div>
 <div>Round ${m.round} · ${fmt(m.date)}, ${KICKOFF}<span class="tag ${m.home?'':'away'}">${m.home?'home':'away'}</span></div><div>📍 ${venueHtml(m)}</div>
 <p><a href="#tegenstander~${m.opp}">View opponent →</a> · <a href="https://sga.netstand.nl/pairings/view/${m.pairing}">Match on Netstand</a></p></div>`}
@@ -50,7 +57,7 @@ const views={
   <div class="card"><b>Our team</b> · average rating ${avg(me)}<br><a href="#team">See the squad →</a></div>
   <div class="card"><b>Opponents</b> · 6 teams in our division<br><a href="#tegenstanders">See the opponents →</a></div>
   <p><a href="https://sga.netstand.nl/divisions/view/${DATA.divisionId}">Standings & results on Netstand</a></p>`},
- kalender(){return `<h1>Calendar</h1><table class="table"><tr><th>Round</th><th>Date</th><th>Opponent</th><th></th><th>Venue</th></tr>${DATA.matches.map(row).join('')}</table>
+ kalender(){return `<h1>Calendar</h1><div class="scroll"><table class="cal"><thead><tr><th>Rd</th><th>Date &amp; kick-off</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${DATA.matches.map(row).join('')}</tbody></table></div>
   <p class="mut">Dates as listed on Netstand. Kick-off is always 20:00.</p>`},
  team(){return `<h1>Our team</h1><p class="mut">Average rating ${avg(me)}. Squad sorted by rating.</p>${ourBoard(me)}`},
  tegenstanders(){const ts=DATA.matches.filter(m=>m.opp);return `<h1>Opponents</h1><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="#tegenstander~${m.opp}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>Avg rating ${avg(t)} · top player ${ord(t)[0].r}</div></div>`}).join('')}</div>`},
