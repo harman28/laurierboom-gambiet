@@ -16,3 +16,4 @@ a{color:var(--acc)}h1{margin:.2em 0 .5em}h2{margin-top:1.6em}
 :root[data-theme=dark]{color-scheme:dark;--bg:#161512;--fg:#eeeae0;--mut:#9d978a;--card:#1f1e1a;--line:#33312b;--acc:#5fbf8a;--acc2:#e0a83a}
 body{padding-inline:0}:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
 header,main,footer{padding-inline:16px}main{padding-block:16px}
+.conf{font-size:.75rem;padding:1px 8px;border-radius:99px;border:1px solid var(--line);white-space:nowrap}.conf.high{color:var(--acc);border-color:var(--acc)}.conf.mid{color:var(--fg)}.conf.low{color:var(--acc2);border-color:var(--acc2)}.why{min-width:16rem;font-size:.9rem;color:var(--mut)}
