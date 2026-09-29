@@ -175,7 +175,7 @@ const DATA = {
      "knsb": "7809901"
     }
    ],
-   "venueName": "Cygnus"
+   "venueName": "Cygnus Gymnasium"
   },
   "caissa-5": {
    "id": 760,
