@@ -80,10 +80,11 @@ const allMatches=()=>OURS.flatMap(s=>DATA.fixtures[s].filter(m=>m.opp).map(m=>({
 const clubRow=m=>`<tr><td class="dt">${fmtShort(m.date)}</td><td><a href="${link('home','',m.us)}">Team ${teamNo(m.us)}</a></td><td><a href="${link('opp',m.opp,m.us)}">${T(m.opp).name}</a></td><td>${tag(m)}</td><td>${venueHtml(m.us,m)}</td></tr>`;
 
 /* ---------- game library (links.js, edited by hand) ---------- */
-const GAMES=typeof GAME_LINKS==='undefined'?[]:GAME_LINKS;
-const gameLink=g=>`<a href="${g.url}">${g.title}</a>${g.note?` <span class="mut">· ${g.note}</span>`:''}`;
-const gamesCard=club=>{const gs=GAMES.filter(g=>g.club===club);return gs.length?`<div class="card"><b>Games against this club</b><ul class="links">${gs.map(g=>`<li>${gameLink(g)}</li>`).join('')}</ul></div>`:''};
-const gameLibrary=()=>GAMES.length?`<h2>Game library</h2><p class="mut">Games played by our players against opponents this season. They also appear on the opponent pages.</p><ul class="links">${GAMES.map(g=>`<li>${gameLink(g)}</li>`).join('')}</ul>`:'';
+const LIBS=typeof GAME_LIBRARIES==='undefined'?{}:GAME_LIBRARIES;
+const libUrl=l=>LIBRARY_BASE+l.id;
+const legacyLink=l=>l.legacy?`<a href="${l.legacy}">earlier collection</a>`:'';
+const gamesCard=club=>{const l=LIBS[club];return l?`<div class="card"><b>Games against ${l.name}</b><p><a href="${libUrl(l)}">Open the game library</a><span class="mut"> · anyone with the link can view and add games, no account needed</span></p>${l.legacy?`<p class="mut">Games are being moved here from an ${legacyLink(l)}.</p>`:''}</div>`:''};
+const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCompare(b.name));return ls.length?`<h2>Game library</h2><p class="mut">One shared library per opponent club. Anyone with a link can view and add games, no account needed. Each library is also linked from the opponent's page.</p><ul class="links cols">${ls.map(l=>`<li><a href="${libUrl(l)}">${l.name}</a>${l.legacy?` <span class="mut">· ${legacyLink(l)}</span>`:''}</li>`).join('')}</ul>`:''};
 
 /* ---------- views ---------- */
 const views={
