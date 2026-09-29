@@ -16,7 +16,9 @@ const nextOf=s=>DATA.fixtures[s].find(m=>m.date&&m.date>=today);
 const mapsUrl=v=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}`;
 const venueOf=(us,m)=>m.home?T(us):T(m.opp);
 const venueHtml=(us,m)=>{const t=venueOf(us,m);return t.venue?`<a href="${mapsUrl(t.venue)}" title="${t.venue}">${t.venueName}</a>`:'<span class="todo">TBC</span>'};
-const link=(view,arg,us=cur)=>`#${us}~${view}${arg?'~'+arg:''}`;
+// Short addresses: #team-2, #team-2~calendar, #team-2~squad, #team-2~opponents, #team-2~opp~caissa-5
+const key=s=>`team-${teamNo(s)}`, URLVIEW={team:'squad'}, VIEWURL={squad:'team'};
+const link=(view,arg,us=cur)=>`#${key(us)}${view==='home'&&!arg?'':'~'+(URLVIEW[view]||view)}${arg?'~'+arg:''}`;
 const tag=m=>`<span class="tag ${m.home?'':'away'}">${m.home?'Home':'Away'}</span>`;
 const ORD=n=>n+(n%100>=11&&n%100<=13?'th':({1:'st',2:'nd',3:'rd'})[n%10]||'th');
 const noRoster=t=>!t.players.length;
@@ -114,10 +116,11 @@ const views={
 const SUB=[['home','Overview'],['calendar','Calendar'],['team','Squad'],['opponents','Opponents']];
 function route(){const [a='',b='',c]=location.hash.slice(1).split('~');let view,arg;
  if(a==='club'){view='club'}
- else{if(OURS.includes(a))cur=a;else if(!a){cur=DATA.defaultTeam}
-  me=T(cur);FIX=DATA.fixtures[cur];view=OURS.includes(a)?(b||'home'):'home';arg=c}
+ else{const s=OURS.find(x=>a===key(x)||a===x);   // also accepts the old long form, #laurierboom-gambiet-2~...
+  if(s)cur=s;else if(!a){cur=DATA.defaultTeam}
+  me=T(cur);FIX=DATA.fixtures[cur];view=s?(VIEWURL[b]||b||'home'):'home';arg=c}
  const club=view==='club';
- document.querySelector('#teams').innerHTML=`<a class="tab ${club?'on':''}" href="#club">All teams</a>`+OURS.map(s=>`<a class="tab ${!club&&s===cur?'on':''}" href="#${s}~home" title="${divName(s)}">Team ${teamNo(s)}<small>${divName(s)}</small></a>`).join('');
+ document.querySelector('#teams').innerHTML=`<a class="tab ${club?'on':''}" href="#club">All teams</a>`+OURS.map(s=>`<a class="tab ${!club&&s===cur?'on':''}" href="${link('home','',s)}" title="${divName(s)}">Team ${teamNo(s)}<small>${divName(s)}</small></a>`).join('');
  document.querySelector('#sub').innerHTML=club?'':SUB.map(([v,l])=>`<a class="${v===view||(v==='opponents'&&view==='opp')?'on':''}" href="${link(v)}">${l}</a>`).join('');
  app.innerHTML=(views[view]||views.home)(arg);window.scrollTo(0,0)}
 addEventListener('hashchange',route);route();
