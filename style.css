@@ -20,3 +20,4 @@ header,main,footer{padding-inline:16px}main{padding-block:16px}
 .cal{width:100%;border-collapse:collapse;min-width:34rem}.cal th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);text-align:left;padding:8px 10px;border-bottom:2px solid var(--line)}
 .cal td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}.cal .rd{font-weight:700;color:var(--mut);width:2rem}
 .cal .sub{font-size:.85rem;color:var(--mut)}.cal .tag{margin:0}.cal tr.bye td{padding:10px}.cal tbody tr:hover{background:var(--card)}
+.col{font-size:.75rem;padding:1px 10px;border-radius:99px;border:1px solid #888;white-space:nowrap}.col.w{background:#fff;color:#111}.col.b{background:#111;color:#fff}

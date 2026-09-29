@@ -59,7 +59,47 @@ const DATA = {
      "knsb": "9029889"
     }
    ],
-   "venueName": "Kattenburg"
+   "venueName": "Kattenburg",
+   "lineups": [
+    {
+     "round": 1,
+     "note": "Based on preference and KNSB rating. We may switch a bit during the season.",
+     "boards": [
+      {
+       "knsb": "9129890",
+       "colour": "black"
+      },
+      {
+       "knsb": "9116998",
+       "colour": "white"
+      },
+      {
+       "knsb": "8571563",
+       "colour": "black"
+      },
+      {
+       "knsb": "9135775",
+       "colour": "white"
+      },
+      {
+       "knsb": "9078047",
+       "colour": "black"
+      },
+      {
+       "knsb": "9141077",
+       "colour": "white"
+      },
+      {
+       "knsb": "9029889",
+       "colour": "black"
+      },
+      {
+       "knsb": "9140648",
+       "colour": "white"
+      }
+     ]
+    }
+   ]
   },
   "amsterdam-west-8": {
    "id": 765,

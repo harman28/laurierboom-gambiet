@@ -48,23 +48,28 @@ function guess(t){
     if(t.players.some(x=>!x.r))why.push('Unrated teammates could also slot in above.')}}
   return{p,board:i+1,why:why.join(' '),conf}})}
 const CONF={high:'Confident',mid:'Likely',low:'Uncertain'};
+const lineupFor=r=>(me.lineups||[]).find(l=>l.round===r);
+const byKnsb=(t,id)=>t.players.find(p=>p.knsb===id);
+const colourPill=c=>`<span class="col ${c==='white'?'w':'b'}">${c==='white'?'White':'Black'}</span>`;
+function ourLineup(l){return `<table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Colour</th></tr>${l.boards.map((b,i)=>{const p=byKnsb(me,b.knsb);return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${colourPill(b.colour)}</td></tr>`}).join('')}</table>${l.note?`<p class="mut">${l.note}</p>`:''}`}
+function headToHead(l,t){const g=guess(t);return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Us</th><th class="n">Rating</th><th>Colour</th><th>Them (expected)</th><th class="n">Rating</th></tr>${l.boards.map((b,i)=>{const p=byKnsb(me,b.knsb),o=g[i].p;return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${colourPill(b.colour)}</td><td>${nlFull(o.n)}</td><td class="n">${o.r||'<span class=mut>unrated</span>'}</td></tr>`}).join('')}</table></div><p class="mut">${l.note||''} Their side is the guess from below.</p>`}
 function board(t){const g=guess(t);return `<table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Guess</th><th>Reasoning</th><th>Profiles</th></tr>${g.map(({p,board,why,conf})=>`<tr><td>${board}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||'<span class=mut>unrated</span>'}</td><td><span class="conf ${conf}">${CONF[conf]}</span></td><td class="why">${why}</td><td><a href="${knsb(p)}">KNSB</a> · <a href="${net(p)}">Netstand</a></td></tr>`).join('')}</table>`}
 function ourBoard(t){return `<table class="table"><tr><th>#</th><th>Player</th><th class="n">Rating</th><th>Profiles</th></tr>${ord(t).map((p,i)=>`<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||'<span class=mut>unrated</span>'}</td><td><a href="${knsb(p)}">KNSB</a> · <a href="${net(p)}">Netstand</a></td></tr>`).join('')}</table>`}
 
 const views={
- home(){const h=next?matchCard(next,'Next match'):'<div class="card">The season is over.</div>';
+ home(){const l=next&&lineupFor(next.round);const h=(next?matchCard(next,'Next match'):'<div class="card">The season is over.</div>')+(l?`<h2>Our line-up, round ${next.round}</h2>${ourLineup(l)}`:'');
   return `<h1>Season 2026–2027</h1><p class="mut">${DATA.division} · 7 rounds, with a bye in round 5.</p>${h}
   <div class="card"><b>Our team</b> · average rating ${avg(me)}<br><a href="#team">See the squad →</a></div>
   <div class="card"><b>Opponents</b> · 6 teams in our division<br><a href="#tegenstanders">See the opponents →</a></div>
   <p><a href="https://sga.netstand.nl/divisions/view/${DATA.divisionId}">Standings & results on Netstand</a></p>`},
  kalender(){return `<h1>Calendar</h1><div class="scroll"><table class="cal"><thead><tr><th>Rd</th><th>Date &amp; kick-off</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${DATA.matches.map(row).join('')}</tbody></table></div>
   <p class="mut">Dates as listed on Netstand. Kick-off is always 20:00.</p>`},
- team(){return `<h1>Our team</h1><p class="mut">Average rating ${avg(me)}. Squad sorted by rating.</p>${ourBoard(me)}`},
+ team(){return `<h1>Our team</h1><p class="mut">Average rating ${avg(me)}. Squad sorted by rating.</p>${ourBoard(me)}${(me.lineups||[]).map(l=>`<h2>Line-up, round ${l.round}</h2>${ourLineup(l)}`).join('')}`},
  tegenstanders(){const ts=DATA.matches.filter(m=>m.opp);return `<h1>Opponents</h1><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="#tegenstander~${m.opp}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>Avg rating ${avg(t)} · top player ${ord(t)[0].r}</div></div>`}).join('')}</div>`},
  tegenstander(s){const t=T(s),m=DATA.matches.find(x=>x.opp===s);if(!t)return '<p>Unknown team.</p>';
   return `<h1>${t.name}</h1>${matchCard(m,`Round ${m.round}`)}
   <p>Average rating ${avg(t)} (ours: ${avg(me)}) · <a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
-  <h2>Expected board order</h2>${(t.observed||[]).length?`<p>Based on the round ${t.observed.slice(-1)[0].round} line-up.</p>`:'<p><b>No results reported yet</b>, so this is a rating-only guess.</p>'}<p class="mut">How this is worked out: players are ordered by rating, highest on board 1. Once the team has played, the line-up they actually fielded replaces the rating guess. Boards within 40 rating points of a neighbour are marked Uncertain because teams often order such players either way.</p>${board(t)}
+  ${(l=>l?`<h2>Head to head, round ${m.round}</h2>${headToHead(l,t)}`:'')(lineupFor(m.round))}<h2>Expected board order</h2>${(t.observed||[]).length?`<p>Based on the round ${t.observed.slice(-1)[0].round} line-up.</p>`:'<p><b>No results reported yet</b>, so this is a rating-only guess.</p>'}<p class="mut">How this is worked out: players are ordered by rating, highest on board 1. Once the team has played, the line-up they actually fielded replaces the rating guess. Boards within 40 rating points of a neighbour are marked Uncertain because teams often order such players either way.</p>${board(t)}
   ${t.note?`<h2>Notes</h2><p>${t.note}</p>`:''}`}
 };
 function route(){const [v='',a]=location.hash.slice(1).split('~');const k=v||'home';
