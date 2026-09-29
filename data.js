@@ -58,7 +58,8 @@ const DATA = {
      "id": 556653,
      "knsb": "9029889"
     }
-   ]
+   ],
+   "venueName": "Kattenburg"
   },
   "amsterdam-west-8": {
    "id": 765,
@@ -115,7 +116,8 @@ const DATA = {
      "id": 524444,
      "knsb": "8566613"
     }
-   ]
+   ],
+   "venueName": "Bilderdijkpark"
   },
   "vas-7": {
    "id": 766,
@@ -172,7 +174,8 @@ const DATA = {
      "id": 518959,
      "knsb": "7809901"
     }
-   ]
+   ],
+   "venueName": "Cygnus"
   },
   "caissa-5": {
    "id": 760,
@@ -229,7 +232,8 @@ const DATA = {
      "id": 516235,
      "knsb": "7304649"
     }
-   ]
+   ],
+   "venueName": "Huize Lydia"
   },
   "zwart-op-wit-2": {
    "id": 761,
@@ -286,7 +290,8 @@ const DATA = {
      "id": 549113,
      "knsb": "9093260"
     }
-   ]
+   ],
+   "venueName": "2 Klaveren"
   },
   "pegasus-amstelveen-2": {
    "id": 763,
@@ -343,7 +348,8 @@ const DATA = {
      "id": 542884,
      "knsb": "9012872"
     }
-   ]
+   ],
+   "venueName": "Groenelaan"
   },
   "de-raadsheer-3": {
    "id": 764,
@@ -400,7 +406,8 @@ const DATA = {
      "id": 546248,
      "knsb": "8341245"
     }
-   ]
+   ],
+   "venueName": "Kattenburg"
   }
  },
  "matches": [

@@ -8,18 +8,18 @@ const nlFull=n=>{const m=n.match(/^(.*?), (.*) \((.*)\)$/);if(!m)return n;const 
 const knsb=p=>`https://ratingviewer.nl/list/latest/players/${p.knsb}/statistics`, net=p=>`https://sga.netstand.nl/players/view/${p.id}`;
 const ord=t=>[...t.players].sort((a,b)=>(b.r||-1)-(a.r||-1));
 const avg=t=>{const r=t.players.filter(p=>p.r);return r.length?Math.round(r.reduce((s,p)=>s+p.r,0)/r.length):0};
-const venue=m=>m.home?me.venue:T(m.opp).venue;
-const venueHtml=m=>{const v=venue(m);return v?`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}">${v}</a>`:'<span class="todo">address TBC</span>'};
+const venueTeam=m=>m.home?me:T(m.opp);
+const venue=m=>venueTeam(m).venue;
+const venueName=m=>venueTeam(m).venueName;
+const venueHtml=m=>{const v=venue(m);return v?`<a href="${mapsUrl(v)}" title="${v}">${venueName(m)}</a>`:'<span class="todo">TBC</span>'};
 const today=new Date().toISOString().slice(0,10);
 const next=DATA.matches.find(m=>m.date&&m.date>=today);
-const venueShort=v=>v.includes('Gebouw De Poort')?'Gebouw De Poort':v.split(',')[0];
-const venueAddr=v=>v.includes('Gebouw De Poort')?v.split(', ').slice(2).join(', '):v.split(', ').slice(1).join(', ');
 const mapsUrl=v=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}`;
 const row=m=>{if(!m.opp)return `<tr class="bye"><td>${m.round}</td><td colspan="4" class="mut">Bye, no match this round</td></tr>`;
  const v=venue(m),o=T(m.opp);
  return `<tr><td class="rd">${m.round}</td><td><div>${fmt(m.date)}</div><div class="sub">${KICKOFF}</div></td>
  <td><a href="#tegenstander~${m.opp}">${o.name}</a></td><td><span class="tag ${m.home?'':'away'}">${m.home?'Home':'Away'}</span></td>
- <td>${v?`<a href="${mapsUrl(v)}">${venueShort(v)}</a><div class="sub">${venueAddr(v)}</div>`:'<span class="todo">TBC</span>'}</td></tr>`};
+ <td>${venueHtml(m)}</td></tr>`};
 function matchCard(m,label){const o=T(m.opp);return `<div class="card next"><div class="mut">${label}</div><div class="big">${m.home?me.name+' – '+o.name:o.name+' – '+me.name}</div>
 <div>Round ${m.round} · ${fmt(m.date)}, ${KICKOFF}<span class="tag ${m.home?'':'away'}">${m.home?'home':'away'}</span></div><div>📍 ${venueHtml(m)}</div>
 <p><a href="#tegenstander~${m.opp}">View opponent →</a> · <a href="https://sga.netstand.nl/pairings/view/${m.pairing}">Match on Netstand</a></p></div>`}
