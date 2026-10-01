@@ -967,7 +967,56 @@ const DATA = {
    "divisionId": 81,
    "venue": "Hermann Wesselink College, Startbaan 3, 1185 XP Amstelveen",
    "venueName": "Hermann Wesselink College",
-   "players": []
+   "players": [
+    {
+     "n": "Moene, W. (Wim)",
+     "r": 2095,
+     "id": 519057,
+     "knsb": "7829371"
+    },
+    {
+     "n": "Boot, H. (Henk)",
+     "r": 2002,
+     "id": 521213,
+     "knsb": "8162088"
+    },
+    {
+     "n": "Lucas, O. (Olav)",
+     "r": 1938,
+     "id": 520831,
+     "knsb": "8111048"
+    },
+    {
+     "n": "Krop, H.A. (Henri)",
+     "r": 1910,
+     "id": 512623,
+     "knsb": "6004922"
+    },
+    {
+     "n": "Rahimi, L. (Leon Darius)",
+     "r": 1893,
+     "id": 546256,
+     "knsb": "9065826"
+    },
+    {
+     "n": "Kollen, L. (Luca)",
+     "r": 1818,
+     "id": 528155,
+     "knsb": "8816698"
+    },
+    {
+     "n": "Patil, N. (Neev)",
+     "r": 1750,
+     "id": 535277,
+     "knsb": "8945530"
+    },
+    {
+     "n": "Gupta, V. (Vihaan)",
+     "r": 1575,
+     "id": 554971,
+     "knsb": "9140428"
+    }
+   ]
   },
   "caissa-5": {
    "id": 760,
