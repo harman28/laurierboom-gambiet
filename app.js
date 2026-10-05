@@ -12,7 +12,12 @@ const avg=t=>{const r=t.players.filter(p=>p.r);return r.length?Math.round(r.redu
 const teamNo=s=>s.replace(/.*-/,'');
 const divName=s=>DATA.divisions[T(s).divisionId];
 const today=new Date().toISOString().slice(0,10);
-const nextOf=s=>DATA.fixtures[s].find(m=>m.date&&m.date>=today);
+const RES=typeof RESULTS==='undefined'?[]:RESULTS;                      // results.js, edited by hand
+const resultFor=(us,round)=>RES.find(r=>r.team===us&&r.round===round);
+const score=n=>String(n).replace(/\.5$/,'½').replace(/^0½$/,'½');       // 6.5 -> 6½, 0.5 -> ½
+const verdict=r=>r.us>r.them?'w':r.us<r.them?'l':'d';
+const resHtml=(r,long)=>`<span class="res ${verdict(r)}">${(long?{w:'Won',l:'Lost',d:'Drew'}:{w:'W',l:'L',d:'D'})[verdict(r)]} ${score(r.us)}–${score(r.them)}</span>`;
+const nextOf=s=>DATA.fixtures[s].find(m=>m.date&&m.date>=today&&!resultFor(s,m.round));
 const mapsUrl=v=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v)}`;
 const venueOf=(us,m)=>m.home?T(us):T(m.opp);
 const venueHtml=(us,m)=>{const t=venueOf(us,m);return t.venue?`<a href="${mapsUrl(t.venue)}" title="${t.venue}">${t.venueName}</a>`:'<span class="todo">TBC</span>'};
@@ -74,10 +79,10 @@ function squad(t){return `<div class="scroll"><table class="table"><tr><th>#</th
 function matchCard(m,label){const o=T(m.opp);return `<div class="card next"><div class="mut">${label}</div><div class="big">${m.home?me.name+' – '+o.name:o.name+' – '+me.name}</div>
 <div>Round ${m.round} · ${fmt(m.date)}, ${KICKOFF} ${tag(m)}</div><div>📍 ${venueHtml(cur,m)}</div>
 <p><a href="${link('opp',m.opp)}">View opponent →</a> · <a href="https://sga.netstand.nl/pairings/view/${m.pairing}">Match on Netstand</a></p></div>`}
-const row=m=>{if(!m.opp)return `<tr class="bye"><td class="rd">${m.round}</td><td colspan="4" class="mut">Bye, no match this round</td></tr>`;
- return `<tr><td class="rd">${m.round}</td><td class="dt">${fmt(m.date)}</td><td><a href="${link('opp',m.opp)}">${T(m.opp).name}</a></td><td>${tag(m)}</td><td>${venueHtml(cur,m)}</td></tr>`};
+const row=m=>{if(!m.opp)return `<tr class="bye"><td class="rd">${m.round}</td><td colspan="5" class="mut">Bye, no match this round</td></tr>`;
+ return `<tr><td class="rd">${m.round}</td><td class="dt">${fmt(m.date)}</td><td><a href="${link('opp',m.opp)}">${T(m.opp).name}</a></td><td>${tag(m)}</td><td>${venueHtml(cur,m)}</td><td>${resultFor(cur,m.round)?resHtml(resultFor(cur,m.round)):''}</td></tr>`};
 const allMatches=()=>OURS.flatMap(s=>DATA.fixtures[s].filter(m=>m.opp).map(m=>({...m,us:s}))).sort((a,b)=>a.date.localeCompare(b.date)||a.us.localeCompare(b.us));
-const clubRow=m=>`<tr><td class="dt">${fmtShort(m.date)}</td><td><a href="${link('home','',m.us)}">Team ${teamNo(m.us)}</a></td><td><a href="${link('opp',m.opp,m.us)}">${T(m.opp).name}</a></td><td>${tag(m)}</td><td>${venueHtml(m.us,m)}</td></tr>`;
+const clubRow=m=>`<tr><td class="dt">${fmtShort(m.date)}</td><td><a href="${link('home','',m.us)}">Team ${teamNo(m.us)}</a></td><td><a href="${link('opp',m.opp,m.us)}">${T(m.opp).name}</a>${resultFor(m.us,m.round)?' '+resHtml(resultFor(m.us,m.round)):''}</td><td>${tag(m)}</td><td>${venueHtml(m.us,m)}</td></tr>`;
 
 /* ---------- game library (links.js, edited by hand) ---------- */
 const LIBS=typeof GAME_LIBRARIES==='undefined'?{}:GAME_LIBRARIES;
@@ -89,6 +94,13 @@ const gamesCard=club=>{const l=LIBS[club];return l?`<div class="card"><b>Games a
 const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCompare(b.name));return ls.length||OWN?`<h2>Game library</h2>${ownCard()}<p class="mut">One shared library per opponent club. Anyone with a link can view and add games, no account needed. Each library is also linked from the opponent's page.</p><ul class="links cols">${ls.map(l=>`<li><a href="${libUrl(l)}">${l.name}</a>${l.legacy?` <span class="mut">· ${legacyLink(l)}</span>`:''}</li>`).join('')}</ul>`:''};
 
 /* ---------- views ---------- */
+const lastCard=()=>{const m=FIX.filter(x=>x.opp&&resultFor(cur,x.round)).pop();if(!m)return'';const r=resultFor(cur,m.round);
+ return `<div class="card"><div class="mut">Last result · Round ${m.round}</div><div class="big">${resHtml(r,true)} <span class="mut" style="font-weight:400">against</span> ${T(m.opp).name}</div><p><a href="${link('opp',m.opp)}">Board by board →</a></p></div>`};
+function resultSection(m,t){const r=resultFor(cur,m.round);if(!r)return'';const l=lineupFor(m.round),g=guess({...t,observed:[]});   // guess check uses the rating-only guess
+ const them=r.theirs.map(x=>x.knsb?byKnsb(t,x.knsb):{n:x.name,sub:true});
+ const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb),q=them[i];return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${l&&l.boards[i]?colourPill(l.boards[i].colour):''}</td><td class="n">${score(o.pts)}</td><td>${q.sub?q.n+' <span class="mut">(substitute)</span>':nlFull(q.n)}</td><td class="n">${q.sub?'<span class="mut">–</span>':(q.r||unrated)}</td></tr>`}).join('');
+ const hits=them.filter((q,i)=>!q.sub&&g[i]&&g[i].p.knsb===q.knsb).length;
+ return `<h2>Result, round ${m.round}: ${resHtml(r,true)}</h2><div class="scroll"><table class="table"><tr><th>Board</th><th>Us</th><th class="n">Rating</th><th>Colour</th><th class="n">Pts</th><th>Them</th><th class="n">Rating</th></tr>${rows}</table></div><p class="mut">Our pre-match guess for their line-up got ${hits} of ${them.length} boards exactly right.</p>`}
 const views={
  club(){const nx=OURS.map(s=>({us:s,m:nextOf(s)})).filter(x=>x.m).map(x=>({...x.m,us:x.us})).sort((a,b)=>a.date.localeCompare(b.date));
   const all=allMatches();let last='';
@@ -98,11 +110,12 @@ const views={
   <h2>All matches</h2><div class="scroll"><table class="cal"><thead><tr><th>Date</th><th>Team</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${rows}</tbody></table></div>${gameLibrary()}`},
  home(){const nx=nextOf(cur),l=nx&&lineupFor(nx.round);
   return `<h1>${me.name}</h1><p class="mut">${divName(cur)} · season 2026–2027 · average rating ${avg(me)}${FIX.some(m=>!m.opp)?` · bye in round ${FIX.find(m=>!m.opp).round}`:''}</p>
+  ${lastCard()}
   ${nx?matchCard(nx,'Next match'):'<div class="card">The season is over.</div>'}
   ${nx?(l?`<h2>Our line-up, round ${nx.round}</h2>${ourLineup(l)}`:`<h2>Expected line-up, round ${nx.round}</h2>${ourExpected()}`):''}
   ${ownCard()}
   <p><a href="https://sga.netstand.nl/divisions/view/${me.divisionId}">Standings &amp; results on Netstand</a></p>`},
- calendar(){return `<h1>Calendar</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="scroll"><table class="cal"><thead><tr><th class="rd">Rd</th><th>Date</th><th>Opponent</th><th></th><th>Venue</th></tr></thead><tbody>${FIX.map(row).join('')}</tbody></table></div>
+ calendar(){return `<h1>Calendar</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="scroll"><table class="cal"><thead><tr><th class="rd">Rd</th><th>Date</th><th>Opponent</th><th></th><th>Venue</th><th>Result</th></tr></thead><tbody>${FIX.map(row).join('')}</tbody></table></div>
   <p class="mut">All matches start at 20:00. Dates as listed on Netstand.</p>`},
  team(){const nx=nextOf(cur);
   return `<h1>Squad</h1><p class="mut">${me.name} · average rating ${avg(me)}. Sorted by rating.</p>${squad(me)}
@@ -113,8 +126,9 @@ const views={
   return `<h1>${t.name}</h1>${matchCard(m,`Round ${m.round}`)}
   <p>${noRoster(t)?'':`Average rating ${avg(t)} (ours: ${avg(me)}) · `}<a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
   ${gamesCard(t.club)}
-  ${noRoster(t)?`<h2>Expected board order</h2>${NOROSTER}`:`<h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}
-  <h2>Expected board order</h2><p>${guessBasis(t)}</p><p class="mut">${GUESS_HOW}</p>${board(t)}`}
+  ${resultSection(m,t)}
+  ${noRoster(t)?`<h2>Expected board order</h2>${NOROSTER}`:`${resultFor(cur,m.round)?'':`<h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}`}
+  ${resultFor(cur,m.round)?'<h2>Our pre-match guess</h2><p class="mut">What we expected before the match, for comparison with the result above.</p>':`<h2>Expected board order</h2><p>${guessBasis(t)}</p>`}<p class="mut">${GUESS_HOW}</p>${board(t)}`}
   ${t.note?`<h2>Notes</h2><p>${t.note}</p>`:''}`}
 };
 const SUB=[['home','Overview'],['calendar','Calendar'],['team','Squad'],['opponents','Opponents']];
