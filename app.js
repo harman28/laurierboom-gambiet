@@ -96,11 +96,17 @@ const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCom
 /* ---------- views ---------- */
 const lastCard=()=>{const m=FIX.filter(x=>x.opp&&resultFor(cur,x.round)).pop();if(!m)return'';const r=resultFor(cur,m.round);
  return `<div class="card"><div class="mut">Last result · Round ${m.round}</div><div class="big">${resHtml(r,true)} <span class="mut" style="font-weight:400">against</span> ${T(m.opp).name}</div><p><a href="${link('opp',m.opp)}">Board by board →</a></p></div>`};
-function resultSection(m,t){const r=resultFor(cur,m.round);if(!r)return'';const l=lineupFor(m.round),g=guess({...t,observed:[]});   // guess check uses the rating-only guess
+function playedPage(m,t,r){const l=lineupFor(m.round),g=guess({...t,observed:[]});          // guess check uses the pre-match guess
  const them=r.theirs.map(x=>x.knsb?byKnsb(t,x.knsb):{n:x.name,sub:true});
- const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb),q=them[i];return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${l&&l.boards[i]?colourPill(l.boards[i].colour):''}</td><td class="n">${score(o.pts)}</td><td>${q.sub?q.n+' <span class="mut">(substitute)</span>':nlFull(q.n)}</td><td class="n">${q.sub?'<span class="mut">–</span>':(q.r||unrated)}</td></tr>`}).join('');
- const hits=them.filter((q,i)=>!q.sub&&g[i]&&g[i].p.knsb===q.knsb).length;
- return `<h2>Result, round ${m.round}: ${resHtml(r,true)}</h2><div class="scroll"><table class="table"><tr><th>Board</th><th>Us</th><th class="n">Rating</th><th>Colour</th><th class="n">Pts</th><th>Them</th><th class="n">Rating</th></tr>${rows}</table></div><p class="mut">Our pre-match guess for their line-up got ${hits} of ${them.length} boards exactly right.</p>`}
+ const hits=them.filter((q,i)=>!q.sub&&g[i]&&g[i].p.knsb===q.knsb).length, bres=p=>p===1?'1–0':p===0?'0–1':'½–½', cls=p=>p===1?'w':p===0?'l':'d';
+ const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb),q=them[i],c=l&&l.boards[i]?l.boards[i].colour:'';
+  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${p.r}</span></div><span class="bs ${cls(o.pts)}">${bres(o.pts)}</span><div class="pl"><b>${q.sub?q.n:nlFull(q.n)}</b><span>${q.sub?'substitute':(q.r||'unrated')}</span></div></div>`}).join('');
+ const lib=LIBS[t.club];
+ return `<h1>${t.name}</h1><div class="score"><span>${me.name}</span><strong class="${verdict(r)}">${score(r.us)}–${score(r.them)}</strong><span>${t.name}</span></div>
+ <p class="mut ctr">Round ${m.round} · ${fmt(m.date)} · ${venueHtml(cur,m)} (${m.home?'home':'away'})</p>
+ <div class="boards">${rows}</div>
+ <p class="mut"><a href="https://sga.netstand.nl/pairings/view/${m.pairing}">Match on Netstand</a> · <a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a>${lib?` · <a href="${libUrl(lib)}">Game library</a>`:''}</p>
+ <details><summary>Our pre-match guess for their line-up: ${hits} of ${them.length} boards right</summary>${board({...t,observed:[]})}</details>`}
 const views={
  club(){const nx=OURS.map(s=>({us:s,m:nextOf(s)})).filter(x=>x.m).map(x=>({...x.m,us:x.us})).sort((a,b)=>a.date.localeCompare(b.date));
   const all=allMatches();let last='';
@@ -123,10 +129,10 @@ const views={
   ${!(me.lineups||[]).length?`<h2>Expected line-up</h2><p>${guessBasis(me)}</p><p class="mut">${GUESS_HOW}</p>${board(me)}`:''}`},
  opponents(){const ts=FIX.filter(m=>m.opp);return `<h1>Opponents</h1><p class="mut">${me.name} · ${divName(cur)}</p><div class="grid">${ts.map(m=>{const t=T(m.opp);return `<div class="card"><b><a href="${link('opp',m.opp)}">${t.name}</a></b><div class="mut">Round ${m.round} · ${fmt(m.date)} · ${m.home?'home':'away'}</div><div>${noRoster(t)?'<span class="mut">Roster not registered yet</span>':`Avg rating ${avg(t)} · top player ${ord(t)[0].r}`}</div></div>`}).join('')}</div>`},
  opp(s){const t=T(s),m=FIX.find(x=>x.opp===s);if(!t||!m)return '<p>Unknown team.</p>';
+  {const r=resultFor(cur,m.round);if(r)return playedPage(m,t,r)}
   return `<h1>${t.name}</h1>${matchCard(m,`Round ${m.round}`)}
   <p>${noRoster(t)?'':`Average rating ${avg(t)} (ours: ${avg(me)}) · `}<a href="https://sga.netstand.nl/teams/view/${t.id}">Team page</a> · <a href="https://sga.netstand.nl/clubs/view/${t.club}">Club page</a></p>
   ${gamesCard(t.club)}
-  ${resultSection(m,t)}
   ${noRoster(t)?`<h2>Expected board order</h2>${NOROSTER}`:`${resultFor(cur,m.round)?'':`<h2>Head to head, round ${m.round}</h2>${headToHead(m,t)}`}
   ${resultFor(cur,m.round)?'<h2>Our pre-match guess</h2><p class="mut">What we expected before the match, for comparison with the result above.</p>':`<h2>Expected board order</h2><p>${guessBasis(t)}</p>`}<p class="mut">${GUESS_HOW}</p>${board(t)}`}
   ${t.note?`<h2>Notes</h2><p>${t.note}</p>`:''}`}
