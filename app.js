@@ -97,10 +97,10 @@ const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCom
 const lastCard=()=>{const m=FIX.filter(x=>x.opp&&resultFor(cur,x.round)).pop();if(!m)return'';const r=resultFor(cur,m.round);
  return `<div class="card"><div class="mut">Last result · Round ${m.round}</div><div class="big">${resHtml(r,true)} <span class="mut" style="font-weight:400">against</span> ${T(m.opp).name}</div><p><a href="${link('opp',m.opp)}">Board by board →</a></p></div>`};
 function playedPage(m,t,r){const l=lineupFor(m.round),g=guess({...t,observed:[]});          // guess check uses the pre-match guess
- const them=r.theirs.map(x=>x.knsb?byKnsb(t,x.knsb):{n:x.name,sub:true});
- const hits=them.filter((q,i)=>!q.sub&&g[i]&&g[i].p.knsb===q.knsb).length, bres=p=>p===1?'1–0':p===0?'0–1':'½–½', cls=p=>p===1?'w':p===0?'l':'d';
+ const them=r.theirs.map(x=>(x.knsb&&byKnsb(t,x.knsb))||{n:x.name,r:x.r,note:x.note,knsb:x.knsb,ext:true});   // ext: not on the registered roster, details from results.js
+ const hits=them.filter((q,i)=>!q.ext&&g[i]&&g[i].p.knsb===q.knsb).length, bres=p=>p===1?'1–0':p===0?'0–1':'½–½', cls=p=>p===1?'w':p===0?'l':'d';
  const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb),q=them[i],c=l&&l.boards[i]?l.boards[i].colour:'';
-  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${p.r}</span></div><span class="bs ${cls(o.pts)}">${bres(o.pts)}</span><div class="pl"><b>${q.sub?q.n:nlFull(q.n)}</b><span>${q.sub?'substitute':(q.r||'unrated')}</span></div></div>`}).join('');
+  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${p.r}</span></div><span class="bs ${cls(o.pts)}">${bres(o.pts)}</span><div class="pl"><b>${q.ext?q.n:nlFull(q.n)}</b><span>${q.r||'unrated'}${q.note?` · ${q.note}`:''}</span></div></div>`}).join('');
  const lib=LIBS[t.club];
  return `<h1>${t.name}</h1><div class="score"><span>${me.name}</span><strong class="${verdict(r)}">${score(r.us)}–${score(r.them)}</strong><span>${t.name}</span></div>
  <p class="mut ctr">Round ${m.round} · ${fmt(m.date)} · ${venueHtml(cur,m)} (${m.home?'home':'away'})</p>
