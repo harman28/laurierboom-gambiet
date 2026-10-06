@@ -138,10 +138,40 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
+     "n": "Jong, C. (Casijn)",
+     "r": 1816,
+     "id": 556651,
+     "knsb": "8571563"
+    },
+    {
+     "n": "Singh, H. (Harman)",
+     "r": 1621,
+     "id": 556653,
+     "knsb": "9029889"
+    },
+    {
+     "n": "Kleef van, T.S. (Thomas)",
+     "r": 1766,
+     "id": 556654,
+     "knsb": "9078047"
+    },
+    {
      "n": "Bautista, K.C. (Keith)",
-     "r": 1901,
+     "r": 1897,
      "id": 556655,
      "knsb": "9116998"
+    },
+    {
+     "n": "Garau, F. (Francesca)",
+     "r": 1998,
+     "id": 556656,
+     "knsb": "9129890"
+    },
+    {
+     "n": "Linde van der, L. (Lars)",
+     "r": 1770,
+     "id": 556657,
+     "knsb": "9135775"
     },
     {
      "n": "Dee van, A.M. (Arne)",
@@ -154,36 +184,6 @@ const DATA = {
      "r": 1539,
      "id": 556671,
      "knsb": "9140648"
-    },
-    {
-     "n": "Garau, F. (Francesca)",
-     "r": 2001,
-     "id": 556656,
-     "knsb": "9129890"
-    },
-    {
-     "n": "Jong, C. (Casijn)",
-     "r": 1816,
-     "id": 556651,
-     "knsb": "8571563"
-    },
-    {
-     "n": "Kleef van, T.S. (Thomas)",
-     "r": 1766,
-     "id": 556654,
-     "knsb": "9078047"
-    },
-    {
-     "n": "Linde van der, L. (Lars)",
-     "r": 1770,
-     "id": 556657,
-     "knsb": "9135775"
-    },
-    {
-     "n": "Singh, H. (Harman)",
-     "r": 1621,
-     "id": 556653,
-     "knsb": "9029889"
     }
    ],
    "note": "",
@@ -224,6 +224,21 @@ const DATA = {
        "knsb": "9140648",
        "colour": "white"
       }
+     ]
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "9129890",
+      "9116998",
+      "8571563",
+      "9135775",
+      "9078047",
+      "9141077",
+      "9029889",
+      "9140648"
      ]
     }
    ]
@@ -1116,24 +1131,6 @@ const DATA = {
    "venueName": "2 Klaveren",
    "players": [
     {
-     "n": "Herrero, R. (Robert)",
-     "r": 1735,
-     "id": 552845,
-     "knsb": "9130022"
-    },
-    {
-     "n": "Korpelshoek, V. (Vincent)",
-     "r": 1858,
-     "id": 540643,
-     "knsb": "9007702"
-    },
-    {
-     "n": "Schot, A. (Aron)",
-     "r": 1553,
-     "id": 534680,
-     "knsb": "8938490"
-    },
-    {
      "n": "Visscher, R. (Robbert)",
      "r": 1628,
      "id": 534390,
@@ -1147,16 +1144,28 @@ const DATA = {
      }
     },
     {
-     "n": "Greeven, S. (Sebastiaan)",
-     "r": 1811,
-     "id": 547565,
-     "knsb": "9078597",
+     "n": "Schot, A. (Aron)",
+     "r": 1553,
+     "id": 534680,
+     "knsb": "8938490"
+    },
+    {
+     "n": "Korpelshoek, V. (Vincent)",
+     "r": 1858,
+     "id": 540643,
+     "knsb": "9007702"
+    },
+    {
+     "n": "Pelser, A. (Abel)",
+     "r": 1784,
+     "id": 549113,
+     "knsb": "9093260",
      "last": {
       "team": "Zwart op Wit 2",
-      "games": 1,
-      "avg": 6.0,
-      "min": 6,
-      "max": 6
+      "games": 2,
+      "avg": 1.0,
+      "min": 1,
+      "max": 1
      }
     },
     {
@@ -1164,6 +1173,18 @@ const DATA = {
      "r": 0,
      "id": 553880,
      "knsb": "9143640"
+    },
+    {
+     "n": "Sten, B. (Blanken)",
+     "r": 1754,
+     "id": 554528,
+     "knsb": "9150746"
+    },
+    {
+     "n": "Przemyslaw, P. (Panas)",
+     "r": 0,
+     "id": 555537,
+     "knsb": "9161207"
     },
     {
      "n": "Berton, F. (Federico)",
@@ -1179,20 +1200,41 @@ const DATA = {
      }
     },
     {
-     "n": "Pelser, A. (Abel)",
-     "r": 1784,
-     "id": 549113,
-     "knsb": "9093260",
+     "n": "Herrero, R. (Robert)",
+     "r": 1735,
+     "id": 552845,
+     "knsb": "9130022"
+    },
+    {
+     "n": "Greeven, S. (Sebastiaan)",
+     "r": 1811,
+     "id": 547565,
+     "knsb": "9078597",
      "last": {
       "team": "Zwart op Wit 2",
-      "games": 2,
-      "avg": 1.0,
-      "min": 1,
-      "max": 1
+      "games": 1,
+      "avg": 6.0,
+      "min": 6,
+      "max": 6
      }
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "9093260",
+      "9007702",
+      "9150746",
+      "9161207",
+      "8938490",
+      "8935036",
+      "9143640",
+      "9164210"
+     ]
+    }
+   ]
   },
   "pegasus-amstelveen-2": {
    "id": 763,
@@ -1415,16 +1457,41 @@ const DATA = {
    "venueName": "Bilderdijkpark",
    "players": [
     {
-     "n": "Aarten, M.M. (Marjolein)",
-     "r": 1593,
-     "id": 524085,
-     "knsb": "8538442",
+     "n": "Kotmans, R. (Rob)",
+     "r": 1804,
+     "id": 512377,
+     "knsb": "5955026"
+    },
+    {
+     "n": "Flikweert, C. (Cees)",
+     "r": 1705,
+     "id": 517854,
+     "knsb": "7591331",
      "last": {
       "team": "Amsterdam West 8",
-      "games": 5,
-      "avg": 3.8,
-      "min": 3,
-      "max": 4
+      "games": 7,
+      "avg": 1.29,
+      "min": 1,
+      "max": 2
+     }
+    },
+    {
+     "n": "Jaarsveld, J. (Jos)",
+     "r": 1540,
+     "id": 517855,
+     "knsb": "7591342"
+    },
+    {
+     "n": "Wouters, F. (Fabio)",
+     "r": 1625,
+     "id": 524444,
+     "knsb": "8566613",
+     "last": {
+      "team": "Amsterdam West 8",
+      "games": 7,
+      "avg": 5.57,
+      "min": 4,
+      "max": 7
      }
     },
     {
@@ -1441,27 +1508,8 @@ const DATA = {
      }
     },
     {
-     "n": "Flikweert, C. (Cees)",
-     "r": 1705,
-     "id": 517854,
-     "knsb": "7591331",
-     "last": {
-      "team": "Amsterdam West 8",
-      "games": 7,
-      "avg": 1.29,
-      "min": 1,
-      "max": 2
-     }
-    },
-    {
-     "n": "Kotmans, R. (Rob)",
-     "r": 1804,
-     "id": 512377,
-     "knsb": "5955026"
-    },
-    {
      "n": "Vapor, K. (Keoni)",
-     "r": 1701,
+     "r": 1711,
      "id": 540021,
      "knsb": "9001355",
      "last": {
@@ -1499,20 +1547,35 @@ const DATA = {
      }
     },
     {
-     "n": "Wouters, F. (Fabio)",
-     "r": 1625,
-     "id": 524444,
-     "knsb": "8566613",
+     "n": "Aarten, M.M. (Marjolein)",
+     "r": 1639,
+     "id": 524085,
+     "knsb": "8538442",
      "last": {
       "team": "Amsterdam West 8",
-      "games": 7,
-      "avg": 5.57,
-      "min": 4,
-      "max": 7
+      "games": 5,
+      "avg": 3.8,
+      "min": 3,
+      "max": 4
      }
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "5955026",
+      "7591331",
+      "9000486",
+      "9001355",
+      "9112334",
+      "8566613",
+      "7591342",
+      "9017448"
+     ]
+    }
+   ]
   },
   "vas-7": {
    "id": 766,
@@ -1524,10 +1587,10 @@ const DATA = {
    "venueName": "Cygnus Gymnasium",
    "players": [
     {
-     "n": "Kroon, B. (Bart)",
-     "r": 1854,
-     "id": 550769,
-     "knsb": "8946377"
+     "n": "Drewes, B.A. (Benno)",
+     "r": 1869,
+     "id": 518959,
+     "knsb": "7809901"
     },
     {
      "n": "Hakvoort, R.C. (Remy)",
@@ -1549,10 +1612,16 @@ const DATA = {
      }
     },
     {
-     "n": "Voitsekhovskyi, V.V. (Vadym)",
-     "r": 1693,
-     "id": 552719,
-     "knsb": "9128845"
+     "n": "Lammers, H. (Hans)",
+     "r": 1682,
+     "id": 523099,
+     "knsb": "8418245"
+    },
+    {
+     "n": "Ersöz, B.H. (Baris)",
+     "r": 1670,
+     "id": 536387,
+     "knsb": "8959434"
     },
     {
      "n": "Cariga, R.B. (Ricky)",
@@ -1568,25 +1637,40 @@ const DATA = {
      }
     },
     {
-     "n": "Lammers, H. (Hans)",
-     "r": 1682,
-     "id": 523099,
-     "knsb": "8418245"
+     "n": "Kroon, B. (Bart)",
+     "r": 1854,
+     "id": 550769,
+     "knsb": "8946377"
     },
     {
-     "n": "Ersöz, B.H. (Baris)",
-     "r": 1665,
-     "id": 536387,
-     "knsb": "8959434"
+     "n": "Bellamy, L.J. (Linda)",
+     "r": 1603,
+     "id": 557133,
+     "knsb": "8837554"
     },
     {
-     "n": "Drewes, B.A. (Benno)",
-     "r": 1869,
-     "id": 518959,
-     "knsb": "7809901"
+     "n": "Voitsekhovskyi, V.V. (Vadym)",
+     "r": 1693,
+     "id": 552719,
+     "knsb": "9128845"
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "8946377",
+      "7809901",
+      "8150186",
+      "8104998",
+      "8418245",
+      "9106185",
+      "8959434",
+      "8837554"
+     ]
+    }
+   ]
   },
   "vas-5": {
    "id": 767,
@@ -2845,7 +2929,149 @@ const DATA = {
     "date": "2026-10-05",
     "home": true,
     "opp": "amsterdam-west-8",
-    "pairing": 2586
+    "pairing": 2586,
+    "result": {
+     "us": 6.5,
+     "them": 1.5,
+     "boards": [
+      {
+       "o": {
+        "n": "Garau, F. (Francesca)",
+        "r": 1998,
+        "id": 556656,
+        "c": "black",
+        "knsb": "9129890"
+       },
+       "t": {
+        "n": "Kotmans, R. (Rob)",
+        "r": 1804,
+        "id": 512377,
+        "c": "white",
+        "knsb": "5955026"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Bautista, K.C. (Keith)",
+        "r": 1897,
+        "id": 556655,
+        "c": "white",
+        "knsb": "9116998"
+       },
+       "t": {
+        "n": "Flikweert, C. (Cees)",
+        "r": 1705,
+        "id": 517854,
+        "c": "black",
+        "knsb": "7591331"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Jong, C. (Casijn)",
+        "r": 1816,
+        "id": 556651,
+        "c": "black",
+        "knsb": "8571563"
+       },
+       "t": {
+        "n": "Contrera naranjo, N. (Néstor)",
+        "r": 1641,
+        "id": 539933,
+        "c": "white",
+        "knsb": "9000486"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Linde van der, L. (Lars)",
+        "r": 1770,
+        "id": 556657,
+        "c": "white",
+        "knsb": "9135775"
+       },
+       "t": {
+        "n": "Vapor, K. (Keoni)",
+        "r": 1711,
+        "id": 540021,
+        "c": "black",
+        "knsb": "9001355"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Kleef van, T.S. (Thomas)",
+        "r": 1766,
+        "id": 556654,
+        "c": "black",
+        "knsb": "9078047"
+       },
+       "t": {
+        "n": "Melikyan, L. (Leo)",
+        "r": 0,
+        "id": 550853,
+        "c": "white",
+        "knsb": "9112334"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Dee van, A.M. (Arne)",
+        "r": 1616,
+        "id": 556658,
+        "c": "white",
+        "knsb": "9141077"
+       },
+       "t": {
+        "n": "Wouters, F. (Fabio)",
+        "r": 1625,
+        "id": 524444,
+        "c": "black",
+        "knsb": "8566613"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Singh, H. (Harman)",
+        "r": 1621,
+        "id": 556653,
+        "c": "black",
+        "knsb": "9029889"
+       },
+       "t": {
+        "n": "Jaarsveld, J. (Jos)",
+        "r": 1540,
+        "id": 517855,
+        "c": "white",
+        "knsb": "7591342"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Faber, R. (Rick)",
+        "r": 1539,
+        "id": 556671,
+        "c": "white",
+        "knsb": "9140648"
+       },
+       "t": {
+        "n": "Oomen, S. (Samuel)",
+        "r": 1481,
+        "id": 541505,
+        "c": "black",
+        "knsb": "9017448"
+       },
+       "p": 0.5
+      }
+     ]
+    }
    },
    {
     "round": 2,

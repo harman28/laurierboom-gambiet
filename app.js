@@ -13,7 +13,9 @@ const teamNo=s=>s.replace(/.*-/,'');
 const divName=s=>DATA.divisions[T(s).divisionId];
 const today=new Date().toISOString().slice(0,10);
 const RES=typeof RESULTS==='undefined'?[]:RESULTS;                      // results.js, edited by hand
-const resultFor=(us,round)=>RES.find(r=>r.team===us&&r.round===round);
+const dataResult=(us,round)=>{const f=DATA.fixtures[us].find(m=>m.round===round),r=f&&f.result;                  // read from Netstand by the daily update
+ return r?{us:r.us,them:r.them,ours:r.boards.map(b=>({knsb:b.o.knsb,name:b.o.n,r:b.o.r,c:b.o.c,pts:b.p})),theirs:r.boards.map(b=>({knsb:b.t.knsb,name:b.t.n,r:b.t.r}))}:null};
+const resultFor=(us,round)=>RES.find(r=>r.team===us&&r.round===round)||dataResult(us,round);                  // a hand-entered entry in results.js wins
 const score=n=>String(n).replace(/\.5$/,'½').replace(/^0½$/,'½');       // 6.5 -> 6½, 0.5 -> ½
 const verdict=r=>r.us>r.them?'w':r.us<r.them?'l':'d';
 const resHtml=(r,long)=>`<span class="res ${verdict(r)}">${(long?{w:'Won',l:'Lost',d:'Drew'}:{w:'W',l:'L',d:'D'})[verdict(r)]} ${score(r.us)}–${score(r.them)}</span>`;
@@ -69,7 +71,7 @@ const colourPill=c=>`<span class="col ${c==='white'?'w':'b'}">${c==='white'?'Whi
 const profiles=p=>`<a href="${knsb(p)}">KNSB</a> · <a href="${net(p)}">Netstand</a>`;
 function ourLineup(l){return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Colour</th></tr>${l.boards.map((b,i)=>{const p=byKnsb(me,b.knsb);return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${colourPill(b.colour)}</td></tr>`}).join('')}</table></div>${l.note?`<p class="mut">${l.note}</p>`:''}`}
 function ourExpected(){return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th></tr>${guess(me).map(g=>`<tr><td>${g.board}</td><td>${nlFull(g.p.n)}</td><td class="n">${g.p.r||unrated}</td></tr>`).join('')}</table></div><p class="mut">Expected line-up, guessed. ${guessBasis(me)} <a href="${link('team')}">See the reasoning</a>.</p>`}
-function headToHead(m,t){const l=lineupFor(m.round),g=guess(t),us=l?null:guess(me);
+function headToHead(m,t){const l=lineupFor(m.round),g=guess(t).slice(0,8),us=l?null:guess(me);
  const rows=g.map((o,i)=>{const p=l?byKnsb(me,l.boards[i].knsb):us[i].p;return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||unrated}</td>${l?`<td>${colourPill(l.boards[i].colour)}</td>`:''}<td>${nlFull(o.p.n)}</td><td class="n">${o.p.r||unrated}</td></tr>`}).join('');
  return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Us${l?'':' (expected)'}</th><th class="n">Rating</th>${l?'<th>Colour</th>':''}<th>Them (expected)</th><th class="n">Rating</th></tr>${rows}</table></div><p class="mut">${l?(l.note||''):'Our side is a guess too.'} Their side is the guess explained below.</p>`}
 function board(t){const g=guess(t);return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Guess</th><th>Reasoning</th><th>Profiles</th></tr>${g.map(({p,board,why,conf})=>`<tr><td>${board}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||unrated}</td><td><span class="conf ${conf}">${CONF[conf]}</span></td><td class="why">${why}</td><td>${profiles(p)}</td></tr>`).join('')}</table></div>`}
@@ -97,10 +99,10 @@ const gameLibrary=()=>{const ls=Object.values(LIBS).sort((a,b)=>a.name.localeCom
 const lastCard=()=>{const m=FIX.filter(x=>x.opp&&resultFor(cur,x.round)).pop();if(!m)return'';const r=resultFor(cur,m.round);
  return `<div class="card"><div class="mut">Last result · Round ${m.round}</div><div class="big">${resHtml(r,true)} <span class="mut" style="font-weight:400">against</span> ${T(m.opp).name}</div><p><a href="${link('opp',m.opp)}">Board by board →</a></p></div>`};
 function playedPage(m,t,r){const l=lineupFor(m.round),g=guess({...t,observed:[]});          // guess check uses the pre-match guess
- const them=r.theirs.map(x=>(x.knsb&&byKnsb(t,x.knsb))||{n:x.name,r:x.r,note:x.note,knsb:x.knsb,ext:true});   // ext: not on the registered roster, details from results.js
- const hits=them.filter((q,i)=>!q.ext&&g[i]&&g[i].p.knsb===q.knsb).length, bres=p=>p===1?'1–0':p===0?'0–1':'½–½', cls=p=>p===1?'w':p===0?'l':'d';
- const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb),q=them[i],c=l&&l.boards[i]?l.boards[i].colour:'';
-  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${p.r}</span></div><span class="bs ${cls(o.pts)}">${bres(o.pts)}</span><div class="pl"><b>${q.ext?q.n:nlFull(q.n)}</b><span>${q.r||'unrated'}${q.note?` · ${q.note}`:''}</span></div></div>`}).join('');
+ const them=r.theirs.map(x=>{const p=x.knsb&&byKnsb(t,x.knsb);return{n:x.name||(p&&p.n)||'?',r:x.r??(p&&p.r),knsb:x.knsb,note:x.note}});
+ const hits=them.filter((q,i)=>q.knsb&&g[i]&&g[i].p.knsb===q.knsb).length, bres=p=>p===1?'1–0':p===0?'0–1':'½–½', cls=p=>p===1?'w':p===0?'l':'d';
+ const rows=r.ours.map((o,i)=>{const p=byKnsb(me,o.knsb)||{n:o.name,r:o.r},q=them[i],c=o.c||(l&&l.boards[i]?l.boards[i].colour:'');
+  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${o.r??p.r}</span></div><span class="bs ${cls(o.pts)}">${bres(o.pts)}</span><div class="pl"><b>${nlFull(q.n)}</b><span>${q.r||'unrated'}${q.note?` · ${q.note}`:''}</span></div></div>`}).join('');
  const lib=LIBS[t.club];
  return `<h1>${t.name}</h1><div class="score"><span>${me.name}</span><strong class="${verdict(r)}">${score(r.us)}–${score(r.them)}</strong><span>${t.name}</span></div>
  <p class="mut ctr">Round ${m.round} · ${fmt(m.date)} · ${venueHtml(cur,m)} (${m.home?'home':'away'})</p>
