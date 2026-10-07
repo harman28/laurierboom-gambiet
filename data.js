@@ -1246,19 +1246,6 @@ const DATA = {
    "venueName": "Groenelaan",
    "players": [
     {
-     "n": "Kampen van, R. (Rick)",
-     "r": 1748,
-     "id": 538775,
-     "knsb": "8690396",
-     "last": {
-      "team": "Pegasus Amstelveen 2",
-      "games": 8,
-      "avg": 5.0,
-      "min": 4,
-      "max": 6
-     }
-    },
-    {
      "n": "Haak, M. (Michiel)",
      "r": 1766,
      "id": 524025,
@@ -1272,10 +1259,30 @@ const DATA = {
      }
     },
     {
-     "n": "Spoelstra, B. (Bas)",
-     "r": 1947,
-     "id": 556865,
-     "knsb": "7981072"
+     "n": "Czudar, S. (Sandor)",
+     "r": 1657,
+     "id": 529114,
+     "knsb": "8843615",
+     "last": {
+      "team": "Pegasus Amstelveen 2",
+      "games": 5,
+      "avg": 6.0,
+      "min": 6,
+      "max": 6
+     }
+    },
+    {
+     "n": "Kampen van, R. (Rick)",
+     "r": 1748,
+     "id": 538775,
+     "knsb": "8690396",
+     "last": {
+      "team": "Pegasus Amstelveen 2",
+      "games": 8,
+      "avg": 5.0,
+      "min": 4,
+      "max": 6
+     }
     },
     {
      "n": "Schor, J.C.W. (Joop)",
@@ -1287,6 +1294,25 @@ const DATA = {
       "games": 6,
       "avg": 4.83,
       "min": 2,
+      "max": 7
+     }
+    },
+    {
+     "n": "Souisa, M.J. (Jack)",
+     "r": 1499,
+     "id": 542884,
+     "knsb": "9012872"
+    },
+    {
+     "n": "Meerkamp van Embden, L.K. (Luuk)",
+     "r": 1628,
+     "id": 550942,
+     "knsb": "9113236",
+     "last": {
+      "team": "Pegasus Amstelveen 2",
+      "games": 6,
+      "avg": 3.5,
+      "min": 1,
       "max": 7
      }
     },
@@ -1304,39 +1330,28 @@ const DATA = {
      }
     },
     {
-     "n": "Meerkamp van Embden, L.K. (Luuk)",
-     "r": 1628,
-     "id": 550942,
-     "knsb": "9113236",
-     "last": {
-      "team": "Pegasus Amstelveen 2",
-      "games": 6,
-      "avg": 3.5,
-      "min": 1,
-      "max": 7
-     }
-    },
-    {
-     "n": "Czudar, S. (Sandor)",
-     "r": 1657,
-     "id": 529114,
-     "knsb": "8843615",
-     "last": {
-      "team": "Pegasus Amstelveen 2",
-      "games": 5,
-      "avg": 6.0,
-      "min": 6,
-      "max": 6
-     }
-    },
-    {
-     "n": "Souisa, M.J. (Jack)",
-     "r": 1499,
-     "id": 542884,
-     "knsb": "9012872"
+     "n": "Spoelstra, B. (Bas)",
+     "r": 1947,
+     "id": 556865,
+     "knsb": "7981072"
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "7981072",
+      "8531358",
+      "9113236",
+      "8690396",
+      "8843615",
+      "8929976",
+      "9010969",
+      "9012872"
+     ]
+    }
+   ]
   },
   "de-raadsheer-3": {
    "id": 764,
@@ -1348,8 +1363,34 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
+     "n": "Koevoets, M.A.C. (Rinus)",
+     "r": 1794,
+     "id": 514529,
+     "knsb": "6742527",
+     "last": {
+      "team": "De Raadsheer 3",
+      "games": 4,
+      "avg": 2.25,
+      "min": 1,
+      "max": 3
+     }
+    },
+    {
+     "n": "Slooten van, R. (Rob)",
+     "r": 1702,
+     "id": 517337,
+     "knsb": "7501626",
+     "last": {
+      "team": "De Raadsheer 3",
+      "games": 4,
+      "avg": 4.0,
+      "min": 3,
+      "max": 5
+     }
+    },
+    {
      "n": "Bergshoeff, G. (Bert)",
-     "r": 1583,
+     "r": 1574,
      "id": 518268,
      "knsb": "7672082",
      "last": {
@@ -1359,6 +1400,12 @@ const DATA = {
       "min": 1,
       "max": 4
      }
+    },
+    {
+     "n": "Baas, R.C. (Rob)",
+     "r": 1512,
+     "id": 526179,
+     "knsb": "8718589"
     },
     {
      "n": "Engen van, F. (Fred)",
@@ -1374,48 +1421,16 @@ const DATA = {
      }
     },
     {
-     "n": "Houba, G. (Gerben)",
-     "r": 1613,
-     "id": 523623,
-     "knsb": "8485785",
+     "n": "Feenstra, J. (Julian)",
+     "r": 1650,
+     "id": 546248,
+     "knsb": "8341245",
      "last": {
       "team": "De Raadsheer 3",
-      "games": 7,
-      "avg": 1.86,
-      "min": 1,
-      "max": 3
-     }
-    },
-    {
-     "n": "Koevoets, M.A.C. (Rinus)",
-     "r": 1794,
-     "id": 514529,
-     "knsb": "6742527",
-     "last": {
-      "team": "De Raadsheer 3",
-      "games": 4,
-      "avg": 2.25,
-      "min": 1,
-      "max": 3
-     }
-    },
-    {
-     "n": "Mantel, D.M.A. (Maxim)",
-     "r": 1635,
-     "id": 557901,
-     "knsb": "8805258"
-    },
-    {
-     "n": "Slooten van, R. (Rob)",
-     "r": 1702,
-     "id": 517337,
-     "knsb": "7501626",
-     "last": {
-      "team": "De Raadsheer 3",
-      "games": 4,
-      "avg": 4.0,
-      "min": 3,
-      "max": 5
+      "games": 6,
+      "avg": 4.33,
+      "min": 2,
+      "max": 7
      }
     },
     {
@@ -1432,20 +1447,41 @@ const DATA = {
      }
     },
     {
-     "n": "Feenstra, J. (Julian)",
-     "r": 1650,
-     "id": 546248,
-     "knsb": "8341245",
+     "n": "Mantel, D.M.A. (Maxim)",
+     "r": 1635,
+     "id": 557901,
+     "knsb": "8805258"
+    },
+    {
+     "n": "Houba, G. (Gerben)",
+     "r": 1613,
+     "id": 523623,
+     "knsb": "8485785",
      "last": {
       "team": "De Raadsheer 3",
-      "games": 6,
-      "avg": 4.33,
-      "min": 2,
-      "max": 7
+      "games": 7,
+      "avg": 1.86,
+      "min": 1,
+      "max": 3
      }
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "7672082",
+      "8805258",
+      "6742527",
+      "8341245",
+      "9026402",
+      "8960028",
+      "7501626",
+      "8718589"
+     ]
+    }
+   ]
   },
   "amsterdam-west-8": {
    "id": 765,
@@ -1985,21 +2021,21 @@ const DATA = {
    "venueName": "Huize Lydia",
    "players": [
     {
-     "n": "Rozenbroek, R. (Ricardo)",
-     "r": 1744,
-     "id": 548489,
-     "knsb": "8403219"
+     "n": "Fokke, H.E. (Erik)",
+     "r": 1676,
+     "id": 515679,
+     "knsb": "7184639"
     },
     {
-     "n": "Sommer, H. (Hugo)",
-     "r": 1678,
-     "id": 543812,
-     "knsb": "9038788",
+     "n": "Kuypers, S.E.M. (Steven)",
+     "r": 1657,
+     "id": 519249,
+     "knsb": "7861832",
      "last": {
       "team": "Caissa 6",
-      "games": 8,
-      "avg": 2.88,
-      "min": 2,
+      "games": 9,
+      "avg": 4.11,
+      "min": 3,
       "max": 5
      }
     },
@@ -2023,15 +2059,39 @@ const DATA = {
      }
     },
     {
-     "n": "Kuypers, S.E.M. (Steven)",
-     "r": 1657,
-     "id": 519249,
-     "knsb": "7861832",
+     "n": "Mulder, L. (Lars)",
+     "r": 1666,
+     "id": 531372,
+     "knsb": "8891135"
+    },
+    {
+     "n": "Dam, M. (Maria)",
+     "r": 1576,
+     "id": 548487,
+     "knsb": "8213392"
+    },
+    {
+     "n": "Rozenbroek, R. (Ricardo)",
+     "r": 1744,
+     "id": 548489,
+     "knsb": "8403219"
+    },
+    {
+     "n": "Cairo, D.E. (David)",
+     "r": 1480,
+     "id": 550174,
+     "knsb": "9097902"
+    },
+    {
+     "n": "Sommer, H. (Hugo)",
+     "r": 1678,
+     "id": 543812,
+     "knsb": "9038788",
      "last": {
       "team": "Caissa 6",
-      "games": 9,
-      "avg": 4.11,
-      "min": 3,
+      "games": 8,
+      "avg": 2.88,
+      "min": 2,
       "max": 5
      }
     },
@@ -2040,12 +2100,6 @@ const DATA = {
      "r": 1619,
      "id": 512440,
      "knsb": "5967698"
-    },
-    {
-     "n": "Dam, M. (Maria)",
-     "r": 1576,
-     "id": 548487,
-     "knsb": "8213392"
     },
     {
      "n": "Roy, D. (Deepayan)",
@@ -2060,6 +2114,21 @@ const DATA = {
       "max": 8
      }
     }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "8403219",
+      "8140770",
+      "7184639",
+      "8891135",
+      "8462773",
+      "7861832",
+      "8213392",
+      "9097902"
+     ]
+    }
    ]
   },
   "amsterdam-west-6": {
@@ -2071,6 +2140,38 @@ const DATA = {
    "venue": "ASV Bilderdijkpark, Bilderdijkpark 10, 1052 SB Amsterdam",
    "venueName": "Bilderdijkpark",
    "players": [
+    {
+     "n": "Kotmans, R. (Rob)",
+     "r": 1804,
+     "id": 512377,
+     "knsb": "5955026"
+    },
+    {
+     "n": "Haastere van, R. (Rob)",
+     "r": 1765,
+     "id": 515701,
+     "knsb": "7188698",
+     "last": {
+      "team": "Amsterdam West 7",
+      "games": 6,
+      "avg": 2.67,
+      "min": 2,
+      "max": 5
+     }
+    },
+    {
+     "n": "Sanders, R.A.B. (Ralph)",
+     "r": 1724,
+     "id": 516193,
+     "knsb": "7291328",
+     "last": {
+      "team": "Amsterdam West 6",
+      "games": 4,
+      "avg": 5.5,
+      "min": 5,
+      "max": 7
+     }
+    },
     {
      "n": "Berg van den, B. (Bas)",
      "r": 1751,
@@ -2085,10 +2186,29 @@ const DATA = {
      }
     },
     {
+     "n": "Walraven van, A. (Arie)",
+     "r": 1744,
+     "id": 521067,
+     "knsb": "8144257"
+    },
+    {
      "n": "Elliyasa, M. (Mehmet)",
      "r": 1824,
      "id": 523880,
      "knsb": "8515947"
+    },
+    {
+     "n": "Singh, S. (Satwik)",
+     "r": 1714,
+     "id": 532806,
+     "knsb": "8912706",
+     "last": {
+      "team": "Amsterdam West 6",
+      "games": 6,
+      "avg": 5.5,
+      "min": 2,
+      "max": 8
+     }
     },
     {
      "n": "Gerritsen, D.W. (Diederik)",
@@ -2134,32 +2254,21 @@ const DATA = {
       "min": 1,
       "max": 6
      }
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Sanders, R.A.B. (Ralph)",
-     "r": 1724,
-     "id": 516193,
-     "knsb": "7291328",
-     "last": {
-      "team": "Amsterdam West 6",
-      "games": 4,
-      "avg": 5.5,
-      "min": 5,
-      "max": 7
-     }
-    },
-    {
-     "n": "Singh, S. (Satwik)",
-     "r": 1714,
-     "id": 532806,
-     "knsb": "8912706",
-     "last": {
-      "team": "Amsterdam West 6",
-      "games": 6,
-      "avg": 5.5,
-      "min": 2,
-      "max": 8
-     }
+     "round": 1,
+     "boards": [
+      "8515947",
+      "5955026",
+      "7188698",
+      "7480418",
+      "8144257",
+      "8241167",
+      "7291328",
+      "8912706"
+     ]
     }
    ]
   },
