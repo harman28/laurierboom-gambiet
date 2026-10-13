@@ -319,10 +319,10 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
-     "n": "Alaskari, M. (Mouhanad)",
-     "r": 1537,
-     "id": 553198,
-     "knsb": "9133377"
+     "n": "Fries de, J. (Jan)",
+     "r": 1715,
+     "id": 523620,
+     "knsb": "8485301"
     },
     {
      "n": "Cnossen, J.L. (Geert-Jan)",
@@ -337,22 +337,16 @@ const DATA = {
      "knsb": "8961392"
     },
     {
-     "n": "Eckenhausen, S. (Sepp)",
-     "r": 1968,
-     "id": 548733,
-     "knsb": "8198960"
-    },
-    {
-     "n": "Fries de, J. (Jan)",
-     "r": 1715,
-     "id": 523620,
-     "knsb": "8485301"
-    },
-    {
      "n": "Soest van, W. (Wouter)",
      "r": 1852,
      "id": 553020,
      "knsb": "9131650"
+    },
+    {
+     "n": "Alaskari, M. (Mouhanad)",
+     "r": 1537,
+     "id": 553198,
+     "knsb": "9133377"
     },
     {
      "n": "Thoen, H. (Hylke)",
@@ -365,6 +359,33 @@ const DATA = {
      "r": 1703,
      "id": 554402,
      "knsb": "8428684"
+    },
+    {
+     "n": "Hasb, A. (Albraa)",
+     "r": 0,
+     "id": 559062,
+     "knsb": "8795534"
+    },
+    {
+     "n": "Eckenhausen, S. (Sepp)",
+     "r": 1968,
+     "id": 548733,
+     "knsb": "8198960"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "8485301",
+      "8428684",
+      "9131650",
+      "9134048",
+      "8795534",
+      "9133377",
+      "8961392",
+      "8648013"
+     ]
     }
    ]
   },
@@ -1927,8 +1948,21 @@ const DATA = {
    "venueName": "Gaaspstraat",
    "players": [
     {
+     "n": "Kerkhoff, F.C. (Frans)",
+     "r": 1632,
+     "id": 514413,
+     "knsb": "6638324",
+     "last": {
+      "team": "EsPion 3",
+      "games": 7,
+      "avg": 4.29,
+      "min": 2,
+      "max": 7
+     }
+    },
+    {
      "n": "Ran, M. (Mart)",
-     "r": 1763,
+     "r": 1761,
      "id": 517504,
      "knsb": "7527740",
      "last": {
@@ -1938,12 +1972,6 @@ const DATA = {
       "min": 1,
       "max": 5
      }
-    },
-    {
-     "n": "Berkelmans, W. (Wim)",
-     "r": 1671,
-     "id": 552347,
-     "knsb": "8030264"
     },
     {
      "n": "Kips, D. (David)",
@@ -1959,21 +1987,8 @@ const DATA = {
      }
     },
     {
-     "n": "Suurendonk, P. (Paul)",
-     "r": 1666,
-     "id": 545792,
-     "knsb": "7161209",
-     "last": {
-      "team": "EsPion 3",
-      "games": 6,
-      "avg": 6.83,
-      "min": 2,
-      "max": 8
-     }
-    },
-    {
      "n": "Schalekamp, R. (Rob)",
-     "r": 1646,
+     "r": 1641,
      "id": 519799,
      "knsb": "7951845",
      "last": {
@@ -1985,29 +2000,56 @@ const DATA = {
      }
     },
     {
-     "n": "Kerkhoff, F.C. (Frans)",
-     "r": 1637,
-     "id": 514413,
-     "knsb": "6638324",
+     "n": "Stolp, H.P. (Peter)",
+     "r": 1508,
+     "id": 528230,
+     "knsb": "8819855"
+    },
+    {
+     "n": "Suurendonk, P. (Paul)",
+     "r": 1664,
+     "id": 545792,
+     "knsb": "7161209",
      "last": {
       "team": "EsPion 3",
-      "games": 7,
-      "avg": 4.29,
+      "games": 6,
+      "avg": 6.83,
       "min": 2,
-      "max": 7
+      "max": 8
      }
     },
     {
-     "n": "Bezemer, C. (Casper)",
-     "r": 1575,
-     "id": 545473,
-     "knsb": "9057334"
+     "n": "Berkelmans, W. (Wim)",
+     "r": 1671,
+     "id": 552347,
+     "knsb": "8030264"
     },
     {
-     "n": "Stolp, H.P. (Peter)",
-     "r": 1513,
-     "id": 528230,
-     "knsb": "8819855"
+     "n": "Liesting, T.S. (Tomas)",
+     "r": 1800,
+     "id": 553308,
+     "knsb": "9134411"
+    },
+    {
+     "n": "Bezemer, C. (Casper)",
+     "r": 1570,
+     "id": 545473,
+     "knsb": "9057334"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "7527740",
+      "8030264",
+      "7713860",
+      "9134411",
+      "6638324",
+      "7951845",
+      "8819855",
+      "7161209"
+     ]
     }
    ]
   },
@@ -3282,7 +3324,149 @@ const DATA = {
     "date": "2026-10-12",
     "home": false,
     "opp": "espion-3",
-    "pairing": 2607
+    "pairing": 2607,
+    "result": {
+     "us": 6.5,
+     "them": 1.5,
+     "boards": [
+      {
+       "o": {
+        "n": "Fries de, J. (Jan)",
+        "r": 1715,
+        "id": 523620,
+        "c": "white",
+        "knsb": "8485301"
+       },
+       "t": {
+        "n": "Ran, M. (Mart)",
+        "r": 1761,
+        "id": 517504,
+        "c": "black",
+        "knsb": "7527740"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Varnica, M. (Milan)",
+        "r": 1703,
+        "id": 554402,
+        "c": "black",
+        "knsb": "8428684"
+       },
+       "t": {
+        "n": "Berkelmans, W. (Wim)",
+        "r": 1671,
+        "id": 552347,
+        "c": "white",
+        "knsb": "8030264"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Soest van, W. (Wouter)",
+        "r": 1852,
+        "id": 553020,
+        "c": "white",
+        "knsb": "9131650"
+       },
+       "t": {
+        "n": "Kips, D. (David)",
+        "r": 1669,
+        "id": 518489,
+        "c": "black",
+        "knsb": "7713860"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Thoen, H. (Hylke)",
+        "r": 1732,
+        "id": 553276,
+        "c": "black",
+        "knsb": "9134048"
+       },
+       "t": {
+        "n": "Liesting, T.S. (Tomas)",
+        "r": 1800,
+        "id": 553308,
+        "c": "white",
+        "knsb": "9134411"
+       },
+       "p": 0.5
+      },
+      {
+       "o": {
+        "n": "Hasb, A. (Albraa)",
+        "r": 0,
+        "id": 559062,
+        "c": "white",
+        "knsb": "8795534"
+       },
+       "t": {
+        "n": "Kerkhoff, F.C. (Frans)",
+        "r": 1632,
+        "id": 514413,
+        "c": "black",
+        "knsb": "6638324"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Alaskari, M. (Mouhanad)",
+        "r": 1537,
+        "id": 553198,
+        "c": "black",
+        "knsb": "9133377"
+       },
+       "t": {
+        "n": "Schalekamp, R. (Rob)",
+        "r": 1641,
+        "id": 519799,
+        "c": "white",
+        "knsb": "7951845"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Boorder de, M. (Mark)",
+        "r": 1471,
+        "id": 536546,
+        "c": "white",
+        "knsb": "8961392"
+       },
+       "t": {
+        "n": "Stolp, H.P. (Peter)",
+        "r": 1508,
+        "id": 528230,
+        "c": "black",
+        "knsb": "8819855"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Cnossen, J.L. (Geert-Jan)",
+        "r": 1588,
+        "id": 525319,
+        "c": "black",
+        "knsb": "8648013"
+       },
+       "t": {
+        "n": "Suurendonk, P. (Paul)",
+        "r": 1664,
+        "id": 545792,
+        "c": "white",
+        "knsb": "7161209"
+       },
+       "p": 0.0
+      }
+     ]
+    }
    },
    {
     "round": 2,
