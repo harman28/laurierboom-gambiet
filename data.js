@@ -23,6 +23,19 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
+     "n": "Weijers, T.F. (Theo)",
+     "r": 1857,
+     "id": 515677,
+     "knsb": "7184496",
+     "last": {
+      "team": "Laurierboom-Gambiet 1",
+      "games": 7,
+      "avg": 4.71,
+      "min": 2,
+      "max": 6
+     }
+    },
+    {
      "n": "Geukes, R.B. (Rob)",
      "r": 1733,
      "id": 517206,
@@ -49,21 +62,8 @@ const DATA = {
      }
     },
     {
-     "n": "Hoeneveld, M. (Maarten)",
-     "r": 2033,
-     "id": 552250,
-     "knsb": "8364587",
-     "last": {
-      "team": "Laurierboom-Gambiet 1",
-      "games": 6,
-      "avg": 2.83,
-      "min": 2,
-      "max": 4
-     }
-    },
-    {
      "n": "Kruiff de, W. (Wilbert)",
-     "r": 1975,
+     "r": 1970,
      "id": 519542,
      "knsb": "7910540",
      "last": {
@@ -72,19 +72,6 @@ const DATA = {
       "avg": 2.75,
       "min": 2,
       "max": 3
-     }
-    },
-    {
-     "n": "Piurbeev, I. (Iurii)",
-     "r": 2028,
-     "id": 553897,
-     "knsb": "9101488",
-     "last": {
-      "team": "Laurierboom-Gambiet 1",
-      "games": 5,
-      "avg": 3.0,
-      "min": 1,
-      "max": 5
      }
     },
     {
@@ -101,19 +88,6 @@ const DATA = {
      }
     },
     {
-     "n": "Weijers, T.F. (Theo)",
-     "r": 1857,
-     "id": 515677,
-     "knsb": "7184496",
-     "last": {
-      "team": "Laurierboom-Gambiet 1",
-      "games": 7,
-      "avg": 4.71,
-      "min": 2,
-      "max": 6
-     }
-    },
-    {
      "n": "Wild Propitius de, M. (Mark)",
      "r": 1975,
      "id": 524448,
@@ -125,6 +99,53 @@ const DATA = {
       "min": 1,
       "max": 4
      }
+    },
+    {
+     "n": "Piurbeev, I.A. (Iurii)",
+     "r": 2032,
+     "id": 553897,
+     "knsb": "9101488",
+     "last": {
+      "team": "Laurierboom-Gambiet 1",
+      "games": 5,
+      "avg": 3.0,
+      "min": 1,
+      "max": 5
+     }
+    },
+    {
+     "n": "Jong, C. (Casijn)",
+     "r": 1816,
+     "id": 556651,
+     "knsb": "8571563"
+    },
+    {
+     "n": "Hoeneveld, M. (Maarten)",
+     "r": 2033,
+     "id": 552250,
+     "knsb": "8364587",
+     "last": {
+      "team": "Laurierboom-Gambiet 1",
+      "games": 6,
+      "avg": 2.83,
+      "min": 2,
+      "max": 4
+     }
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "9101488",
+      "8567702",
+      "7910540",
+      "7184496",
+      "8261440",
+      "8571563",
+      "7473477",
+      "7625420"
+     ]
     }
    ]
   },
@@ -253,6 +274,12 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
+     "n": "Coorn, W. (Willem Timo)",
+     "r": 1738,
+     "id": 528439,
+     "knsb": "8825597"
+    },
+    {
      "n": "Bhadane, S. (Sourbh)",
      "r": 1744,
      "id": 547584,
@@ -265,28 +292,16 @@ const DATA = {
      "knsb": "9109353"
     },
     {
-     "n": "Coorn, W. (Willem Timo)",
-     "r": 1738,
-     "id": 528439,
-     "knsb": "8825597"
-    },
-    {
-     "n": "Coskun, R. (Roman)",
-     "r": 1421,
-     "id": 552211,
-     "knsb": "9091863"
+     "n": "Humerczyk, H.H. (Hubert)",
+     "r": 1827,
+     "id": 552213,
+     "knsb": "9093898"
     },
     {
      "n": "Gwadera, M.M. (Magda)",
      "r": 1621,
      "id": 552219,
      "knsb": "9125468"
-    },
-    {
-     "n": "Humerczyk, H.H. (Hubert)",
-     "r": 1810,
-     "id": 552213,
-     "knsb": "9093898"
     },
     {
      "n": "Lovisotto, K. (Kevin)",
@@ -306,6 +321,33 @@ const DATA = {
       "min": 3,
       "max": 6
      }
+    },
+    {
+     "n": "Scheltema, J. (Job)",
+     "r": 0,
+     "id": 556731,
+     "knsb": "8386917"
+    },
+    {
+     "n": "Coskun, R. (Roman)",
+     "r": 1421,
+     "id": 552211,
+     "knsb": "9091863"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "9109353",
+      "9155586",
+      "9078740",
+      "9093898",
+      "8825597",
+      "8386917",
+      "9140384",
+      "9125468"
+     ]
     }
    ]
   },
@@ -445,7 +487,7 @@ const DATA = {
     },
     {
      "n": "Krol van de, S.T. (Sernin)",
-     "r": 1844,
+     "r": 1815,
      "id": 548183,
      "knsb": "8120310",
      "last": {
@@ -702,8 +744,53 @@ const DATA = {
    "venueName": "Gaaspstraat",
    "players": [
     {
+     "n": "Urbanus, P. (Peter)",
+     "r": 1687,
+     "id": 514123,
+     "knsb": "6452160"
+    },
+    {
+     "n": "Steensma, F. (Frank)",
+     "r": 1697,
+     "id": 514632,
+     "knsb": "6768355",
+     "last": {
+      "team": "EsPion 2",
+      "games": 3,
+      "avg": 7.67,
+      "min": 7,
+      "max": 8
+     }
+    },
+    {
+     "n": "Boom, H. (Harrie)",
+     "r": 1683,
+     "id": 515363,
+     "knsb": "7116142",
+     "last": {
+      "team": "EsPion 2",
+      "games": 1,
+      "avg": 7.0,
+      "min": 7,
+      "max": 7
+     }
+    },
+    {
+     "n": "Vellekoop, A. (Alfred)",
+     "r": 1716,
+     "id": 518259,
+     "knsb": "7670751",
+     "last": {
+      "team": "EsPion 2",
+      "games": 6,
+      "avg": 6.67,
+      "min": 4,
+      "max": 8
+     }
+    },
+    {
      "n": "Eijk van der, D. (Dick)",
-     "r": 2008,
+     "r": 1999,
      "id": 519313,
      "knsb": "7870148",
      "last": {
@@ -715,8 +802,14 @@ const DATA = {
      }
     },
     {
+     "n": "Dernier, R.P. (Raymond)",
+     "r": 1731,
+     "id": 523806,
+     "knsb": "8505728"
+    },
+    {
      "n": "Wieringa, E.A. (Ric)",
-     "r": 1773,
+     "r": 1770,
      "id": 526121,
      "knsb": "8715795",
      "last": {
@@ -729,60 +822,24 @@ const DATA = {
     },
     {
      "n": "Admiraal, R.M. (Ron)",
-     "r": 1732,
+     "r": 1727,
      "id": 537021,
      "knsb": "8967365"
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Vellekoop, A. (Alfred)",
-     "r": 1713,
-     "id": 518259,
-     "knsb": "7670751",
-     "last": {
-      "team": "EsPion 2",
-      "games": 6,
-      "avg": 6.67,
-      "min": 4,
-      "max": 8
-     }
-    },
-    {
-     "n": "Dernier, R.P. (Raymond)",
-     "r": 1731,
-     "id": 523806,
-     "knsb": "8505728"
-    },
-    {
-     "n": "Boom, H. (Harrie)",
-     "r": 1704,
-     "id": 515363,
-     "knsb": "7116142",
-     "last": {
-      "team": "EsPion 2",
-      "games": 1,
-      "avg": 7.0,
-      "min": 7,
-      "max": 7
-     }
-    },
-    {
-     "n": "Steensma, F. (Frank)",
-     "r": 1689,
-     "id": 514632,
-     "knsb": "6768355",
-     "last": {
-      "team": "EsPion 2",
-      "games": 3,
-      "avg": 7.67,
-      "min": 7,
-      "max": 8
-     }
-    },
-    {
-     "n": "Urbanus, P. (Peter)",
-     "r": 1687,
-     "id": 514123,
-     "knsb": "6452160"
+     "round": 1,
+     "boards": [
+      "7870148",
+      "8715795",
+      "8505728",
+      "8967365",
+      "7670751",
+      "6768355",
+      "6452160",
+      "7116142"
+     ]
     }
    ]
   },
@@ -810,7 +867,7 @@ const DATA = {
     },
     {
      "n": "Groot, P. (Pim)",
-     "r": 1983,
+     "r": 1942,
      "id": 519056,
      "knsb": "7829349",
      "last": {
@@ -836,7 +893,7 @@ const DATA = {
     },
     {
      "n": "Schip van 't, R.M. (Richard)",
-     "r": 1951,
+     "r": 1966,
      "id": 516940,
      "knsb": "7428476",
      "last": {
@@ -1006,13 +1063,13 @@ const DATA = {
    "players": [
     {
      "n": "Moene, W. (Wim)",
-     "r": 2095,
+     "r": 2077,
      "id": 519057,
      "knsb": "7829371"
     },
     {
      "n": "Boot, H. (Henk)",
-     "r": 2002,
+     "r": 2012,
      "id": 521213,
      "knsb": "8162088"
     },
@@ -1030,7 +1087,7 @@ const DATA = {
     },
     {
      "n": "Rahimi, L. (Leon Darius)",
-     "r": 1893,
+     "r": 1903,
      "id": 546256,
      "knsb": "9065826"
     },
@@ -1042,13 +1099,13 @@ const DATA = {
     },
     {
      "n": "Patil, N. (Neev)",
-     "r": 1750,
+     "r": 1747,
      "id": 535277,
      "knsb": "8945530"
     },
     {
      "n": "Gupta, V. (Vihaan)",
-     "r": 1575,
+     "r": 1585,
      "id": 554971,
      "knsb": "9140428"
     }
@@ -1740,13 +1797,13 @@ const DATA = {
    "players": [
     {
      "n": "Visser, W. (Wouter)",
-     "r": 1778,
+     "r": 1788,
      "id": 557290,
      "knsb": "8421754"
     },
     {
      "n": "Schutte, J.F. (Filip)",
-     "r": 1812,
+     "r": 1788,
      "id": 522832,
      "knsb": "8379195",
      "last": {
@@ -1759,7 +1816,7 @@ const DATA = {
     },
     {
      "n": "Veraart, J.C. (Jan)",
-     "r": 1850,
+     "r": 1841,
      "id": 532155,
      "knsb": "8903554"
     },
@@ -1791,13 +1848,13 @@ const DATA = {
     },
     {
      "n": "Romijn, B. (Bart)",
-     "r": 1850,
+     "r": 1833,
      "id": 512767,
      "knsb": "6030365"
     },
     {
      "n": "Rijnders, N. (Nanno)",
-     "r": 1784,
+     "r": 1794,
      "id": 541173,
      "knsb": "8624022",
      "last": {
@@ -1847,7 +1904,7 @@ const DATA = {
     },
     {
      "n": "Broekman, L. (Lode)",
-     "r": 1651,
+     "r": 1628,
      "id": 525071,
      "knsb": "8624264",
      "last": {
@@ -1912,7 +1969,7 @@ const DATA = {
     },
     {
      "n": "Norden, M.J. (Marc)",
-     "r": 1832,
+     "r": 1802,
      "id": 519525,
      "knsb": "7908978",
      "last": {
@@ -2458,7 +2515,7 @@ const DATA = {
     },
     {
      "n": "Lesman, K.F.P.M. (Karol)",
-     "r": 1649,
+     "r": 1655,
      "id": 521692,
      "knsb": "8237933",
      "last": {
@@ -2477,7 +2534,7 @@ const DATA = {
     },
     {
      "n": "Laan, C.J. (Kees)",
-     "r": 1606,
+     "r": 1616,
      "id": 525545,
      "knsb": "8663589",
      "last": {
@@ -2614,7 +2671,7 @@ const DATA = {
    "players": [
     {
      "n": "Kruif de, K. (Kees)",
-     "r": 1835,
+     "r": 1817,
      "id": 515029,
      "knsb": "6995021",
      "last": {
@@ -2659,7 +2716,7 @@ const DATA = {
     },
     {
      "n": "Hart de, A.T. (Arthur)",
-     "r": 1705,
+     "r": 1771,
      "id": 556877,
      "knsb": "6237407"
     },
@@ -2714,16 +2771,67 @@ const DATA = {
    "venueName": "De Schakel",
    "players": [
     {
-     "n": "Bergen, F.A.C. (Fred)",
-     "r": 1776,
-     "id": 512711,
-     "knsb": "6021466",
+     "n": "Duijm, M.J.A. (Marcel)",
+     "r": 1720,
+     "id": 516414,
+     "knsb": "7348693"
+    },
+    {
+     "n": "Noltes, C.H. (Niels)",
+     "r": 1865,
+     "id": 527501,
+     "knsb": "8787372",
      "last": {
       "team": "Oosten-Toren 3",
       "games": 8,
-      "avg": 2.0,
+      "avg": 5.5,
       "min": 1,
-      "max": 3
+      "max": 8
+     }
+    },
+    {
+     "n": "Källgren, J.A. (Jonas)",
+     "r": 1690,
+     "id": 544361,
+     "knsb": "8103040",
+     "last": {
+      "team": "Oosten-Toren 3",
+      "games": 8,
+      "avg": 4.75,
+      "min": 3,
+      "max": 6
+     }
+    },
+    {
+     "n": "Lam, K.Y. (Kin)",
+     "r": 1593,
+     "id": 547366,
+     "knsb": "9077860",
+     "last": {
+      "team": "Oosten-Toren 3",
+      "games": 8,
+      "avg": 2.5,
+      "min": 1,
+      "max": 5
+     }
+    },
+    {
+     "n": "Hoogendijk, J. (Jesca)",
+     "r": 1479,
+     "id": 547532,
+     "knsb": "9078465"
+    },
+    {
+     "n": "Wessels Beljaars, E.M.C. (Erik)",
+     "r": 1726,
+     "id": 548160,
+     "knsb": "9036797",
+     "last": {
+      "team": "Oosten-Toren 3",
+      "games": 7,
+      "avg": 2.71,
+      "min": 1,
+      "max": 4
      }
     },
     {
@@ -2753,62 +2861,38 @@ const DATA = {
      }
     },
     {
+     "n": "Bergen, F.A.C. (Fred)",
+     "r": 1776,
+     "id": 512711,
+     "knsb": "6021466",
+     "last": {
+      "team": "Oosten-Toren 3",
+      "games": 8,
+      "avg": 2.0,
+      "min": 1,
+      "max": 3
+     }
+    },
+    {
      "n": "Leene, W. (Wim)",
      "r": 1793,
      "id": 516130,
      "knsb": "7280493"
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Lam, K.Y. (Kin)",
-     "r": 1593,
-     "id": 547366,
-     "knsb": "9077860",
-     "last": {
-      "team": "Oosten-Toren 3",
-      "games": 8,
-      "avg": 2.5,
-      "min": 1,
-      "max": 5
-     }
-    },
-    {
-     "n": "Källgren, J.A. (Jonas)",
-     "r": 1690,
-     "id": 544361,
-     "knsb": "8103040",
-     "last": {
-      "team": "Oosten-Toren 3",
-      "games": 8,
-      "avg": 4.75,
-      "min": 3,
-      "max": 6
-     }
-    },
-    {
-     "n": "Wessels Beljaars, E.M.C. (Erik)",
-     "r": 1726,
-     "id": 548160,
-     "knsb": "9036797",
-     "last": {
-      "team": "Oosten-Toren 3",
-      "games": 7,
-      "avg": 2.71,
-      "min": 1,
-      "max": 4
-     }
-    },
-    {
-     "n": "Noltes, C.H. (Niels)",
-     "r": 1865,
-     "id": 527501,
-     "knsb": "8787372",
-     "last": {
-      "team": "Oosten-Toren 3",
-      "games": 8,
-      "avg": 5.5,
-      "min": 1,
-      "max": 8
-     }
+     "round": 1,
+     "boards": [
+      "7348693",
+      "9036797",
+      "9025797",
+      "8787372",
+      "9077860",
+      "8103040",
+      "9127778",
+      "9078465"
+     ]
     }
    ]
   },
@@ -2823,7 +2907,7 @@ const DATA = {
    "players": [
     {
      "n": "Wagdy, A. (Ahmed)",
-     "r": 1864,
+     "r": 1851,
      "id": 557097,
      "knsb": "9063483"
     },
@@ -3029,7 +3113,149 @@ const DATA = {
     "date": "2026-10-19",
     "home": true,
     "opp": "espion-2",
-    "pairing": 2532
+    "pairing": 2532,
+    "result": {
+     "us": 6.0,
+     "them": 2.0,
+     "boards": [
+      {
+       "o": {
+        "n": "Piurbeev, I.A. (Iurii)",
+        "r": 2032,
+        "id": 553897,
+        "c": "black",
+        "knsb": "9101488"
+       },
+       "t": {
+        "n": "Eijk van der, D. (Dick)",
+        "r": 1999,
+        "id": 519313,
+        "c": "white",
+        "knsb": "7870148"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Wild Propitius de, M. (Mark)",
+        "r": 1975,
+        "id": 524448,
+        "c": "white",
+        "knsb": "8567702"
+       },
+       "t": {
+        "n": "Wieringa, E.A. (Ric)",
+        "r": 1770,
+        "id": 526121,
+        "c": "black",
+        "knsb": "8715795"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Kruiff de, W. (Wilbert)",
+        "r": 1970,
+        "id": 519542,
+        "c": "black",
+        "knsb": "7910540"
+       },
+       "t": {
+        "n": "Dernier, R.P. (Raymond)",
+        "r": 1731,
+        "id": 523806,
+        "c": "white",
+        "knsb": "8505728"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Weijers, T.F. (Theo)",
+        "r": 1857,
+        "id": 515677,
+        "c": "white",
+        "knsb": "7184496"
+       },
+       "t": {
+        "n": "Admiraal, R.M. (Ron)",
+        "r": 1727,
+        "id": 537021,
+        "c": "black",
+        "knsb": "8967365"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Sanderse, G. (Gerard)",
+        "r": 1937,
+        "id": 521892,
+        "c": "black",
+        "knsb": "8261440"
+       },
+       "t": {
+        "n": "Vellekoop, A. (Alfred)",
+        "r": 1716,
+        "id": 518259,
+        "c": "white",
+        "knsb": "7670751"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Jong, C. (Casijn)",
+        "r": 1816,
+        "id": 556651,
+        "c": "white",
+        "knsb": "8571563"
+       },
+       "t": {
+        "n": "Steensma, F. (Frank)",
+        "r": 1697,
+        "id": 514632,
+        "c": "black",
+        "knsb": "6768355"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Geukes, R.B. (Rob)",
+        "r": 1733,
+        "id": 517206,
+        "c": "black",
+        "knsb": "7473477"
+       },
+       "t": {
+        "n": "Urbanus, P. (Peter)",
+        "r": 1687,
+        "id": 514123,
+        "c": "white",
+        "knsb": "6452160"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Hasnan, N. (Nadia)",
+        "r": 1728,
+        "id": 517998,
+        "c": "white",
+        "knsb": "7625420"
+       },
+       "t": {
+        "n": "Boom, H. (Harrie)",
+        "r": 1683,
+        "id": 515363,
+        "c": "black",
+        "knsb": "7116142"
+       },
+       "p": 1.0
+      }
+     ]
+    }
    },
    {
     "round": 2,
@@ -3273,7 +3499,149 @@ const DATA = {
     "date": "2026-10-19",
     "home": true,
     "opp": "oosten-toren-3",
-    "pairing": 2629
+    "pairing": 2629,
+    "result": {
+     "us": 6.0,
+     "them": 2.0,
+     "boards": [
+      {
+       "o": {
+        "n": "Budarin, K. (Konstantin)",
+        "r": 1991,
+        "id": 550585,
+        "c": "black",
+        "knsb": "9109353"
+       },
+       "t": {
+        "n": "Duijm, M.J.A. (Marcel)",
+        "r": 1720,
+        "id": 516414,
+        "c": "white",
+        "knsb": "7348693"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Rueb, S. (Sebastiaan)",
+        "r": 1749,
+        "id": 554976,
+        "c": "white",
+        "knsb": "9155586"
+       },
+       "t": {
+        "n": "Wessels Beljaars, E.M.C. (Erik)",
+        "r": 1726,
+        "id": 548160,
+        "c": "black",
+        "knsb": "9036797"
+       },
+       "p": 0.5
+      },
+      {
+       "o": {
+        "n": "Bhadane, S. (Sourbh)",
+        "r": 1744,
+        "id": 547584,
+        "c": "black",
+        "knsb": "9078740"
+       },
+       "t": {
+        "n": "Dubrovsky, E.D. (Eduard)",
+        "r": 1603,
+        "id": 550935,
+        "c": "white",
+        "knsb": "9025797"
+       },
+       "p": 0.5
+      },
+      {
+       "o": {
+        "n": "Humerczyk, H.H. (Hubert)",
+        "r": 1827,
+        "id": 552213,
+        "c": "white",
+        "knsb": "9093898"
+       },
+       "t": {
+        "n": "Noltes, C.H. (Niels)",
+        "r": 1865,
+        "id": 527501,
+        "c": "black",
+        "knsb": "8787372"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Coorn, W. (Willem Timo)",
+        "r": 1738,
+        "id": 528439,
+        "c": "black",
+        "knsb": "8825597"
+       },
+       "t": {
+        "n": "Lam, K.Y. (Kin)",
+        "r": 1593,
+        "id": 547366,
+        "c": "white",
+        "knsb": "9077860"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Scheltema, J. (Job)",
+        "r": 0,
+        "id": 556731,
+        "c": "white",
+        "knsb": "8386917"
+       },
+       "t": {
+        "n": "Källgren, J.A. (Jonas)",
+        "r": 1690,
+        "id": 544361,
+        "c": "black",
+        "knsb": "8103040"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Lovisotto, K. (Kevin)",
+        "r": 1651,
+        "id": 553675,
+        "c": "black",
+        "knsb": "9140384"
+       },
+       "t": {
+        "n": "Jansma, R. (Roelof)",
+        "r": 0,
+        "id": 552558,
+        "c": "white",
+        "knsb": "9127778"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Gwadera, M.M. (Magda)",
+        "r": 1621,
+        "id": 552219,
+        "c": "white",
+        "knsb": "9125468"
+       },
+       "t": {
+        "n": "Hoogendijk, J. (Jesca)",
+        "r": 1479,
+        "id": 547532,
+        "c": "black",
+        "knsb": "9078465"
+       },
+       "p": 1.0
+      }
+     ]
+    }
    },
    {
     "round": 2,
