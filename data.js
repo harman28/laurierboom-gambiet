@@ -549,24 +549,6 @@ const DATA = {
    "venueName": "Huize Lydia",
    "players": [
     {
-     "n": "Fritschy, P. (Pieter)",
-     "r": 1969,
-     "id": 535114,
-     "knsb": "8943671"
-    },
-    {
-     "n": "Timmerman, J.T.J. (Jan)",
-     "r": 1872,
-     "id": 523242,
-     "knsb": "8436835"
-    },
-    {
-     "n": "Sternfeld, D. (Douwe)",
-     "r": 1869,
-     "id": 522222,
-     "knsb": "8293659"
-    },
-    {
      "n": "Banning van, J. (Jan)",
      "r": 1865,
      "id": 513646,
@@ -584,6 +566,30 @@ const DATA = {
      "r": 1838,
      "id": 520319,
      "knsb": "8040571"
+    },
+    {
+     "n": "Suyderhoud, W.C. (Wim)",
+     "r": 1768,
+     "id": 520835,
+     "knsb": "8111301"
+    },
+    {
+     "n": "Venema, C. (Coen)",
+     "r": 1786,
+     "id": 521050,
+     "knsb": "8140781"
+    },
+    {
+     "n": "Sternfeld, D. (Douwe)",
+     "r": 1869,
+     "id": 522222,
+     "knsb": "8293659"
+    },
+    {
+     "n": "Timmerman, J.T.J. (Jan)",
+     "r": 1872,
+     "id": 523242,
+     "knsb": "8436835"
     },
     {
      "n": "Vlis van der, P. (Peter)",
@@ -612,10 +618,25 @@ const DATA = {
      }
     },
     {
-     "n": "Venema, C. (Coen)",
-     "r": 1786,
-     "id": 521050,
-     "knsb": "8140781"
+     "n": "Fritschy, P. (Pieter)",
+     "r": 1969,
+     "id": 535114,
+     "knsb": "8943671"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "6221512",
+      "8436835",
+      "8716774",
+      "8293659",
+      "8040571",
+      "8111301",
+      "8517872",
+      "8140781"
+     ]
     }
    ]
   },
@@ -960,45 +981,6 @@ const DATA = {
      "knsb": "7469660"
     },
     {
-     "n": "Rue de, M.P. (Mischa)",
-     "r": 1841,
-     "id": 518549,
-     "knsb": "7726565",
-     "last": {
-      "team": "ENPS 3",
-      "games": 7,
-      "avg": 1.14,
-      "min": 1,
-      "max": 2
-     }
-    },
-    {
-     "n": "Heeneman, R.G. (Ron)",
-     "r": 1783,
-     "id": 515884,
-     "knsb": "7235129",
-     "last": {
-      "team": "ENPS 3",
-      "games": 4,
-      "avg": 5.25,
-      "min": 4,
-      "max": 6
-     }
-    },
-    {
-     "n": "Hulsing, M. (Martin)",
-     "r": 1740,
-     "id": 534652,
-     "knsb": "8938127",
-     "last": {
-      "team": "ENPS 3",
-      "games": 3,
-      "avg": 4.67,
-      "min": 2,
-      "max": 6
-     }
-    },
-    {
      "n": "Maas van der, J. (Johan)",
      "r": 1805,
      "id": 518130,
@@ -1012,16 +994,16 @@ const DATA = {
      }
     },
     {
-     "n": "Veen van der, A. (Ailko)",
-     "r": 1718,
-     "id": 524966,
-     "knsb": "8614639",
+     "n": "Rue de, M.P. (Mischa)",
+     "r": 1841,
+     "id": 518549,
+     "knsb": "7726565",
      "last": {
       "team": "ENPS 3",
-      "games": 5,
-      "avg": 4.6,
-      "min": 3,
-      "max": 6
+      "games": 7,
+      "avg": 1.14,
+      "min": 1,
+      "max": 2
      }
     },
     {
@@ -1049,6 +1031,66 @@ const DATA = {
       "min": 7,
       "max": 8
      }
+    },
+    {
+     "n": "Veen van der, A. (Ailko)",
+     "r": 1718,
+     "id": 524966,
+     "knsb": "8614639",
+     "last": {
+      "team": "ENPS 3",
+      "games": 5,
+      "avg": 4.6,
+      "min": 3,
+      "max": 6
+     }
+    },
+    {
+     "n": "Sloot, G. (Gerben)",
+     "r": 1777,
+     "id": 527139,
+     "knsb": "8772643"
+    },
+    {
+     "n": "Hulsing, M. (Martin)",
+     "r": 1740,
+     "id": 534652,
+     "knsb": "8938127",
+     "last": {
+      "team": "ENPS 3",
+      "games": 3,
+      "avg": 4.67,
+      "min": 2,
+      "max": 6
+     }
+    },
+    {
+     "n": "Heeneman, R.G. (Ron)",
+     "r": 1783,
+     "id": 515884,
+     "knsb": "7235129",
+     "last": {
+      "team": "ENPS 3",
+      "games": 4,
+      "avg": 5.25,
+      "min": 4,
+      "max": 6
+     }
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "7726565",
+      "7469660",
+      "8276752",
+      "7648102",
+      "8938127",
+      "8211379",
+      "8614639",
+      "8772643"
+     ]
     }
    ]
   },
