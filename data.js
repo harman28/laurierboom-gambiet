@@ -441,17 +441,10 @@ const DATA = {
    "venueName": "Bilderdijkpark",
    "players": [
     {
-     "n": "Broerse, M. (Milo)",
-     "r": 1803,
-     "id": 526014,
-     "knsb": "8708502",
-     "last": {
-      "team": "Amsterdam West 5",
-      "games": 7,
-      "avg": 4.14,
-      "min": 3,
-      "max": 6
-     }
+     "n": "Kotmans, R. (Rob)",
+     "r": 1804,
+     "id": 512377,
+     "knsb": "5955026"
     },
     {
      "n": "Duin, R.J.A. (Roelf Jan)",
@@ -467,36 +460,35 @@ const DATA = {
      }
     },
     {
+     "n": "Elliyasa, M. (Mehmet)",
+     "r": 1824,
+     "id": 523880,
+     "knsb": "8515947"
+    },
+    {
+     "n": "Broerse, M. (Milo)",
+     "r": 1803,
+     "id": 526014,
+     "knsb": "8708502",
+     "last": {
+      "team": "Amsterdam West 5",
+      "games": 7,
+      "avg": 4.14,
+      "min": 3,
+      "max": 6
+     }
+    },
+    {
      "n": "Knegt de, J. (Jaap)",
      "r": 1825,
      "id": 537753,
      "knsb": "8978398"
     },
     {
-     "n": "Krajenbrink, M.J. (Menno)",
-     "r": 1870,
-     "id": 546100,
-     "knsb": "8170349",
-     "last": {
-      "team": "Amsterdam West 5",
-      "games": 5,
-      "avg": 1.8,
-      "min": 1,
-      "max": 4
-     }
-    },
-    {
-     "n": "Krol van de, S.T. (Sernin)",
-     "r": 1815,
-     "id": 548183,
-     "knsb": "8120310",
-     "last": {
-      "team": "Amsterdam West 5",
-      "games": 5,
-      "avg": 2.0,
-      "min": 2,
-      "max": 2
-     }
+     "n": "Gerritsen, D.W. (Diederik)",
+     "r": 1784,
+     "id": 539704,
+     "knsb": "8241167"
     },
     {
      "n": "Plukkel, S.P.M. (Simon)",
@@ -525,6 +517,32 @@ const DATA = {
      }
     },
     {
+     "n": "Krajenbrink, M.J. (Menno)",
+     "r": 1870,
+     "id": 546100,
+     "knsb": "8170349",
+     "last": {
+      "team": "Amsterdam West 5",
+      "games": 5,
+      "avg": 1.8,
+      "min": 1,
+      "max": 4
+     }
+    },
+    {
+     "n": "Krol van de, S.T. (Sernin)",
+     "r": 1815,
+     "id": 548183,
+     "knsb": "8120310",
+     "last": {
+      "team": "Amsterdam West 5",
+      "games": 5,
+      "avg": 2.0,
+      "min": 2,
+      "max": 2
+     }
+    },
+    {
      "n": "Wiel van de, S.W.A. (Sander)",
      "r": 1789,
      "id": 522225,
@@ -536,6 +554,21 @@ const DATA = {
       "min": 3,
       "max": 4
      }
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "8152496",
+      "8978398",
+      "8241167",
+      "8708502",
+      "5955026",
+      "8460903",
+      "8515947",
+      "7992501"
+     ]
     }
    ]
   },
@@ -650,6 +683,19 @@ const DATA = {
    "venueName": "Bilderdijkhof",
    "players": [
     {
+     "n": "Lonkhuyzen van, H. (Henk)",
+     "r": 1627,
+     "id": 513669,
+     "knsb": "6226077",
+     "last": {
+      "team": "De Amstel 2",
+      "games": 5,
+      "avg": 7.6,
+      "min": 7,
+      "max": 8
+     }
+    },
+    {
      "n": "Geertsema, P.J. (Piet)",
      "r": 1904,
      "id": 514212,
@@ -660,32 +706,6 @@ const DATA = {
       "avg": 1.43,
       "min": 1,
       "max": 2
-     }
-    },
-    {
-     "n": "Verschueren, P.A.M. (Peter)",
-     "r": 1867,
-     "id": 516992,
-     "knsb": "7440653",
-     "last": {
-      "team": "De Amstel 2",
-      "games": 5,
-      "avg": 2.2,
-      "min": 1,
-      "max": 3
-     }
-    },
-    {
-     "n": "Beentjes, K. (Koen)",
-     "r": 1860,
-     "id": 522063,
-     "knsb": "8279040",
-     "last": {
-      "team": "De Amstel 2",
-      "games": 7,
-      "avg": 2.86,
-      "min": 1,
-      "max": 4
      }
     },
     {
@@ -702,29 +722,16 @@ const DATA = {
      }
     },
     {
-     "n": "Jong de, M. (Maarten)",
-     "r": 1806,
-     "id": 527114,
-     "knsb": "8771961",
+     "n": "Verschueren, P.A.M. (Peter)",
+     "r": 1867,
+     "id": 516992,
+     "knsb": "7440653",
      "last": {
       "team": "De Amstel 2",
-      "games": 7,
-      "avg": 4.43,
-      "min": 3,
-      "max": 6
-     }
-    },
-    {
-     "n": "Cicek, M. (Mladen)",
-     "r": 1779,
-     "id": 518139,
-     "knsb": "7649125",
-     "last": {
-      "team": "De Amstel 2",
-      "games": 7,
-      "avg": 5.71,
-      "min": 5,
-      "max": 6
+      "games": 5,
+      "avg": 2.2,
+      "min": 1,
+      "max": 3
      }
     },
     {
@@ -741,17 +748,58 @@ const DATA = {
      }
     },
     {
-     "n": "Lonkhuyzen van, H. (Henk)",
-     "r": 1627,
-     "id": 513669,
-     "knsb": "6226077",
+     "n": "Cicek, M. (Mladen)",
+     "r": 1779,
+     "id": 518139,
+     "knsb": "7649125",
      "last": {
       "team": "De Amstel 2",
-      "games": 5,
-      "avg": 7.6,
-      "min": 7,
-      "max": 8
+      "games": 7,
+      "avg": 5.71,
+      "min": 5,
+      "max": 6
      }
+    },
+    {
+     "n": "Beentjes, K. (Koen)",
+     "r": 1860,
+     "id": 522063,
+     "knsb": "8279040",
+     "last": {
+      "team": "De Amstel 2",
+      "games": 7,
+      "avg": 2.86,
+      "min": 1,
+      "max": 4
+     }
+    },
+    {
+     "n": "Jong de, M. (Maarten)",
+     "r": 1806,
+     "id": 527114,
+     "knsb": "8771961",
+     "last": {
+      "team": "De Amstel 2",
+      "games": 7,
+      "avg": 4.43,
+      "min": 3,
+      "max": 6
+     }
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "6524529",
+      "8279040",
+      "8771961",
+      "7440653",
+      "6926227",
+      "6226077",
+      "7649125",
+      "7526057"
+     ]
     }
    ]
   },
@@ -874,6 +922,38 @@ const DATA = {
    "venueName": "Annapark",
    "players": [
     {
+     "n": "Heijlman, M. (Martin)",
+     "r": 1925,
+     "id": 514053,
+     "knsb": "6415013",
+     "last": {
+      "team": "Almere 1",
+      "games": 7,
+      "avg": 2.43,
+      "min": 1,
+      "max": 3
+     }
+    },
+    {
+     "n": "Kruijf, C.A. (Caspar)",
+     "r": 1918,
+     "id": 515340,
+     "knsb": "7108123"
+    },
+    {
+     "n": "Schip van 't, R.M. (Richard)",
+     "r": 1966,
+     "id": 516940,
+     "knsb": "7428476",
+     "last": {
+      "team": "Almere 1",
+      "games": 5,
+      "avg": 5.0,
+      "min": 4,
+      "max": 6
+     }
+    },
+    {
      "n": "Rijk de, B.A.W.M. (Ben)",
      "r": 1882,
      "id": 517400,
@@ -884,19 +964,6 @@ const DATA = {
       "avg": 4.8,
       "min": 2,
       "max": 7
-     }
-    },
-    {
-     "n": "Groot, P. (Pim)",
-     "r": 1942,
-     "id": 519056,
-     "knsb": "7829349",
-     "last": {
-      "team": "Almere 1",
-      "games": 3,
-      "avg": 2.33,
-      "min": 1,
-      "max": 5
      }
     },
     {
@@ -913,42 +980,10 @@ const DATA = {
      }
     },
     {
-     "n": "Schip van 't, R.M. (Richard)",
-     "r": 1966,
-     "id": 516940,
-     "knsb": "7428476",
-     "last": {
-      "team": "Almere 1",
-      "games": 5,
-      "avg": 5.0,
-      "min": 4,
-      "max": 6
-     }
-    },
-    {
-     "n": "Heijlman, M. (Martin)",
-     "r": 1925,
-     "id": 514053,
-     "knsb": "6415013",
-     "last": {
-      "team": "Almere 1",
-      "games": 7,
-      "avg": 2.43,
-      "min": 1,
-      "max": 3
-     }
-    },
-    {
-     "n": "Natu, C.N. (Chitrang)",
-     "r": 1790,
-     "id": 555916,
-     "knsb": "8982963"
-    },
-    {
-     "n": "Alexandrov, M. (Matvey)",
-     "r": 2013,
-     "id": 556462,
-     "knsb": "9000398"
+     "n": "Veldhuijsen, K. (Klaas)",
+     "r": 1819,
+     "id": 541731,
+     "knsb": "7329663"
     },
     {
      "n": "Dambrink, J.L. (Louis)",
@@ -962,6 +997,46 @@ const DATA = {
       "min": 2,
       "max": 8
      }
+    },
+    {
+     "n": "Natu, C.N. (Chitrang)",
+     "r": 1790,
+     "id": 555916,
+     "knsb": "8982963"
+    },
+    {
+     "n": "Groot, P. (Pim)",
+     "r": 1942,
+     "id": 519056,
+     "knsb": "7829349",
+     "last": {
+      "team": "Almere 1",
+      "games": 3,
+      "avg": 2.33,
+      "min": 1,
+      "max": 5
+     }
+    },
+    {
+     "n": "Alexandrov, M. (Matvey)",
+     "r": 2013,
+     "id": 556462,
+     "knsb": "9000398"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "7108123",
+      "6415013",
+      "7709262",
+      "7511680",
+      "7428476",
+      "6266942",
+      "8982963",
+      "7329663"
+     ]
     }
    ]
   },
@@ -1104,34 +1179,28 @@ const DATA = {
    "venueName": "Hermann Wesselink College",
    "players": [
     {
-     "n": "Moene, W. (Wim)",
-     "r": 2077,
-     "id": 519057,
-     "knsb": "7829371"
-    },
-    {
-     "n": "Boot, H. (Henk)",
-     "r": 2012,
-     "id": 521213,
-     "knsb": "8162088"
-    },
-    {
-     "n": "Lucas, O. (Olav)",
-     "r": 1938,
-     "id": 520831,
-     "knsb": "8111048"
-    },
-    {
      "n": "Krop, H.A. (Henri)",
      "r": 1910,
      "id": 512623,
      "knsb": "6004922"
     },
     {
-     "n": "Rahimi, L. (Leon Darius)",
-     "r": 1903,
-     "id": 546256,
-     "knsb": "9065826"
+     "n": "Moene, W. (Wim)",
+     "r": 2077,
+     "id": 519057,
+     "knsb": "7829371"
+    },
+    {
+     "n": "Boer de, H. (Harold)",
+     "r": 1938,
+     "id": 519539,
+     "knsb": "7910474"
+    },
+    {
+     "n": "Lucas, O. (Olav)",
+     "r": 1938,
+     "id": 520831,
+     "knsb": "8111048"
     },
     {
      "n": "Kollen, L. (Luca)",
@@ -1146,10 +1215,37 @@ const DATA = {
      "knsb": "8945530"
     },
     {
+     "n": "Rahimi, L. (Leon Darius)",
+     "r": 1903,
+     "id": 546256,
+     "knsb": "9065826"
+    },
+    {
      "n": "Gupta, V. (Vihaan)",
      "r": 1585,
      "id": 554971,
      "knsb": "9140428"
+    },
+    {
+     "n": "Boot, H. (Henk)",
+     "r": 2012,
+     "id": 521213,
+     "knsb": "8162088"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "9065826",
+      "6004922",
+      "8111048",
+      "7910474",
+      "7829371",
+      "8816698",
+      "8945530",
+      "9140428"
+     ]
     }
    ]
   },
@@ -2625,38 +2721,6 @@ const DATA = {
    "venueName": "Bilderdijkpark",
    "players": [
     {
-     "n": "Haastere van, R. (Rob)",
-     "r": 1765,
-     "id": 515701,
-     "knsb": "7188698",
-     "last": {
-      "team": "Amsterdam West 7",
-      "games": 6,
-      "avg": 2.67,
-      "min": 2,
-      "max": 5
-     }
-    },
-    {
-     "n": "Knoester, N.P.C. (Klaas)",
-     "r": 1619,
-     "id": 517752,
-     "knsb": "7576921",
-     "last": {
-      "team": "Amsterdam West 7",
-      "games": 7,
-      "avg": 5.57,
-      "min": 3,
-      "max": 7
-     }
-    },
-    {
-     "n": "Korver, H. (Henri)",
-     "r": 1660,
-     "id": 548834,
-     "knsb": "9089256"
-    },
-    {
      "n": "Marcus, A. (Andre)",
      "r": 1625,
      "id": 512907,
@@ -2668,18 +2732,6 @@ const DATA = {
       "min": 2,
       "max": 8
      }
-    },
-    {
-     "n": "Laar van de, A. (Bert)",
-     "r": 1710,
-     "id": 517354,
-     "knsb": "7504838"
-    },
-    {
-     "n": "Neerhof, G.J. (Gertjan)",
-     "r": 1724,
-     "id": 556777,
-     "knsb": "7816578"
     },
     {
      "n": "Peereboom, M.J. (Michiel)",
@@ -2695,10 +2747,75 @@ const DATA = {
      }
     },
     {
+     "n": "Haastere van, R. (Rob)",
+     "r": 1765,
+     "id": 515701,
+     "knsb": "7188698",
+     "last": {
+      "team": "Amsterdam West 7",
+      "games": 6,
+      "avg": 2.67,
+      "min": 2,
+      "max": 5
+     }
+    },
+    {
+     "n": "Laar van de, A. (Bert)",
+     "r": 1710,
+     "id": 517354,
+     "knsb": "7504838"
+    },
+    {
+     "n": "Knoester, N.P.C. (Klaas)",
+     "r": 1619,
+     "id": 517752,
+     "knsb": "7576921",
+     "last": {
+      "team": "Amsterdam West 7",
+      "games": 7,
+      "avg": 5.57,
+      "min": 3,
+      "max": 7
+     }
+    },
+    {
      "n": "Tulleken, H.J.A.F. (Herbert)",
      "r": 1672,
      "id": 519059,
      "knsb": "7829415"
+    },
+    {
+     "n": "Berg van de, H.G.M. (Henk)",
+     "r": 1605,
+     "id": 520218,
+     "knsb": "8029076"
+    },
+    {
+     "n": "Neerhof, G.J. (Gertjan)",
+     "r": 1724,
+     "id": 556777,
+     "knsb": "7816578"
+    },
+    {
+     "n": "Korver, H. (Henri)",
+     "r": 1660,
+     "id": 548834,
+     "knsb": "9089256"
+    }
+   ],
+   "observed": [
+    {
+     "round": 1,
+     "boards": [
+      "8029076",
+      "7127780",
+      "7188698",
+      "7504838",
+      "7829415",
+      "6062166",
+      "7816578",
+      "7576921"
+     ]
     }
    ]
   },
@@ -2712,23 +2829,43 @@ const DATA = {
    "venueName": "Kattenburg",
    "players": [
     {
-     "n": "Kruif de, K. (Kees)",
-     "r": 1817,
-     "id": 515029,
-     "knsb": "6995021",
+     "n": "Markus, G.A. (Gijs)",
+     "r": 1625,
+     "id": 512384,
+     "knsb": "5956368",
      "last": {
       "team": "Fischer Z 2",
-      "games": 1,
-      "avg": 3.0,
-      "min": 3,
-      "max": 3
+      "games": 7,
+      "avg": 6.0,
+      "min": 5,
+      "max": 7
      }
     },
     {
-     "n": "Griendt van de, M.W.E. (Monique)",
-     "r": 1834,
-     "id": 516960,
-     "knsb": "7434636"
+     "n": "Beekhuizen, B. (Bas)",
+     "r": 1674,
+     "id": 514461,
+     "knsb": "6687923",
+     "last": {
+      "team": "Fischer Z 2",
+      "games": 7,
+      "avg": 6.57,
+      "min": 5,
+      "max": 8
+     }
+    },
+    {
+     "n": "Boonstra, E. (Elwin)",
+     "r": 1615,
+     "id": 514513,
+     "knsb": "6738281",
+     "last": {
+      "team": "Fischer Z 2",
+      "games": 7,
+      "avg": 5.0,
+      "min": 3,
+      "max": 8
+     }
     },
     {
      "n": "Snoep, J. (Jaap)",
@@ -2757,49 +2894,44 @@ const DATA = {
      }
     },
     {
+     "n": "Kruif de, K. (Kees)",
+     "r": 1817,
+     "id": 515029,
+     "knsb": "6995021",
+     "last": {
+      "team": "Fischer Z 2",
+      "games": 1,
+      "avg": 3.0,
+      "min": 3,
+      "max": 3
+     }
+    },
+    {
+     "n": "Griendt van de, M.W.E. (Monique)",
+     "r": 1834,
+     "id": 516960,
+     "knsb": "7434636"
+    },
+    {
      "n": "Hart de, A.T. (Arthur)",
      "r": 1771,
      "id": 556877,
      "knsb": "6237407"
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Beekhuizen, B. (Bas)",
-     "r": 1674,
-     "id": 514461,
-     "knsb": "6687923",
-     "last": {
-      "team": "Fischer Z 2",
-      "games": 7,
-      "avg": 6.57,
-      "min": 5,
-      "max": 8
-     }
-    },
-    {
-     "n": "Markus, G.A. (Gijs)",
-     "r": 1625,
-     "id": 512384,
-     "knsb": "5956368",
-     "last": {
-      "team": "Fischer Z 2",
-      "games": 7,
-      "avg": 6.0,
-      "min": 5,
-      "max": 7
-     }
-    },
-    {
-     "n": "Boonstra, E. (Elwin)",
-     "r": 1615,
-     "id": 514513,
-     "knsb": "6738281",
-     "last": {
-      "team": "Fischer Z 2",
-      "games": 7,
-      "avg": 5.0,
-      "min": 3,
-      "max": 8
-     }
+     "round": 1,
+     "boards": [
+      "6971998",
+      "6995021",
+      "6237407",
+      "7434636",
+      "6971921",
+      "6687923",
+      "6738281",
+      "5956368"
+     ]
     }
    ]
   },
@@ -2948,23 +3080,36 @@ const DATA = {
    "venueName": "KLUP",
    "players": [
     {
-     "n": "Wagdy, A. (Ahmed)",
-     "r": 1851,
-     "id": 557097,
-     "knsb": "9063483"
-    },
-    {
-     "n": "Yunusova, D.Y. (Dinara)",
-     "r": 1801,
-     "id": 548203,
-     "knsb": "9083052",
+     "n": "Roberts, T. (Tom)",
+     "r": 1548,
+     "id": 548202,
+     "knsb": "9083041",
      "last": {
       "team": "De Queer Schaakclub 2",
-      "games": 2,
-      "avg": 2.0,
-      "min": 1,
-      "max": 3
+      "games": 8,
+      "avg": 5.5,
+      "min": 5,
+      "max": 6
      }
+    },
+    {
+     "n": "Rutten, N. (Nina)",
+     "r": 1541,
+     "id": 548794,
+     "knsb": "9088860",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 7,
+      "avg": 7.57,
+      "min": 7,
+      "max": 8
+     }
+    },
+    {
+     "n": "Helfrich, M. (Megan)",
+     "r": 0,
+     "id": 553586,
+     "knsb": "8795710"
     },
     {
      "n": "Marczuk, W. (Wojciech)",
@@ -2977,6 +3122,43 @@ const DATA = {
       "avg": 1.33,
       "min": 1,
       "max": 2
+     }
+    },
+    {
+     "n": "Arenas, J. (Joshua)",
+     "r": 0,
+     "id": 555750,
+     "knsb": "9106174"
+    },
+    {
+     "n": "Wagdy, A. (Ahmed)",
+     "r": 1851,
+     "id": 557097,
+     "knsb": "9063483"
+    },
+    {
+     "n": "Leveque, L. (Michel-Victor)",
+     "r": 0,
+     "id": 557664,
+     "knsb": "9179181"
+    },
+    {
+     "n": "Kingma, R. (Robin)",
+     "r": 0,
+     "id": 557667,
+     "knsb": "9179192"
+    },
+    {
+     "n": "Yunusova, D.Y. (Dinara)",
+     "r": 1801,
+     "id": 548203,
+     "knsb": "9083052",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 2,
+      "avg": 2.0,
+      "min": 1,
+      "max": 3
      }
     },
     {
@@ -3017,32 +3199,21 @@ const DATA = {
       "min": 3,
       "max": 6
      }
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Roberts, T. (Tom)",
-     "r": 1548,
-     "id": 548202,
-     "knsb": "9083041",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 8,
-      "avg": 5.5,
-      "min": 5,
-      "max": 6
-     }
-    },
-    {
-     "n": "Rutten, N. (Nina)",
-     "r": 1541,
-     "id": 548794,
-     "knsb": "9088860",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 7,
-      "avg": 7.57,
-      "min": 7,
-      "max": 8
-     }
+     "round": 1,
+     "boards": [
+      "9017041",
+      "9063483",
+      "9083041",
+      "8795710",
+      "9179181",
+      "9088860",
+      "9106174",
+      "9179192"
+     ]
     }
    ]
   },
@@ -3056,6 +3227,18 @@ const DATA = {
    "venueName": "Cygnus Gymnasium",
    "players": [
     {
+     "n": "Prent, T. (Tom)",
+     "r": 1726,
+     "id": 513405,
+     "knsb": "6169900"
+    },
+    {
+     "n": "Groenenberg, H. (Huub)",
+     "r": 1762,
+     "id": 514136,
+     "knsb": "6458837"
+    },
+    {
      "n": "Deuss, L.J. (Ber)",
      "r": 1879,
      "id": 515840,
@@ -3066,6 +3249,45 @@ const DATA = {
       "avg": 1.0,
       "min": 1,
       "max": 1
+     }
+    },
+    {
+     "n": "Pex, J. (John)",
+     "r": 1698,
+     "id": 517709,
+     "knsb": "7569419",
+     "last": {
+      "team": "VAS 6",
+      "games": 7,
+      "avg": 5.14,
+      "min": 4,
+      "max": 6
+     }
+    },
+    {
+     "n": "Karman, E.J. (Evert Jan)",
+     "r": 1705,
+     "id": 521115,
+     "knsb": "8150186",
+     "last": {
+      "team": "VAS 7",
+      "games": 6,
+      "avg": 1.67,
+      "min": 1,
+      "max": 3
+     }
+    },
+    {
+     "n": "Reynolds, R. (Reynold)",
+     "r": 1708,
+     "id": 537713,
+     "knsb": "8977859",
+     "last": {
+      "team": "VAS 6",
+      "games": 7,
+      "avg": 3.43,
+      "min": 1,
+      "max": 4
      }
     },
     {
@@ -3082,10 +3304,10 @@ const DATA = {
      }
     },
     {
-     "n": "Groenenberg, H. (Huub)",
-     "r": 1762,
-     "id": 514136,
-     "knsb": "6458837"
+     "n": "Kroon, B. (Bart)",
+     "r": 1854,
+     "id": 550769,
+     "knsb": "8946377"
     },
     {
      "n": "Duivenvoorden, B. (Ben)",
@@ -3101,25 +3323,6 @@ const DATA = {
      }
     },
     {
-     "n": "Prent, T. (Tom)",
-     "r": 1726,
-     "id": 513405,
-     "knsb": "6169900"
-    },
-    {
-     "n": "Reynolds, R. (Reynold)",
-     "r": 1708,
-     "id": 537713,
-     "knsb": "8977859",
-     "last": {
-      "team": "VAS 6",
-      "games": 7,
-      "avg": 3.43,
-      "min": 1,
-      "max": 4
-     }
-    },
-    {
      "n": "Hagen, T.J. (Tejo)",
      "r": 1693,
      "id": 519037,
@@ -3131,19 +3334,21 @@ const DATA = {
       "min": 3,
       "max": 8
      }
-    },
+    }
+   ],
+   "observed": [
     {
-     "n": "Pex, J. (John)",
-     "r": 1698,
-     "id": 517709,
-     "knsb": "7569419",
-     "last": {
-      "team": "VAS 6",
-      "games": 7,
-      "avg": 5.14,
-      "min": 4,
-      "max": 6
-     }
+     "round": 1,
+     "boards": [
+      "7221192",
+      "7687911",
+      "8946377",
+      "6458837",
+      "8150186",
+      "6169900",
+      "8977859",
+      "7569419"
+     ]
     }
    ]
   }
