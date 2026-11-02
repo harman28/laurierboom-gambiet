@@ -3368,14 +3368,14 @@ const DATA = {
       {
        "o": {
         "n": "Piurbeev, I.A. (Iurii)",
-        "r": 2032,
+        "r": 2078,
         "id": 553897,
         "c": "black",
         "knsb": "9101488"
        },
        "t": {
         "n": "Eijk van der, D. (Dick)",
-        "r": 1999,
+        "r": 2000,
         "id": 519313,
         "c": "white",
         "knsb": "7870148"
@@ -3385,14 +3385,14 @@ const DATA = {
       {
        "o": {
         "n": "Wild Propitius de, M. (Mark)",
-        "r": 1975,
+        "r": 1955,
         "id": 524448,
         "c": "white",
         "knsb": "8567702"
        },
        "t": {
         "n": "Wieringa, E.A. (Ric)",
-        "r": 1770,
+        "r": 1791,
         "id": 526121,
         "c": "black",
         "knsb": "8715795"
@@ -3402,14 +3402,14 @@ const DATA = {
       {
        "o": {
         "n": "Kruiff de, W. (Wilbert)",
-        "r": 1970,
+        "r": 1986,
         "id": 519542,
         "c": "black",
         "knsb": "7910540"
        },
        "t": {
         "n": "Dernier, R.P. (Raymond)",
-        "r": 1731,
+        "r": 1726,
         "id": 523806,
         "c": "white",
         "knsb": "8505728"
@@ -3419,14 +3419,14 @@ const DATA = {
       {
        "o": {
         "n": "Weijers, T.F. (Theo)",
-        "r": 1857,
+        "r": 1865,
         "id": 515677,
         "c": "white",
         "knsb": "7184496"
        },
        "t": {
         "n": "Admiraal, R.M. (Ron)",
-        "r": 1727,
+        "r": 1742,
         "id": 537021,
         "c": "black",
         "knsb": "8967365"
@@ -3436,14 +3436,14 @@ const DATA = {
       {
        "o": {
         "n": "Sanderse, G. (Gerard)",
-        "r": 1937,
+        "r": 1941,
         "id": 521892,
         "c": "black",
         "knsb": "8261440"
        },
        "t": {
         "n": "Vellekoop, A. (Alfred)",
-        "r": 1716,
+        "r": 1693,
         "id": 518259,
         "c": "white",
         "knsb": "7670751"
@@ -3453,14 +3453,14 @@ const DATA = {
       {
        "o": {
         "n": "Jong, C. (Casijn)",
-        "r": 1816,
+        "r": 1801,
         "id": 556651,
         "c": "white",
         "knsb": "8571563"
        },
        "t": {
         "n": "Steensma, F. (Frank)",
-        "r": 1697,
+        "r": 1702,
         "id": 514632,
         "c": "black",
         "knsb": "6768355"
@@ -3470,14 +3470,14 @@ const DATA = {
       {
        "o": {
         "n": "Geukes, R.B. (Rob)",
-        "r": 1733,
+        "r": 1719,
         "id": 517206,
         "c": "black",
         "knsb": "7473477"
        },
        "t": {
         "n": "Urbanus, P. (Peter)",
-        "r": 1687,
+        "r": 1701,
         "id": 514123,
         "c": "white",
         "knsb": "6452160"
@@ -3487,14 +3487,14 @@ const DATA = {
       {
        "o": {
         "n": "Hasnan, N. (Nadia)",
-        "r": 1728,
+        "r": 1739,
         "id": 517998,
         "c": "white",
         "knsb": "7625420"
        },
        "t": {
         "n": "Boom, H. (Harrie)",
-        "r": 1683,
+        "r": 1706,
         "id": 515363,
         "c": "black",
         "knsb": "7116142"
@@ -3561,14 +3561,14 @@ const DATA = {
       {
        "o": {
         "n": "Garau, F. (Francesca)",
-        "r": 1998,
+        "r": 2007,
         "id": 556656,
         "c": "black",
         "knsb": "9129890"
        },
        "t": {
         "n": "Kotmans, R. (Rob)",
-        "r": 1804,
+        "r": 1776,
         "id": 512377,
         "c": "white",
         "knsb": "5955026"
@@ -3578,14 +3578,14 @@ const DATA = {
       {
        "o": {
         "n": "Bautista, K.C. (Keith)",
-        "r": 1897,
+        "r": 1857,
         "id": 556655,
         "c": "white",
         "knsb": "9116998"
        },
        "t": {
         "n": "Flikweert, C. (Cees)",
-        "r": 1705,
+        "r": 1699,
         "id": 517854,
         "c": "black",
         "knsb": "7591331"
@@ -3595,14 +3595,14 @@ const DATA = {
       {
        "o": {
         "n": "Jong, C. (Casijn)",
-        "r": 1816,
+        "r": 1801,
         "id": 556651,
         "c": "black",
         "knsb": "8571563"
        },
        "t": {
         "n": "Contrera naranjo, N. (Néstor)",
-        "r": 1641,
+        "r": 1680,
         "id": 539933,
         "c": "white",
         "knsb": "9000486"
@@ -3612,14 +3612,14 @@ const DATA = {
       {
        "o": {
         "n": "Linde van der, L. (Lars)",
-        "r": 1770,
+        "r": 1831,
         "id": 556657,
         "c": "white",
         "knsb": "9135775"
        },
        "t": {
         "n": "Vapor, K. (Keoni)",
-        "r": 1711,
+        "r": 1704,
         "id": 540021,
         "c": "black",
         "knsb": "9001355"
@@ -3629,7 +3629,7 @@ const DATA = {
       {
        "o": {
         "n": "Kleef van, T.S. (Thomas)",
-        "r": 1766,
+        "r": 1773,
         "id": 556654,
         "c": "black",
         "knsb": "9078047"
@@ -3646,14 +3646,14 @@ const DATA = {
       {
        "o": {
         "n": "Dee van, A.M. (Arne)",
-        "r": 1616,
+        "r": 1658,
         "id": 556658,
         "c": "white",
         "knsb": "9141077"
        },
        "t": {
         "n": "Wouters, F. (Fabio)",
-        "r": 1625,
+        "r": 1603,
         "id": 524444,
         "c": "black",
         "knsb": "8566613"
@@ -3663,14 +3663,14 @@ const DATA = {
       {
        "o": {
         "n": "Singh, H. (Harman)",
-        "r": 1621,
+        "r": 1629,
         "id": 556653,
         "c": "black",
         "knsb": "9029889"
        },
        "t": {
         "n": "Jaarsveld, J. (Jos)",
-        "r": 1540,
+        "r": 1530,
         "id": 517855,
         "c": "white",
         "knsb": "7591342"
@@ -3680,14 +3680,14 @@ const DATA = {
       {
        "o": {
         "n": "Faber, R. (Rick)",
-        "r": 1539,
+        "r": 1612,
         "id": 556671,
         "c": "white",
         "knsb": "9140648"
        },
        "t": {
         "n": "Oomen, S. (Samuel)",
-        "r": 1481,
+        "r": 1503,
         "id": 541505,
         "c": "black",
         "knsb": "9017448"
@@ -3754,14 +3754,14 @@ const DATA = {
       {
        "o": {
         "n": "Budarin, K. (Konstantin)",
-        "r": 1991,
+        "r": 2001,
         "id": 550585,
         "c": "black",
         "knsb": "9109353"
        },
        "t": {
         "n": "Duijm, M.J.A. (Marcel)",
-        "r": 1720,
+        "r": 1698,
         "id": 516414,
         "c": "white",
         "knsb": "7348693"
@@ -3771,14 +3771,14 @@ const DATA = {
       {
        "o": {
         "n": "Rueb, S. (Sebastiaan)",
-        "r": 1749,
+        "r": 1798,
         "id": 554976,
         "c": "white",
         "knsb": "9155586"
        },
        "t": {
         "n": "Wessels Beljaars, E.M.C. (Erik)",
-        "r": 1726,
+        "r": 1728,
         "id": 548160,
         "c": "black",
         "knsb": "9036797"
@@ -3788,14 +3788,14 @@ const DATA = {
       {
        "o": {
         "n": "Bhadane, S. (Sourbh)",
-        "r": 1744,
+        "r": 1741,
         "id": 547584,
         "c": "black",
         "knsb": "9078740"
        },
        "t": {
         "n": "Dubrovsky, E.D. (Eduard)",
-        "r": 1603,
+        "r": 1615,
         "id": 550935,
         "c": "white",
         "knsb": "9025797"
@@ -3805,14 +3805,14 @@ const DATA = {
       {
        "o": {
         "n": "Humerczyk, H.H. (Hubert)",
-        "r": 1827,
+        "r": 1825,
         "id": 552213,
         "c": "white",
         "knsb": "9093898"
        },
        "t": {
         "n": "Noltes, C.H. (Niels)",
-        "r": 1865,
+        "r": 1824,
         "id": 527501,
         "c": "black",
         "knsb": "8787372"
@@ -3822,14 +3822,14 @@ const DATA = {
       {
        "o": {
         "n": "Coorn, W. (Willem Timo)",
-        "r": 1738,
+        "r": 1716,
         "id": 528439,
         "c": "black",
         "knsb": "8825597"
        },
        "t": {
         "n": "Lam, K.Y. (Kin)",
-        "r": 1593,
+        "r": 1608,
         "id": 547366,
         "c": "white",
         "knsb": "9077860"
@@ -3856,14 +3856,14 @@ const DATA = {
       {
        "o": {
         "n": "Lovisotto, K. (Kevin)",
-        "r": 1651,
+        "r": 1641,
         "id": 553675,
         "c": "black",
         "knsb": "9140384"
        },
        "t": {
         "n": "Jansma, R. (Roelof)",
-        "r": 0,
+        "r": 1200,
         "id": 552558,
         "c": "white",
         "knsb": "9127778"
@@ -3873,14 +3873,14 @@ const DATA = {
       {
        "o": {
         "n": "Gwadera, M.M. (Magda)",
-        "r": 1621,
+        "r": 1634,
         "id": 552219,
         "c": "white",
         "knsb": "9125468"
        },
        "t": {
         "n": "Hoogendijk, J. (Jesca)",
-        "r": 1479,
+        "r": 1449,
         "id": 547532,
         "c": "black",
         "knsb": "9078465"
@@ -3947,14 +3947,14 @@ const DATA = {
       {
        "o": {
         "n": "Fries de, J. (Jan)",
-        "r": 1715,
+        "r": 1729,
         "id": 523620,
         "c": "white",
         "knsb": "8485301"
        },
        "t": {
         "n": "Ran, M. (Mart)",
-        "r": 1761,
+        "r": 1732,
         "id": 517504,
         "c": "black",
         "knsb": "7527740"
@@ -3964,14 +3964,14 @@ const DATA = {
       {
        "o": {
         "n": "Varnica, M. (Milan)",
-        "r": 1703,
+        "r": 1730,
         "id": 554402,
         "c": "black",
         "knsb": "8428684"
        },
        "t": {
         "n": "Berkelmans, W. (Wim)",
-        "r": 1671,
+        "r": 1614,
         "id": 552347,
         "c": "white",
         "knsb": "8030264"
@@ -3981,14 +3981,14 @@ const DATA = {
       {
        "o": {
         "n": "Soest van, W. (Wouter)",
-        "r": 1852,
+        "r": 1869,
         "id": 553020,
         "c": "white",
         "knsb": "9131650"
        },
        "t": {
         "n": "Kips, D. (David)",
-        "r": 1669,
+        "r": 1656,
         "id": 518489,
         "c": "black",
         "knsb": "7713860"
@@ -3998,14 +3998,14 @@ const DATA = {
       {
        "o": {
         "n": "Thoen, H. (Hylke)",
-        "r": 1732,
+        "r": 1642,
         "id": 553276,
         "c": "black",
         "knsb": "9134048"
        },
        "t": {
         "n": "Liesting, T.S. (Tomas)",
-        "r": 1800,
+        "r": 1812,
         "id": 553308,
         "c": "white",
         "knsb": "9134411"
@@ -4022,7 +4022,7 @@ const DATA = {
        },
        "t": {
         "n": "Kerkhoff, F.C. (Frans)",
-        "r": 1632,
+        "r": 1652,
         "id": 514413,
         "c": "black",
         "knsb": "6638324"
@@ -4032,14 +4032,14 @@ const DATA = {
       {
        "o": {
         "n": "Alaskari, M. (Mouhanad)",
-        "r": 1537,
+        "r": 1583,
         "id": 553198,
         "c": "black",
         "knsb": "9133377"
        },
        "t": {
         "n": "Schalekamp, R. (Rob)",
-        "r": 1641,
+        "r": 1652,
         "id": 519799,
         "c": "white",
         "knsb": "7951845"
@@ -4049,14 +4049,14 @@ const DATA = {
       {
        "o": {
         "n": "Boorder de, M. (Mark)",
-        "r": 1471,
+        "r": 1498,
         "id": 536546,
         "c": "white",
         "knsb": "8961392"
        },
        "t": {
         "n": "Stolp, H.P. (Peter)",
-        "r": 1508,
+        "r": 1502,
         "id": 528230,
         "c": "black",
         "knsb": "8819855"
@@ -4066,14 +4066,14 @@ const DATA = {
       {
        "o": {
         "n": "Cnossen, J.L. (Geert-Jan)",
-        "r": 1588,
+        "r": 1575,
         "id": 525319,
         "c": "black",
         "knsb": "8648013"
        },
        "t": {
         "n": "Suurendonk, P. (Paul)",
-        "r": 1664,
+        "r": 1713,
         "id": 545792,
         "c": "white",
         "knsb": "7161209"
