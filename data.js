@@ -24,7 +24,7 @@ const DATA = {
    "players": [
     {
      "n": "Weijers, T.F. (Theo)",
-     "r": 1857,
+     "r": 1865,
      "id": 515677,
      "knsb": "7184496",
      "last": {
@@ -37,7 +37,7 @@ const DATA = {
     },
     {
      "n": "Geukes, R.B. (Rob)",
-     "r": 1733,
+     "r": 1719,
      "id": 517206,
      "knsb": "7473477",
      "last": {
@@ -50,7 +50,7 @@ const DATA = {
     },
     {
      "n": "Hasnan, N. (Nadia)",
-     "r": 1728,
+     "r": 1739,
      "id": 517998,
      "knsb": "7625420",
      "last": {
@@ -63,7 +63,7 @@ const DATA = {
     },
     {
      "n": "Kruiff de, W. (Wilbert)",
-     "r": 1970,
+     "r": 1986,
      "id": 519542,
      "knsb": "7910540",
      "last": {
@@ -76,7 +76,7 @@ const DATA = {
     },
     {
      "n": "Sanderse, G. (Gerard)",
-     "r": 1937,
+     "r": 1941,
      "id": 521892,
      "knsb": "8261440",
      "last": {
@@ -89,7 +89,7 @@ const DATA = {
     },
     {
      "n": "Wild Propitius de, M. (Mark)",
-     "r": 1975,
+     "r": 1955,
      "id": 524448,
      "knsb": "8567702",
      "last": {
@@ -102,7 +102,7 @@ const DATA = {
     },
     {
      "n": "Piurbeev, I.A. (Iurii)",
-     "r": 2032,
+     "r": 2078,
      "id": 553897,
      "knsb": "9101488",
      "last": {
@@ -115,7 +115,7 @@ const DATA = {
     },
     {
      "n": "Jong, C. (Casijn)",
-     "r": 1816,
+     "r": 1801,
      "id": 556651,
      "knsb": "8571563"
     },
@@ -160,49 +160,49 @@ const DATA = {
    "players": [
     {
      "n": "Jong, C. (Casijn)",
-     "r": 1816,
+     "r": 1801,
      "id": 556651,
      "knsb": "8571563"
     },
     {
      "n": "Singh, H. (Harman)",
-     "r": 1621,
+     "r": 1629,
      "id": 556653,
      "knsb": "9029889"
     },
     {
      "n": "Kleef van, T.S. (Thomas)",
-     "r": 1766,
+     "r": 1773,
      "id": 556654,
      "knsb": "9078047"
     },
     {
      "n": "Bautista, K.C. (Keith)",
-     "r": 1897,
+     "r": 1857,
      "id": 556655,
      "knsb": "9116998"
     },
     {
      "n": "Garau, F. (Francesca)",
-     "r": 1998,
+     "r": 2007,
      "id": 556656,
      "knsb": "9129890"
     },
     {
      "n": "Linde van der, L. (Lars)",
-     "r": 1770,
+     "r": 1831,
      "id": 556657,
      "knsb": "9135775"
     },
     {
      "n": "Dee van, A.M. (Arne)",
-     "r": 1616,
+     "r": 1658,
      "id": 556658,
      "knsb": "9141077"
     },
     {
      "n": "Faber, R. (Rick)",
-     "r": 1539,
+     "r": 1612,
      "id": 556671,
      "knsb": "9140648"
     }
@@ -275,43 +275,43 @@ const DATA = {
    "players": [
     {
      "n": "Coorn, W. (Willem Timo)",
-     "r": 1738,
+     "r": 1716,
      "id": 528439,
      "knsb": "8825597"
     },
     {
      "n": "Bhadane, S. (Sourbh)",
-     "r": 1744,
+     "r": 1741,
      "id": 547584,
      "knsb": "9078740"
     },
     {
      "n": "Budarin, K. (Konstantin)",
-     "r": 1991,
+     "r": 2001,
      "id": 550585,
      "knsb": "9109353"
     },
     {
      "n": "Humerczyk, H.H. (Hubert)",
-     "r": 1827,
+     "r": 1825,
      "id": 552213,
      "knsb": "9093898"
     },
     {
      "n": "Gwadera, M.M. (Magda)",
-     "r": 1621,
+     "r": 1634,
      "id": 552219,
      "knsb": "9125468"
     },
     {
      "n": "Lovisotto, K. (Kevin)",
-     "r": 1651,
+     "r": 1641,
      "id": 553675,
      "knsb": "9140384"
     },
     {
      "n": "Rueb, S. (Sebastiaan)",
-     "r": 1749,
+     "r": 1798,
      "id": 554976,
      "knsb": "9155586",
      "last": {
@@ -330,7 +330,7 @@ const DATA = {
     },
     {
      "n": "Coskun, R. (Roman)",
-     "r": 1421,
+     "r": 1416,
      "id": 552211,
      "knsb": "9091863"
     }
@@ -362,43 +362,43 @@ const DATA = {
    "players": [
     {
      "n": "Fries de, J. (Jan)",
-     "r": 1715,
+     "r": 1729,
      "id": 523620,
      "knsb": "8485301"
     },
     {
      "n": "Cnossen, J.L. (Geert-Jan)",
-     "r": 1588,
+     "r": 1575,
      "id": 525319,
      "knsb": "8648013"
     },
     {
      "n": "Boorder de, M. (Mark)",
-     "r": 1471,
+     "r": 1498,
      "id": 536546,
      "knsb": "8961392"
     },
     {
      "n": "Soest van, W. (Wouter)",
-     "r": 1852,
+     "r": 1869,
      "id": 553020,
      "knsb": "9131650"
     },
     {
      "n": "Alaskari, M. (Mouhanad)",
-     "r": 1537,
+     "r": 1583,
      "id": 553198,
      "knsb": "9133377"
     },
     {
      "n": "Thoen, H. (Hylke)",
-     "r": 1732,
+     "r": 1642,
      "id": 553276,
      "knsb": "9134048"
     },
     {
      "n": "Varnica, M. (Milan)",
-     "r": 1703,
+     "r": 1730,
      "id": 554402,
      "knsb": "8428684"
     },
@@ -442,13 +442,13 @@ const DATA = {
    "players": [
     {
      "n": "Kotmans, R. (Rob)",
-     "r": 1804,
+     "r": 1776,
      "id": 512377,
      "knsb": "5955026"
     },
     {
      "n": "Duin, R.J.A. (Roelf Jan)",
-     "r": 1769,
+     "r": 1760,
      "id": 520044,
      "knsb": "7992501",
      "last": {
@@ -461,13 +461,13 @@ const DATA = {
     },
     {
      "n": "Elliyasa, M. (Mehmet)",
-     "r": 1824,
+     "r": 1836,
      "id": 523880,
      "knsb": "8515947"
     },
     {
      "n": "Broerse, M. (Milo)",
-     "r": 1803,
+     "r": 1802,
      "id": 526014,
      "knsb": "8708502",
      "last": {
@@ -480,19 +480,19 @@ const DATA = {
     },
     {
      "n": "Knegt de, J. (Jaap)",
-     "r": 1825,
+     "r": 1809,
      "id": 537753,
      "knsb": "8978398"
     },
     {
      "n": "Gerritsen, D.W. (Diederik)",
-     "r": 1784,
+     "r": 1813,
      "id": 539704,
      "knsb": "8241167"
     },
     {
      "n": "Plukkel, S.P.M. (Simon)",
-     "r": 1755,
+     "r": 1729,
      "id": 539964,
      "knsb": "8460903",
      "last": {
@@ -505,7 +505,7 @@ const DATA = {
     },
     {
      "n": "Westra, G. (Ger)",
-     "r": 1840,
+     "r": 1796,
      "id": 552393,
      "knsb": "8152496",
      "last": {
@@ -518,7 +518,7 @@ const DATA = {
     },
     {
      "n": "Krajenbrink, M.J. (Menno)",
-     "r": 1870,
+     "r": 1887,
      "id": 546100,
      "knsb": "8170349",
      "last": {
@@ -531,7 +531,7 @@ const DATA = {
     },
     {
      "n": "Krol van de, S.T. (Sernin)",
-     "r": 1815,
+     "r": 1819,
      "id": 548183,
      "knsb": "8120310",
      "last": {
@@ -583,7 +583,7 @@ const DATA = {
    "players": [
     {
      "n": "Banning van, J. (Jan)",
-     "r": 1865,
+     "r": 1866,
      "id": 513646,
      "knsb": "6221512",
      "last": {
@@ -596,37 +596,37 @@ const DATA = {
     },
     {
      "n": "Thewissen, B.T. (Boudewijn)",
-     "r": 1838,
+     "r": 1847,
      "id": 520319,
      "knsb": "8040571"
     },
     {
      "n": "Suyderhoud, W.C. (Wim)",
-     "r": 1768,
+     "r": 1756,
      "id": 520835,
      "knsb": "8111301"
     },
     {
      "n": "Venema, C. (Coen)",
-     "r": 1786,
+     "r": 1773,
      "id": 521050,
      "knsb": "8140781"
     },
     {
      "n": "Sternfeld, D. (Douwe)",
-     "r": 1869,
+     "r": 1846,
      "id": 522222,
      "knsb": "8293659"
     },
     {
      "n": "Timmerman, J.T.J. (Jan)",
-     "r": 1872,
+     "r": 1903,
      "id": 523242,
      "knsb": "8436835"
     },
     {
      "n": "Vlis van der, P. (Peter)",
-     "r": 1834,
+     "r": 1816,
      "id": 523891,
      "knsb": "8517872",
      "last": {
@@ -639,7 +639,7 @@ const DATA = {
     },
     {
      "n": "Keuken, M.P. (Menno)",
-     "r": 1826,
+     "r": 1823,
      "id": 526135,
      "knsb": "8716774",
      "last": {
@@ -684,7 +684,7 @@ const DATA = {
    "players": [
     {
      "n": "Lonkhuyzen van, H. (Henk)",
-     "r": 1627,
+     "r": 1616,
      "id": 513669,
      "knsb": "6226077",
      "last": {
@@ -697,7 +697,7 @@ const DATA = {
     },
     {
      "n": "Geertsema, P.J. (Piet)",
-     "r": 1904,
+     "r": 1916,
      "id": 514212,
      "knsb": "6524529",
      "last": {
@@ -710,7 +710,7 @@ const DATA = {
     },
     {
      "n": "Hogerwerf, J.G.F.M. (Jacques)",
-     "r": 1817,
+     "r": 1810,
      "id": 514820,
      "knsb": "6926227",
      "last": {
@@ -723,7 +723,7 @@ const DATA = {
     },
     {
      "n": "Verschueren, P.A.M. (Peter)",
-     "r": 1867,
+     "r": 1881,
      "id": 516992,
      "knsb": "7440653",
      "last": {
@@ -736,7 +736,7 @@ const DATA = {
     },
     {
      "n": "Hattum van, A.H. (Lex)",
-     "r": 1717,
+     "r": 1699,
      "id": 517489,
      "knsb": "7526057",
      "last": {
@@ -749,7 +749,7 @@ const DATA = {
     },
     {
      "n": "Cicek, M. (Mladen)",
-     "r": 1779,
+     "r": 1767,
      "id": 518139,
      "knsb": "7649125",
      "last": {
@@ -762,7 +762,7 @@ const DATA = {
     },
     {
      "n": "Beentjes, K. (Koen)",
-     "r": 1860,
+     "r": 1881,
      "id": 522063,
      "knsb": "8279040",
      "last": {
@@ -775,7 +775,7 @@ const DATA = {
     },
     {
      "n": "Jong de, M. (Maarten)",
-     "r": 1806,
+     "r": 1822,
      "id": 527114,
      "knsb": "8771961",
      "last": {
@@ -814,13 +814,13 @@ const DATA = {
    "players": [
     {
      "n": "Urbanus, P. (Peter)",
-     "r": 1687,
+     "r": 1701,
      "id": 514123,
      "knsb": "6452160"
     },
     {
      "n": "Steensma, F. (Frank)",
-     "r": 1697,
+     "r": 1702,
      "id": 514632,
      "knsb": "6768355",
      "last": {
@@ -833,7 +833,7 @@ const DATA = {
     },
     {
      "n": "Boom, H. (Harrie)",
-     "r": 1683,
+     "r": 1706,
      "id": 515363,
      "knsb": "7116142",
      "last": {
@@ -846,7 +846,7 @@ const DATA = {
     },
     {
      "n": "Vellekoop, A. (Alfred)",
-     "r": 1716,
+     "r": 1693,
      "id": 518259,
      "knsb": "7670751",
      "last": {
@@ -859,7 +859,7 @@ const DATA = {
     },
     {
      "n": "Eijk van der, D. (Dick)",
-     "r": 1999,
+     "r": 2000,
      "id": 519313,
      "knsb": "7870148",
      "last": {
@@ -872,13 +872,13 @@ const DATA = {
     },
     {
      "n": "Dernier, R.P. (Raymond)",
-     "r": 1731,
+     "r": 1726,
      "id": 523806,
      "knsb": "8505728"
     },
     {
      "n": "Wieringa, E.A. (Ric)",
-     "r": 1770,
+     "r": 1791,
      "id": 526121,
      "knsb": "8715795",
      "last": {
@@ -891,7 +891,7 @@ const DATA = {
     },
     {
      "n": "Admiraal, R.M. (Ron)",
-     "r": 1727,
+     "r": 1742,
      "id": 537021,
      "knsb": "8967365"
     }
@@ -923,7 +923,7 @@ const DATA = {
    "players": [
     {
      "n": "Heijlman, M. (Martin)",
-     "r": 1925,
+     "r": 1927,
      "id": 514053,
      "knsb": "6415013",
      "last": {
@@ -936,7 +936,7 @@ const DATA = {
     },
     {
      "n": "Kruijf, C.A. (Caspar)",
-     "r": 1918,
+     "r": 1921,
      "id": 515340,
      "knsb": "7108123"
     },
@@ -955,7 +955,7 @@ const DATA = {
     },
     {
      "n": "Rijk de, B.A.W.M. (Ben)",
-     "r": 1882,
+     "r": 1862,
      "id": 517400,
      "knsb": "7511680",
      "last": {
@@ -968,7 +968,7 @@ const DATA = {
     },
     {
      "n": "Kortendijk, A.J. (Albert)",
-     "r": 1966,
+     "r": 1961,
      "id": 518468,
      "knsb": "7709262",
      "last": {
@@ -981,13 +981,13 @@ const DATA = {
     },
     {
      "n": "Veldhuijsen, K. (Klaas)",
-     "r": 1819,
+     "r": 1851,
      "id": 541731,
      "knsb": "7329663"
     },
     {
      "n": "Dambrink, J.L. (Louis)",
-     "r": 1870,
+     "r": 1862,
      "id": 547808,
      "knsb": "6266942",
      "last": {
@@ -1000,13 +1000,13 @@ const DATA = {
     },
     {
      "n": "Natu, C.N. (Chitrang)",
-     "r": 1790,
+     "r": 1985,
      "id": 555916,
      "knsb": "8982963"
     },
     {
      "n": "Groot, P. (Pim)",
-     "r": 1942,
+     "r": 1960,
      "id": 519056,
      "knsb": "7829349",
      "last": {
@@ -1019,7 +1019,7 @@ const DATA = {
     },
     {
      "n": "Alexandrov, M. (Matvey)",
-     "r": 2013,
+     "r": 2022,
      "id": 556462,
      "knsb": "9000398"
     }
@@ -1051,13 +1051,13 @@ const DATA = {
    "players": [
     {
      "n": "Rijkom van, E.P. (Eric)",
-     "r": 1817,
+     "r": 1806,
      "id": 517189,
      "knsb": "7469660"
     },
     {
      "n": "Maas van der, J. (Johan)",
-     "r": 1805,
+     "r": 1820,
      "id": 518130,
      "knsb": "7648102",
      "last": {
@@ -1070,7 +1070,7 @@ const DATA = {
     },
     {
      "n": "Rue de, M.P. (Mischa)",
-     "r": 1841,
+     "r": 1848,
      "id": 518549,
      "knsb": "7726565",
      "last": {
@@ -1083,7 +1083,7 @@ const DATA = {
     },
     {
      "n": "Rekelhof, M. (Martin)",
-     "r": 1721,
+     "r": 1717,
      "id": 521545,
      "knsb": "8211379",
      "last": {
@@ -1096,7 +1096,7 @@ const DATA = {
     },
     {
      "n": "Bakker, T.J. (Theo)",
-     "r": 1752,
+     "r": 1743,
      "id": 522040,
      "knsb": "8276752",
      "last": {
@@ -1109,7 +1109,7 @@ const DATA = {
     },
     {
      "n": "Veen van der, A. (Ailko)",
-     "r": 1718,
+     "r": 1709,
      "id": 524966,
      "knsb": "8614639",
      "last": {
@@ -1122,13 +1122,13 @@ const DATA = {
     },
     {
      "n": "Sloot, G. (Gerben)",
-     "r": 1777,
+     "r": 1785,
      "id": 527139,
      "knsb": "8772643"
     },
     {
      "n": "Hulsing, M. (Martin)",
-     "r": 1740,
+     "r": 1748,
      "id": 534652,
      "knsb": "8938127",
      "last": {
@@ -1180,55 +1180,55 @@ const DATA = {
    "players": [
     {
      "n": "Krop, H.A. (Henri)",
-     "r": 1910,
+     "r": 1920,
      "id": 512623,
      "knsb": "6004922"
     },
     {
      "n": "Moene, W. (Wim)",
-     "r": 2077,
+     "r": 2085,
      "id": 519057,
      "knsb": "7829371"
     },
     {
      "n": "Boer de, H. (Harold)",
-     "r": 1938,
+     "r": 1946,
      "id": 519539,
      "knsb": "7910474"
     },
     {
      "n": "Lucas, O. (Olav)",
-     "r": 1938,
+     "r": 1932,
      "id": 520831,
      "knsb": "8111048"
     },
     {
      "n": "Kollen, L. (Luca)",
-     "r": 1818,
+     "r": 1845,
      "id": 528155,
      "knsb": "8816698"
     },
     {
      "n": "Patil, N. (Neev)",
-     "r": 1747,
+     "r": 1750,
      "id": 535277,
      "knsb": "8945530"
     },
     {
      "n": "Rahimi, L. (Leon Darius)",
-     "r": 1903,
+     "r": 1859,
      "id": 546256,
      "knsb": "9065826"
     },
     {
      "n": "Gupta, V. (Vihaan)",
-     "r": 1585,
+     "r": 1777,
      "id": 554971,
      "knsb": "9140428"
     },
     {
      "n": "Boot, H. (Henk)",
-     "r": 2012,
+     "r": 2007,
      "id": 521213,
      "knsb": "8162088"
     }
@@ -1273,7 +1273,7 @@ const DATA = {
     },
     {
      "n": "Rijsoort van, P.H. (Piet-Hein)",
-     "r": 1812,
+     "r": 1810,
      "id": 550750,
      "knsb": "9111157",
      "last": {
@@ -1286,7 +1286,7 @@ const DATA = {
     },
     {
      "n": "Werf van der, P. (Peter)",
-     "r": 1809,
+     "r": 1823,
      "id": 517997,
      "knsb": "7625332",
      "last": {
@@ -1324,7 +1324,7 @@ const DATA = {
     },
     {
      "n": "Varnica, A. (Aleks)",
-     "r": 1744,
+     "r": 1755,
      "id": 523180,
      "knsb": "8428695"
     },
@@ -1348,7 +1348,7 @@ const DATA = {
    "players": [
     {
      "n": "Visscher, R. (Robbert)",
-     "r": 1628,
+     "r": 1643,
      "id": 534390,
      "knsb": "8935036",
      "last": {
@@ -1361,19 +1361,19 @@ const DATA = {
     },
     {
      "n": "Schot, A. (Aron)",
-     "r": 1553,
+     "r": 1542,
      "id": 534680,
      "knsb": "8938490"
     },
     {
      "n": "Korpelshoek, V. (Vincent)",
-     "r": 1858,
+     "r": 1890,
      "id": 540643,
      "knsb": "9007702"
     },
     {
      "n": "Pelser, A. (Abel)",
-     "r": 1784,
+     "r": 1788,
      "id": 549113,
      "knsb": "9093260",
      "last": {
@@ -1386,13 +1386,13 @@ const DATA = {
     },
     {
      "n": "Arcilla, R. (Rogelio)",
-     "r": 0,
+     "r": 1617,
      "id": 553880,
      "knsb": "9143640"
     },
     {
      "n": "Sten, B. (Blanken)",
-     "r": 1754,
+     "r": 1749,
      "id": 554528,
      "knsb": "9150746"
     },
@@ -1463,7 +1463,7 @@ const DATA = {
    "players": [
     {
      "n": "Haak, M. (Michiel)",
-     "r": 1766,
+     "r": 1762,
      "id": 524025,
      "knsb": "8531358",
      "last": {
@@ -1476,7 +1476,7 @@ const DATA = {
     },
     {
      "n": "Czudar, S. (Sandor)",
-     "r": 1657,
+     "r": 1673,
      "id": 529114,
      "knsb": "8843615",
      "last": {
@@ -1489,7 +1489,7 @@ const DATA = {
     },
     {
      "n": "Kampen van, R. (Rick)",
-     "r": 1748,
+     "r": 1763,
      "id": 538775,
      "knsb": "8690396",
      "last": {
@@ -1502,7 +1502,7 @@ const DATA = {
     },
     {
      "n": "Schor, J.C.W. (Joop)",
-     "r": 1639,
+     "r": 1628,
      "id": 540927,
      "knsb": "9010969",
      "last": {
@@ -1515,13 +1515,13 @@ const DATA = {
     },
     {
      "n": "Souisa, M.J. (Jack)",
-     "r": 1499,
+     "r": 1528,
      "id": 542884,
      "knsb": "9012872"
     },
     {
      "n": "Meerkamp van Embden, L.K. (Luuk)",
-     "r": 1628,
+     "r": 1660,
      "id": 550942,
      "knsb": "9113236",
      "last": {
@@ -1534,7 +1534,7 @@ const DATA = {
     },
     {
      "n": "Paradkar, T. (Tanmay)",
-     "r": 0,
+     "r": 1614,
      "id": 554589,
      "knsb": "8929976",
      "last": {
@@ -1547,7 +1547,7 @@ const DATA = {
     },
     {
      "n": "Spoelstra, B. (Bas)",
-     "r": 1947,
+     "r": 1972,
      "id": 556865,
      "knsb": "7981072"
     }
@@ -1580,7 +1580,7 @@ const DATA = {
    "players": [
     {
      "n": "Koevoets, M.A.C. (Rinus)",
-     "r": 1794,
+     "r": 1769,
      "id": 514529,
      "knsb": "6742527",
      "last": {
@@ -1593,7 +1593,7 @@ const DATA = {
     },
     {
      "n": "Slooten van, R. (Rob)",
-     "r": 1702,
+     "r": 1726,
      "id": 517337,
      "knsb": "7501626",
      "last": {
@@ -1606,7 +1606,7 @@ const DATA = {
     },
     {
      "n": "Bergshoeff, G. (Bert)",
-     "r": 1574,
+     "r": 1544,
      "id": 518268,
      "knsb": "7672082",
      "last": {
@@ -1619,7 +1619,7 @@ const DATA = {
     },
     {
      "n": "Baas, R.C. (Rob)",
-     "r": 1512,
+     "r": 1499,
      "id": 526179,
      "knsb": "8718589"
     },
@@ -1638,7 +1638,7 @@ const DATA = {
     },
     {
      "n": "Feenstra, J. (Julian)",
-     "r": 1650,
+     "r": 1637,
      "id": 546248,
      "knsb": "8341245",
      "last": {
@@ -1651,7 +1651,7 @@ const DATA = {
     },
     {
      "n": "Verboven, G. (Gijs)",
-     "r": 1588,
+     "r": 1573,
      "id": 548940,
      "knsb": "9026402",
      "last": {
@@ -1664,7 +1664,7 @@ const DATA = {
     },
     {
      "n": "Mantel, D.M.A. (Maxim)",
-     "r": 1635,
+     "r": 1650,
      "id": 557901,
      "knsb": "8805258"
     },
@@ -1710,13 +1710,13 @@ const DATA = {
    "players": [
     {
      "n": "Kotmans, R. (Rob)",
-     "r": 1804,
+     "r": 1776,
      "id": 512377,
      "knsb": "5955026"
     },
     {
      "n": "Flikweert, C. (Cees)",
-     "r": 1705,
+     "r": 1699,
      "id": 517854,
      "knsb": "7591331",
      "last": {
@@ -1729,13 +1729,13 @@ const DATA = {
     },
     {
      "n": "Jaarsveld, J. (Jos)",
-     "r": 1540,
+     "r": 1530,
      "id": 517855,
      "knsb": "7591342"
     },
     {
      "n": "Wouters, F. (Fabio)",
-     "r": 1625,
+     "r": 1603,
      "id": 524444,
      "knsb": "8566613",
      "last": {
@@ -1748,7 +1748,7 @@ const DATA = {
     },
     {
      "n": "Contrera naranjo, N. (Néstor)",
-     "r": 1641,
+     "r": 1680,
      "id": 539933,
      "knsb": "9000486",
      "last": {
@@ -1761,7 +1761,7 @@ const DATA = {
     },
     {
      "n": "Vapor, K. (Keoni)",
-     "r": 1711,
+     "r": 1704,
      "id": 540021,
      "knsb": "9001355",
      "last": {
@@ -1774,7 +1774,7 @@ const DATA = {
     },
     {
      "n": "Oomen, S. (Samuel)",
-     "r": 1481,
+     "r": 1503,
      "id": 541505,
      "knsb": "9017448",
      "last": {
@@ -1800,7 +1800,7 @@ const DATA = {
     },
     {
      "n": "Aarten, M.M. (Marjolein)",
-     "r": 1639,
+     "r": 1631,
      "id": 524085,
      "knsb": "8538442",
      "last": {
@@ -1840,19 +1840,19 @@ const DATA = {
    "players": [
     {
      "n": "Drewes, B.A. (Benno)",
-     "r": 1869,
+     "r": 1868,
      "id": 518959,
      "knsb": "7809901"
     },
     {
      "n": "Hakvoort, R.C. (Remy)",
-     "r": 1817,
+     "r": 1815,
      "id": 520785,
      "knsb": "8104998"
     },
     {
      "n": "Karman, E.J. (Evert Jan)",
-     "r": 1705,
+     "r": 1706,
      "id": 521115,
      "knsb": "8150186",
      "last": {
@@ -1865,19 +1865,19 @@ const DATA = {
     },
     {
      "n": "Lammers, H. (Hans)",
-     "r": 1682,
+     "r": 1707,
      "id": 523099,
      "knsb": "8418245"
     },
     {
      "n": "Ersöz, B.H. (Baris)",
-     "r": 1670,
+     "r": 1647,
      "id": 536387,
      "knsb": "8959434"
     },
     {
      "n": "Cariga, R.B. (Ricky)",
-     "r": 1685,
+     "r": 1631,
      "id": 550338,
      "knsb": "9106185",
      "last": {
@@ -1890,7 +1890,7 @@ const DATA = {
     },
     {
      "n": "Kroon, B. (Bart)",
-     "r": 1854,
+     "r": 1847,
      "id": 550769,
      "knsb": "8946377"
     },
@@ -1902,7 +1902,7 @@ const DATA = {
     },
     {
      "n": "Voitsekhovskyi, V.V. (Vadym)",
-     "r": 1693,
+     "r": 1731,
      "id": 552719,
      "knsb": "9128845"
     }
@@ -1941,7 +1941,7 @@ const DATA = {
     },
     {
      "n": "Schutte, J.F. (Filip)",
-     "r": 1788,
+     "r": 1719,
      "id": 522832,
      "knsb": "8379195",
      "last": {
@@ -1954,7 +1954,7 @@ const DATA = {
     },
     {
      "n": "Veraart, J.C. (Jan)",
-     "r": 1841,
+     "r": 1860,
      "id": 532155,
      "knsb": "8903554"
     },
@@ -1986,13 +1986,13 @@ const DATA = {
     },
     {
      "n": "Romijn, B. (Bart)",
-     "r": 1833,
+     "r": 1835,
      "id": 512767,
      "knsb": "6030365"
     },
     {
      "n": "Rijnders, N. (Nanno)",
-     "r": 1794,
+     "r": 1803,
      "id": 541173,
      "knsb": "8624022",
      "last": {
@@ -2005,7 +2005,7 @@ const DATA = {
     },
     {
      "n": "Gaalen van, J.M. (Jakob)",
-     "r": 1801,
+     "r": 1796,
      "id": 547439,
      "knsb": "8907008",
      "last": {
@@ -2042,7 +2042,7 @@ const DATA = {
     },
     {
      "n": "Broekman, L. (Lode)",
-     "r": 1628,
+     "r": 1642,
      "id": 525071,
      "knsb": "8624264",
      "last": {
@@ -2055,7 +2055,7 @@ const DATA = {
     },
     {
      "n": "Houtrijve van, H.C. (Henk)",
-     "r": 1607,
+     "r": 1606,
      "id": 517109,
      "knsb": "7455173",
      "last": {
@@ -2068,7 +2068,7 @@ const DATA = {
     },
     {
      "n": "Jansen, B. (Bob)",
-     "r": 1711,
+     "r": 1735,
      "id": 539833,
      "knsb": "7878101",
      "last": {
@@ -2081,7 +2081,7 @@ const DATA = {
     },
     {
      "n": "Khawajeh al, I. (Ibrahim)",
-     "r": 1722,
+     "r": 1721,
      "id": 526481,
      "knsb": "8726795",
      "last": {
@@ -2107,7 +2107,7 @@ const DATA = {
     },
     {
      "n": "Norden, M.J. (Marc)",
-     "r": 1802,
+     "r": 1809,
      "id": 519525,
      "knsb": "7908978",
      "last": {
@@ -2120,7 +2120,7 @@ const DATA = {
     },
     {
      "n": "Wijgers, B. (Ben)",
-     "r": 2006,
+     "r": 1985,
      "id": 520269,
      "knsb": "8034796",
      "last": {
@@ -2144,7 +2144,7 @@ const DATA = {
    "players": [
     {
      "n": "Kerkhoff, F.C. (Frans)",
-     "r": 1632,
+     "r": 1652,
      "id": 514413,
      "knsb": "6638324",
      "last": {
@@ -2157,7 +2157,7 @@ const DATA = {
     },
     {
      "n": "Ran, M. (Mart)",
-     "r": 1761,
+     "r": 1732,
      "id": 517504,
      "knsb": "7527740",
      "last": {
@@ -2170,7 +2170,7 @@ const DATA = {
     },
     {
      "n": "Kips, D. (David)",
-     "r": 1669,
+     "r": 1656,
      "id": 518489,
      "knsb": "7713860",
      "last": {
@@ -2183,7 +2183,7 @@ const DATA = {
     },
     {
      "n": "Schalekamp, R. (Rob)",
-     "r": 1641,
+     "r": 1652,
      "id": 519799,
      "knsb": "7951845",
      "last": {
@@ -2196,13 +2196,13 @@ const DATA = {
     },
     {
      "n": "Stolp, H.P. (Peter)",
-     "r": 1508,
+     "r": 1502,
      "id": 528230,
      "knsb": "8819855"
     },
     {
      "n": "Suurendonk, P. (Paul)",
-     "r": 1664,
+     "r": 1713,
      "id": 545792,
      "knsb": "7161209",
      "last": {
@@ -2215,19 +2215,19 @@ const DATA = {
     },
     {
      "n": "Berkelmans, W. (Wim)",
-     "r": 1671,
+     "r": 1614,
      "id": 552347,
      "knsb": "8030264"
     },
     {
      "n": "Liesting, T.S. (Tomas)",
-     "r": 1800,
+     "r": 1812,
      "id": 553308,
      "knsb": "9134411"
     },
     {
      "n": "Bezemer, C. (Casper)",
-     "r": 1570,
+     "r": 1561,
      "id": 545473,
      "knsb": "9057334"
     }
@@ -2259,13 +2259,13 @@ const DATA = {
    "players": [
     {
      "n": "Fokke, H.E. (Erik)",
-     "r": 1676,
+     "r": 1667,
      "id": 515679,
      "knsb": "7184639"
     },
     {
      "n": "Kuypers, S.E.M. (Steven)",
-     "r": 1657,
+     "r": 1649,
      "id": 519249,
      "knsb": "7861832",
      "last": {
@@ -2278,13 +2278,13 @@ const DATA = {
     },
     {
      "n": "Feber de, M.T. (Matthijs)",
-     "r": 1678,
+     "r": 1670,
      "id": 521049,
      "knsb": "8140770"
     },
     {
      "n": "Nieberg, D. (Debby)",
-     "r": 1658,
+     "r": 1673,
      "id": 523433,
      "knsb": "8462773",
      "last": {
@@ -2297,31 +2297,31 @@ const DATA = {
     },
     {
      "n": "Mulder, L. (Lars)",
-     "r": 1666,
+     "r": 1779,
      "id": 531372,
      "knsb": "8891135"
     },
     {
      "n": "Dam, M. (Maria)",
-     "r": 1576,
+     "r": 1588,
      "id": 548487,
      "knsb": "8213392"
     },
     {
      "n": "Rozenbroek, R. (Ricardo)",
-     "r": 1744,
+     "r": 1725,
      "id": 548489,
      "knsb": "8403219"
     },
     {
      "n": "Cairo, D.E. (David)",
-     "r": 1480,
+     "r": 1573,
      "id": 550174,
      "knsb": "9097902"
     },
     {
      "n": "Sommer, H. (Hugo)",
-     "r": 1678,
+     "r": 1662,
      "id": 543812,
      "knsb": "9038788",
      "last": {
@@ -2340,7 +2340,7 @@ const DATA = {
     },
     {
      "n": "Roy, D. (Deepayan)",
-     "r": 1553,
+     "r": 1537,
      "id": 535320,
      "knsb": "8946047",
      "last": {
@@ -2379,13 +2379,13 @@ const DATA = {
    "players": [
     {
      "n": "Kotmans, R. (Rob)",
-     "r": 1804,
+     "r": 1776,
      "id": 512377,
      "knsb": "5955026"
     },
     {
      "n": "Haastere van, R. (Rob)",
-     "r": 1765,
+     "r": 1784,
      "id": 515701,
      "knsb": "7188698",
      "last": {
@@ -2398,7 +2398,7 @@ const DATA = {
     },
     {
      "n": "Sanders, R.A.B. (Ralph)",
-     "r": 1724,
+     "r": 1719,
      "id": 516193,
      "knsb": "7291328",
      "last": {
@@ -2411,7 +2411,7 @@ const DATA = {
     },
     {
      "n": "Berg van den, B. (Bas)",
-     "r": 1751,
+     "r": 1775,
      "id": 517245,
      "knsb": "7480418",
      "last": {
@@ -2424,19 +2424,19 @@ const DATA = {
     },
     {
      "n": "Walraven van, A. (Arie)",
-     "r": 1744,
+     "r": 1729,
      "id": 521067,
      "knsb": "8144257"
     },
     {
      "n": "Elliyasa, M. (Mehmet)",
-     "r": 1824,
+     "r": 1836,
      "id": 523880,
      "knsb": "8515947"
     },
     {
      "n": "Singh, S. (Satwik)",
-     "r": 1714,
+     "r": 1679,
      "id": 532806,
      "knsb": "8912706",
      "last": {
@@ -2449,7 +2449,7 @@ const DATA = {
     },
     {
      "n": "Gerritsen, D.W. (Diederik)",
-     "r": 1784,
+     "r": 1813,
      "id": 539704,
      "knsb": "8241167"
     },
@@ -2571,7 +2571,7 @@ const DATA = {
     },
     {
      "n": "Haanen, P. (Piet)",
-     "r": 1671,
+     "r": 1676,
      "id": 528194,
      "knsb": "8818623",
      "last": {
@@ -2640,7 +2640,7 @@ const DATA = {
     },
     {
      "n": "Verheijden, C. (Chris)",
-     "r": 1651,
+     "r": 1624,
      "id": 526714,
      "knsb": "8747200",
      "last": {
@@ -2653,7 +2653,7 @@ const DATA = {
     },
     {
      "n": "Lesman, K.F.P.M. (Karol)",
-     "r": 1655,
+     "r": 1644,
      "id": 521692,
      "knsb": "8237933",
      "last": {
@@ -2672,7 +2672,7 @@ const DATA = {
     },
     {
      "n": "Laan, C.J. (Kees)",
-     "r": 1616,
+     "r": 1633,
      "id": 525545,
      "knsb": "8663589",
      "last": {
@@ -2722,7 +2722,7 @@ const DATA = {
    "players": [
     {
      "n": "Marcus, A. (Andre)",
-     "r": 1625,
+     "r": 1616,
      "id": 512907,
      "knsb": "6062166",
      "last": {
@@ -2735,7 +2735,7 @@ const DATA = {
     },
     {
      "n": "Peereboom, M.J. (Michiel)",
-     "r": 1701,
+     "r": 1692,
      "id": 515400,
      "knsb": "7127780",
      "last": {
@@ -2748,7 +2748,7 @@ const DATA = {
     },
     {
      "n": "Haastere van, R. (Rob)",
-     "r": 1765,
+     "r": 1784,
      "id": 515701,
      "knsb": "7188698",
      "last": {
@@ -2761,13 +2761,13 @@ const DATA = {
     },
     {
      "n": "Laar van de, A. (Bert)",
-     "r": 1710,
+     "r": 1699,
      "id": 517354,
      "knsb": "7504838"
     },
     {
      "n": "Knoester, N.P.C. (Klaas)",
-     "r": 1619,
+     "r": 1634,
      "id": 517752,
      "knsb": "7576921",
      "last": {
@@ -2780,25 +2780,25 @@ const DATA = {
     },
     {
      "n": "Tulleken, H.J.A.F. (Herbert)",
-     "r": 1672,
+     "r": 1674,
      "id": 519059,
      "knsb": "7829415"
     },
     {
      "n": "Berg van de, H.G.M. (Henk)",
-     "r": 1605,
+     "r": 1611,
      "id": 520218,
      "knsb": "8029076"
     },
     {
      "n": "Neerhof, G.J. (Gertjan)",
-     "r": 1724,
+     "r": 1686,
      "id": 556777,
      "knsb": "7816578"
     },
     {
      "n": "Korver, H. (Henri)",
-     "r": 1660,
+     "r": 1636,
      "id": 548834,
      "knsb": "9089256"
     }
@@ -2830,7 +2830,7 @@ const DATA = {
    "players": [
     {
      "n": "Markus, G.A. (Gijs)",
-     "r": 1625,
+     "r": 1620,
      "id": 512384,
      "knsb": "5956368",
      "last": {
@@ -2843,7 +2843,7 @@ const DATA = {
     },
     {
      "n": "Beekhuizen, B. (Bas)",
-     "r": 1674,
+     "r": 1651,
      "id": 514461,
      "knsb": "6687923",
      "last": {
@@ -2856,7 +2856,7 @@ const DATA = {
     },
     {
      "n": "Boonstra, E. (Elwin)",
-     "r": 1615,
+     "r": 1611,
      "id": 514513,
      "knsb": "6738281",
      "last": {
@@ -2882,7 +2882,7 @@ const DATA = {
     },
     {
      "n": "Mark van der, A. (Arie)",
-     "r": 1780,
+     "r": 1766,
      "id": 514977,
      "knsb": "6971998",
      "last": {
@@ -2895,7 +2895,7 @@ const DATA = {
     },
     {
      "n": "Kruif de, K. (Kees)",
-     "r": 1817,
+     "r": 1844,
      "id": 515029,
      "knsb": "6995021",
      "last": {
@@ -2914,7 +2914,7 @@ const DATA = {
     },
     {
      "n": "Hart de, A.T. (Arthur)",
-     "r": 1771,
+     "r": 1791,
      "id": 556877,
      "knsb": "6237407"
     }
@@ -2946,13 +2946,13 @@ const DATA = {
    "players": [
     {
      "n": "Duijm, M.J.A. (Marcel)",
-     "r": 1720,
+     "r": 1698,
      "id": 516414,
      "knsb": "7348693"
     },
     {
      "n": "Noltes, C.H. (Niels)",
-     "r": 1865,
+     "r": 1824,
      "id": 527501,
      "knsb": "8787372",
      "last": {
@@ -2978,7 +2978,7 @@ const DATA = {
     },
     {
      "n": "Lam, K.Y. (Kin)",
-     "r": 1593,
+     "r": 1608,
      "id": 547366,
      "knsb": "9077860",
      "last": {
@@ -2991,13 +2991,13 @@ const DATA = {
     },
     {
      "n": "Hoogendijk, J. (Jesca)",
-     "r": 1479,
+     "r": 1449,
      "id": 547532,
      "knsb": "9078465"
     },
     {
      "n": "Wessels Beljaars, E.M.C. (Erik)",
-     "r": 1726,
+     "r": 1728,
      "id": 548160,
      "knsb": "9036797",
      "last": {
@@ -3010,7 +3010,7 @@ const DATA = {
     },
     {
      "n": "Dubrovsky, E.D. (Eduard)",
-     "r": 1603,
+     "r": 1615,
      "id": 550935,
      "knsb": "9025797",
      "last": {
@@ -3023,7 +3023,7 @@ const DATA = {
     },
     {
      "n": "Jansma, R. (Roelof)",
-     "r": 0,
+     "r": 1200,
      "id": 552558,
      "knsb": "9127778",
      "last": {
@@ -3036,7 +3036,7 @@ const DATA = {
     },
     {
      "n": "Bergen, F.A.C. (Fred)",
-     "r": 1776,
+     "r": 1780,
      "id": 512711,
      "knsb": "6021466",
      "last": {
@@ -3081,7 +3081,7 @@ const DATA = {
    "players": [
     {
      "n": "Roberts, T. (Tom)",
-     "r": 1548,
+     "r": 1612,
      "id": 548202,
      "knsb": "9083041",
      "last": {
@@ -3094,7 +3094,7 @@ const DATA = {
     },
     {
      "n": "Rutten, N. (Nina)",
-     "r": 1541,
+     "r": 1597,
      "id": 548794,
      "knsb": "9088860",
      "last": {
@@ -3107,13 +3107,13 @@ const DATA = {
     },
     {
      "n": "Helfrich, M. (Megan)",
-     "r": 0,
+     "r": 1358,
      "id": 553586,
      "knsb": "8795710"
     },
     {
      "n": "Marczuk, W. (Wojciech)",
-     "r": 1743,
+     "r": 1776,
      "id": 553931,
      "knsb": "9017041",
      "last": {
@@ -3132,7 +3132,7 @@ const DATA = {
     },
     {
      "n": "Wagdy, A. (Ahmed)",
-     "r": 1851,
+     "r": 1822,
      "id": 557097,
      "knsb": "9063483"
     },
@@ -3176,7 +3176,7 @@ const DATA = {
     },
     {
      "n": "Helmer, T. (Thor)",
-     "r": 1626,
+     "r": 1611,
      "id": 552854,
      "knsb": "9130132",
      "last": {
@@ -3234,13 +3234,13 @@ const DATA = {
     },
     {
      "n": "Groenenberg, H. (Huub)",
-     "r": 1762,
+     "r": 1773,
      "id": 514136,
      "knsb": "6458837"
     },
     {
      "n": "Deuss, L.J. (Ber)",
-     "r": 1879,
+     "r": 1882,
      "id": 515840,
      "knsb": "7221192",
      "last": {
@@ -3253,7 +3253,7 @@ const DATA = {
     },
     {
      "n": "Pex, J. (John)",
-     "r": 1698,
+     "r": 1683,
      "id": 517709,
      "knsb": "7569419",
      "last": {
@@ -3266,7 +3266,7 @@ const DATA = {
     },
     {
      "n": "Karman, E.J. (Evert Jan)",
-     "r": 1705,
+     "r": 1706,
      "id": 521115,
      "knsb": "8150186",
      "last": {
@@ -3279,7 +3279,7 @@ const DATA = {
     },
     {
      "n": "Reynolds, R. (Reynold)",
-     "r": 1708,
+     "r": 1717,
      "id": 537713,
      "knsb": "8977859",
      "last": {
@@ -3292,7 +3292,7 @@ const DATA = {
     },
     {
      "n": "Brouwer, R.E. (Reitze)",
-     "r": 1827,
+     "r": 1840,
      "id": 547783,
      "knsb": "7687911",
      "last": {
@@ -3305,13 +3305,13 @@ const DATA = {
     },
     {
      "n": "Kroon, B. (Bart)",
-     "r": 1854,
+     "r": 1847,
      "id": 550769,
      "knsb": "8946377"
     },
     {
      "n": "Duivenvoorden, B. (Ben)",
-     "r": 1729,
+     "r": 1744,
      "id": 517708,
      "knsb": "7569408",
      "last": {
@@ -3324,7 +3324,7 @@ const DATA = {
     },
     {
      "n": "Hagen, T.J. (Tejo)",
-     "r": 1693,
+     "r": 1702,
      "id": 519037,
      "knsb": "7824993",
      "last": {
