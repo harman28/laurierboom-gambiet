@@ -1259,6 +1259,25 @@ const DATA = {
    "venueName": "Huize Lydia",
    "players": [
     {
+     "n": "Zwerver, F. (Feico)",
+     "r": 1712,
+     "id": 516235,
+     "knsb": "7304649"
+    },
+    {
+     "n": "Werf van der, P. (Peter)",
+     "r": 1823,
+     "id": 517997,
+     "knsb": "7625332",
+     "last": {
+      "team": "Caissa 5",
+      "games": 7,
+      "avg": 4.0,
+      "min": 3,
+      "max": 5
+     }
+    },
+    {
      "n": "Willemssen, F.T. (Florian)",
      "r": 1832,
      "id": 522957,
@@ -1269,6 +1288,31 @@ const DATA = {
       "avg": 2.67,
       "min": 1,
       "max": 4
+     }
+    },
+    {
+     "n": "Varnica, A. (Aleks)",
+     "r": 1755,
+     "id": 523180,
+     "knsb": "8428695"
+    },
+    {
+     "n": "Zanoli, O.P.J.M. (Olivier)",
+     "r": 1761,
+     "id": 524654,
+     "knsb": "8588470"
+    },
+    {
+     "n": "Floris, Y. (Yar)",
+     "r": 1762,
+     "id": 545394,
+     "knsb": "9056729",
+     "last": {
+      "team": "Caissa 5",
+      "games": 5,
+      "avg": 1.2,
+      "min": 1,
+      "max": 2
      }
     },
     {
@@ -1285,57 +1329,34 @@ const DATA = {
      }
     },
     {
-     "n": "Werf van der, P. (Peter)",
-     "r": 1823,
-     "id": 517997,
-     "knsb": "7625332",
-     "last": {
-      "team": "Caissa 5",
-      "games": 7,
-      "avg": 4.0,
-      "min": 3,
-      "max": 5
-     }
+     "n": "Uiterwijk, C. (Camile)",
+     "r": 1666,
+     "id": 551984,
+     "knsb": "9124126"
     },
     {
      "n": "Beukering van, P.A.C. (Paul)",
      "r": 1770,
      "id": 523600,
      "knsb": "8484256"
-    },
-    {
-     "n": "Floris, Y. (Yar)",
-     "r": 1762,
-     "id": 545394,
-     "knsb": "9056729",
-     "last": {
-      "team": "Caissa 5",
-      "games": 5,
-      "avg": 1.2,
-      "min": 1,
-      "max": 2
-     }
-    },
-    {
-     "n": "Zanoli, O.P.J.M. (Olivier)",
-     "r": 1761,
-     "id": 524654,
-     "knsb": "8588470"
-    },
-    {
-     "n": "Varnica, A. (Aleks)",
-     "r": 1755,
-     "id": 523180,
-     "knsb": "8428695"
-    },
-    {
-     "n": "Zwerver, F. (Feico)",
-     "r": 1712,
-     "id": 516235,
-     "knsb": "7304649"
     }
    ],
-   "note": ""
+   "note": "",
+   "observed": [
+    {
+     "round": 2,
+     "boards": [
+      "9111157",
+      "9056729",
+      "8428695",
+      "8396762",
+      "7625332",
+      "8588470",
+      "7304649",
+      "9124126"
+     ]
+    }
+   ]
   },
   "zwart-op-wit-2": {
    "id": 761,
@@ -1372,6 +1393,19 @@ const DATA = {
      "knsb": "9007702"
     },
     {
+     "n": "Greeven, S. (Sebastiaan)",
+     "r": 1811,
+     "id": 547565,
+     "knsb": "9078597",
+     "last": {
+      "team": "Zwart op Wit 2",
+      "games": 1,
+      "avg": 6.0,
+      "min": 6,
+      "max": 6
+     }
+    },
+    {
      "n": "Pelser, A. (Abel)",
      "r": 1788,
      "id": 549113,
@@ -1383,6 +1417,12 @@ const DATA = {
       "min": 1,
       "max": 1
      }
+    },
+    {
+     "n": "Herrero, R. (Robert)",
+     "r": 1735,
+     "id": 552845,
+     "knsb": "9130022"
     },
     {
      "n": "Arcilla, R. (Rogelio)",
@@ -1416,23 +1456,10 @@ const DATA = {
      }
     },
     {
-     "n": "Herrero, R. (Robert)",
-     "r": 1735,
-     "id": 552845,
-     "knsb": "9130022"
-    },
-    {
-     "n": "Greeven, S. (Sebastiaan)",
-     "r": 1811,
-     "id": 547565,
-     "knsb": "9078597",
-     "last": {
-      "team": "Zwart op Wit 2",
-      "games": 1,
-      "avg": 6.0,
-      "min": 6,
-      "max": 6
-     }
+     "n": "Thivan, G. (Gunawardana)",
+     "r": 0,
+     "id": 653023,
+     "knsb": "9191237"
     }
    ],
    "note": "",
@@ -1448,6 +1475,19 @@ const DATA = {
       "8935036",
       "9143640",
       "9164210"
+     ]
+    },
+    {
+     "round": 2,
+     "boards": [
+      "9078597",
+      "9164210",
+      "9007702",
+      "9191237",
+      "8935036",
+      "9130022",
+      "8938490",
+      "9143640"
      ]
     }
    ]
