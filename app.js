@@ -67,13 +67,16 @@ const GUESS_HOW='How this is worked out: once a team has played, the line-up the
 /* ---------- line-ups ---------- */
 const lineupFor=r=>(me.lineups||[]).find(l=>l.round===r);
 const byKnsb=(t,id)=>t.players.find(p=>p.knsb===id);
+const anyPlayer=k=>{for(const t of Object.values(DATA.teams)){const p=byKnsb(t,k);if(p)return p}};
+const lineupPlayer=b=>(b.knsb&&(byKnsb(me,b.knsb)||anyPlayer(b.knsb)))||{n:b.name,r:b.r};      // name-only: not registered on Netstand yet
 const colourPill=c=>`<span class="col ${c==='white'?'w':'b'}">${c==='white'?'White':'Black'}</span>`;
 const profiles=p=>`<a href="${knsb(p)}">KNSB</a> · <a href="${net(p)}">Netstand</a>`;
-function ourLineup(l){return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Colour</th></tr>${l.boards.map((b,i)=>{const p=byKnsb(me,b.knsb);return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r}</td><td>${colourPill(b.colour)}</td></tr>`}).join('')}</table></div>${l.note?`<p class="mut">${l.note}</p>`:''}`}
+function ourLineup(l){return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Colour</th></tr>${l.boards.map((b,i)=>{const p=lineupPlayer(b);return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||'–'}</td><td>${colourPill(b.colour)}</td></tr>`}).join('')}</table></div>${l.note?`<p class="mut">${l.note}</p>`:''}`}
 function ourExpected(){return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th></tr>${guess(me).map(g=>`<tr><td>${g.board}</td><td>${nlFull(g.p.n)}</td><td class="n">${g.p.r||unrated}</td></tr>`).join('')}</table></div><p class="mut">Expected line-up, guessed. ${guessBasis(me)} <a href="${link('team')}">See the reasoning</a>.</p>`}
-function headToHead(m,t){const l=lineupFor(m.round),g=guess(t).slice(0,8),us=l?null:guess(me);
- const rows=g.map((o,i)=>{const p=l?byKnsb(me,l.boards[i].knsb):us[i].p;return `<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||unrated}</td>${l?`<td>${colourPill(l.boards[i].colour)}</td>`:''}<td>${nlFull(o.p.n)}</td><td class="n">${o.p.r||unrated}</td></tr>`}).join('');
- return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Us${l?'':' (expected)'}</th><th class="n">Rating</th>${l?'<th>Colour</th>':''}<th>Them (expected)</th><th class="n">Rating</th></tr>${rows}</table></div><p class="mut">${l?(l.note||''):'Our side is a guess too.'} Their side is the guess explained below.</p>`}
+function headToHead(m,t){const l=lineupFor(m.round),g=guess(t).slice(0,8),us=l?null:guess(me);   // one compact row per board, like the played-match page
+ const rows=g.map((o,i)=>{const p=l?lineupPlayer(l.boards[i]):us[i].p,c=l&&l.boards[i]?l.boards[i].colour:'';
+  return `<div class="bd"><span class="n">${i+1}</span><div class="pl"><b>${c?`<i class="sq ${c==='white'?'w':'b'}" title="${c}"></i>`:''}${nlFull(p.n)}</b><span>${p.r||(l?'–':'unrated')}</span></div><span class="bs d">vs</span><div class="pl"><b>${nlFull(o.p.n)}</b><span>${o.p.r||'unrated'}</span></div></div>`}).join('');
+ return `<div class="boards">${rows}</div><p class="mut">${l?(l.note||''):'Our side is a guess too.'} Their side is our expected line-up, explained below.</p>`}
 function board(t){const g=guess(t);return `<div class="scroll"><table class="table"><tr><th>Board</th><th>Player</th><th class="n">Rating</th><th>Guess</th><th>Reasoning</th><th>Profiles</th></tr>${g.map(({p,board,why,conf})=>`<tr><td>${board}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||unrated}</td><td><span class="conf ${conf}">${CONF[conf]}</span></td><td class="why">${why}</td><td>${profiles(p)}</td></tr>`).join('')}</table></div>`}
 function squad(t){return `<div class="scroll"><table class="table"><tr><th>#</th><th>Player</th><th class="n">Rating</th><th>Profiles</th></tr>${ord(t).map((p,i)=>`<tr><td>${i+1}</td><td>${nlFull(p.n)}</td><td class="n">${p.r||unrated}</td><td>${profiles(p)}</td></tr>`).join('')}</table></div>`}
 

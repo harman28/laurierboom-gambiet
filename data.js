@@ -246,6 +246,44 @@ const DATA = {
        "colour": "white"
       }
      ]
+    },
+    {
+     "round": 2,
+     "note": "Line-up as posted by Lars. Teun Dikkers and Luciano Picozzi are not on Netstand's roster for this team yet, so their ratings are not shown. Hylke Thoen normally plays for team 4.",
+     "boards": [
+      {
+       "knsb": "9116998",
+       "colour": "white"
+      },
+      {
+       "knsb": "9129890",
+       "colour": "black"
+      },
+      {
+       "knsb": "8571563",
+       "colour": "white"
+      },
+      {
+       "knsb": "9135775",
+       "colour": "black"
+      },
+      {
+       "name": "Teun Dikkers",
+       "colour": "white"
+      },
+      {
+       "knsb": "9134048",
+       "colour": "black"
+      },
+      {
+       "knsb": "9029889",
+       "colour": "white"
+      },
+      {
+       "name": "Luciano Picozzi",
+       "colour": "black"
+      }
+     ]
     }
    ],
    "observed": [
