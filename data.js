@@ -504,7 +504,7 @@ const DATA = {
      "knsb": "8515947"
     },
     {
-     "n": "Broerse, M. (Milo)",
+     "n": "Broerse, M.J. (Milo Jan)",
      "r": 1802,
      "id": 526014,
      "knsb": "8708502",
