@@ -2156,10 +2156,10 @@ const DATA = {
    "venueName": "Cygnus Gymnasium",
    "players": [
     {
-     "n": "Visser, W. (Wouter)",
-     "r": 1788,
-     "id": 557290,
-     "knsb": "8421754"
+     "n": "Romijn, B. (Bart)",
+     "r": 1835,
+     "id": 512767,
+     "knsb": "6030365"
     },
     {
      "n": "Schutte, J.F. (Filip)",
@@ -2171,6 +2171,19 @@ const DATA = {
       "games": 7,
       "avg": 1.71,
       "min": 1,
+      "max": 3
+     }
+    },
+    {
+     "n": "Zdravkovic, A. (Andrija)",
+     "r": 1832,
+     "id": 528793,
+     "knsb": "8834606",
+     "last": {
+      "team": "VAS 5",
+      "games": 1,
+      "avg": 3.0,
+      "min": 3,
       "max": 3
      }
     },
@@ -2192,25 +2205,6 @@ const DATA = {
       "min": 1,
       "max": 3
      }
-    },
-    {
-     "n": "Zdravkovic, A. (Andrija)",
-     "r": 1832,
-     "id": 528793,
-     "knsb": "8834606",
-     "last": {
-      "team": "VAS 5",
-      "games": 1,
-      "avg": 3.0,
-      "min": 3,
-      "max": 3
-     }
-    },
-    {
-     "n": "Romijn, B. (Bart)",
-     "r": 1835,
-     "id": 512767,
-     "knsb": "6030365"
     },
     {
      "n": "Rijnders, N. (Nanno)",
@@ -2237,6 +2231,27 @@ const DATA = {
       "min": 4,
       "max": 6
      }
+    },
+    {
+     "n": "Visser, W. (Wouter)",
+     "r": 1788,
+     "id": 557290,
+     "knsb": "8421754"
+    }
+   ],
+   "observed": [
+    {
+     "round": 2,
+     "boards": [
+      "8903554",
+      "8379195",
+      "8995899",
+      "6030365",
+      "8834606",
+      "8624022",
+      "8907008",
+      "8421754"
+     ]
     }
    ]
   },
@@ -2260,71 +2275,6 @@ const DATA = {
       "avg": 6.17,
       "min": 2,
       "max": 8
-     }
-    },
-    {
-     "n": "Broekman, L. (Lode)",
-     "r": 1642,
-     "id": 525071,
-     "knsb": "8624264",
-     "last": {
-      "team": "MSK 1",
-      "games": 7,
-      "avg": 7.43,
-      "min": 7,
-      "max": 8
-     }
-    },
-    {
-     "n": "Houtrijve van, H.C. (Henk)",
-     "r": 1606,
-     "id": 517109,
-     "knsb": "7455173",
-     "last": {
-      "team": "MSK 1",
-      "games": 5,
-      "avg": 5.8,
-      "min": 5,
-      "max": 7
-     }
-    },
-    {
-     "n": "Jansen, B. (Bob)",
-     "r": 1735,
-     "id": 539833,
-     "knsb": "7878101",
-     "last": {
-      "team": "MSK 1",
-      "games": 5,
-      "avg": 3.6,
-      "min": 3,
-      "max": 4
-     }
-    },
-    {
-     "n": "Khawajeh al, I. (Ibrahim)",
-     "r": 1721,
-     "id": 526481,
-     "knsb": "8726795",
-     "last": {
-      "team": "MSK 1",
-      "games": 8,
-      "avg": 3.62,
-      "min": 2,
-      "max": 6
-     }
-    },
-    {
-     "n": "Moons, A.C.W. (Andre)",
-     "r": 1715,
-     "id": 524145,
-     "knsb": "8543436",
-     "last": {
-      "team": "MSK 1",
-      "games": 8,
-      "avg": 5.62,
-      "min": 5,
-      "max": 6
      }
     },
     {
@@ -2352,6 +2302,98 @@ const DATA = {
       "min": 1,
       "max": 1
      }
+    },
+    {
+     "n": "Dijk van, B. (Bert)",
+     "r": 1639,
+     "id": 520558,
+     "knsb": "8077366"
+    },
+    {
+     "n": "Moons, A.C.W. (Andre)",
+     "r": 1715,
+     "id": 524145,
+     "knsb": "8543436",
+     "last": {
+      "team": "MSK 1",
+      "games": 8,
+      "avg": 5.62,
+      "min": 5,
+      "max": 6
+     }
+    },
+    {
+     "n": "Broekman, L. (Lode)",
+     "r": 1642,
+     "id": 525071,
+     "knsb": "8624264",
+     "last": {
+      "team": "MSK 1",
+      "games": 7,
+      "avg": 7.43,
+      "min": 7,
+      "max": 8
+     }
+    },
+    {
+     "n": "Khawajeh al, I. (Ibrahim)",
+     "r": 1721,
+     "id": 526481,
+     "knsb": "8726795",
+     "last": {
+      "team": "MSK 1",
+      "games": 8,
+      "avg": 3.62,
+      "min": 2,
+      "max": 6
+     }
+    },
+    {
+     "n": "Bruijn de, O. (Olivier)",
+     "r": 1819,
+     "id": 527093,
+     "knsb": "8771301"
+    },
+    {
+     "n": "Houtrijve van, H.C. (Henk)",
+     "r": 1606,
+     "id": 517109,
+     "knsb": "7455173",
+     "last": {
+      "team": "MSK 1",
+      "games": 5,
+      "avg": 5.8,
+      "min": 5,
+      "max": 7
+     }
+    },
+    {
+     "n": "Jansen, B. (Bob)",
+     "r": 1735,
+     "id": 539833,
+     "knsb": "7878101",
+     "last": {
+      "team": "MSK 1",
+      "games": 5,
+      "avg": 3.6,
+      "min": 3,
+      "max": 4
+     }
+    }
+   ],
+   "observed": [
+    {
+     "round": 2,
+     "boards": [
+      "8034796",
+      "7908978",
+      "8726795",
+      "8771301",
+      "7437573",
+      "8543436",
+      "8077366",
+      "8624264"
+     ]
     }
    ]
   },
