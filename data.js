@@ -2980,36 +2980,10 @@ const DATA = {
    "venueName": "Huize Lydia",
    "players": [
     {
-     "n": "Havik, G. (Gilles)",
-     "r": 1761,
-     "id": 544885,
-     "knsb": "9031682",
-     "last": {
-      "team": "Caissa 7",
-      "games": 9,
-      "avg": 1.56,
-      "min": 1,
-      "max": 2
-     }
-    },
-    {
      "n": "Bovenschen, H. (Hans)",
      "r": 1673,
      "id": 514556,
      "knsb": "6750238"
-    },
-    {
-     "n": "Verheijden, C. (Chris)",
-     "r": 1624,
-     "id": 526714,
-     "knsb": "8747200",
-     "last": {
-      "team": "Caissa 7",
-      "games": 6,
-      "avg": 4.17,
-      "min": 3,
-      "max": 7
-     }
     },
     {
      "n": "Lesman, K.F.P.M. (Karol)",
@@ -3022,25 +2996,6 @@ const DATA = {
       "avg": 5.4,
       "min": 4,
       "max": 7
-     }
-    },
-    {
-     "n": "Timmer, A. (André)",
-     "r": 1607,
-     "id": 522590,
-     "knsb": "8344655"
-    },
-    {
-     "n": "Laan, C.J. (Kees)",
-     "r": 1633,
-     "id": 525545,
-     "knsb": "8663589",
-     "last": {
-      "team": "Caissa 7",
-      "games": 8,
-      "avg": 4.12,
-      "min": 3,
-      "max": 6
      }
     },
     {
@@ -3057,6 +3012,12 @@ const DATA = {
      }
     },
     {
+     "n": "Timmer, A. (André)",
+     "r": 1607,
+     "id": 522590,
+     "knsb": "8344655"
+    },
+    {
      "n": "Wieringa, J.G. (Jan)",
      "r": 1467,
      "id": 523908,
@@ -3068,6 +3029,66 @@ const DATA = {
       "min": 7,
       "max": 8
      }
+    },
+    {
+     "n": "Laan, C.J. (Kees)",
+     "r": 1633,
+     "id": 525545,
+     "knsb": "8663589",
+     "last": {
+      "team": "Caissa 7",
+      "games": 8,
+      "avg": 4.12,
+      "min": 3,
+      "max": 6
+     }
+    },
+    {
+     "n": "Simpkins, N. (Nick)",
+     "r": 1441,
+     "id": 527767,
+     "knsb": "8802684"
+    },
+    {
+     "n": "Havik, G. (Gilles)",
+     "r": 1761,
+     "id": 544885,
+     "knsb": "9031682",
+     "last": {
+      "team": "Caissa 7",
+      "games": 9,
+      "avg": 1.56,
+      "min": 1,
+      "max": 2
+     }
+    },
+    {
+     "n": "Verheijden, C. (Chris)",
+     "r": 1624,
+     "id": 526714,
+     "knsb": "8747200",
+     "last": {
+      "team": "Caissa 7",
+      "games": 6,
+      "avg": 4.17,
+      "min": 3,
+      "max": 7
+     }
+    }
+   ],
+   "observed": [
+    {
+     "round": 2,
+     "boards": [
+      "9031682",
+      "8663589",
+      "6750238",
+      "8237933",
+      "8344655",
+      "8292526",
+      "8519456",
+      "8802684"
+     ]
     }
    ]
   },
@@ -3151,16 +3172,16 @@ const DATA = {
      "knsb": "8029076"
     },
     {
-     "n": "Neerhof, G.J. (Gertjan)",
-     "r": 1686,
-     "id": 556777,
-     "knsb": "7816578"
-    },
-    {
      "n": "Korver, H. (Henri)",
      "r": 1636,
      "id": 548834,
      "knsb": "9089256"
+    },
+    {
+     "n": "Neerhof, G.J. (Gertjan)",
+     "r": 1686,
+     "id": 556777,
+     "knsb": "7816578"
     }
    ],
    "observed": [
@@ -3172,6 +3193,19 @@ const DATA = {
       "7188698",
       "7504838",
       "7829415",
+      "6062166",
+      "7816578",
+      "7576921"
+     ]
+    },
+    {
+     "round": 2,
+     "boards": [
+      "7188698",
+      "7504838",
+      "7127780",
+      "8029076",
+      "9089256",
       "6062166",
       "7816578",
       "7576921"
