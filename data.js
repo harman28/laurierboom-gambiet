@@ -392,6 +392,18 @@ const DATA = {
      "knsb": "9125468"
     },
     {
+     "n": "Soest van, W. (Wouter)",
+     "r": 1869,
+     "id": 553020,
+     "knsb": "9131650"
+    },
+    {
+     "n": "Alaskari, M. (Mouhanad)",
+     "r": 1583,
+     "id": 553198,
+     "knsb": "9133377"
+    },
+    {
      "n": "Lovisotto, K. (Kevin)",
      "r": 1641,
      "id": 553675,
@@ -435,6 +447,19 @@ const DATA = {
       "8386917",
       "9140384",
       "9125468"
+     ]
+    },
+    {
+     "round": 2,
+     "boards": [
+      "9109353",
+      "9155586",
+      "9078740",
+      "9093898",
+      "8825597",
+      "8386917",
+      "9131650",
+      "9133377"
      ]
     }
    ]
@@ -1626,7 +1651,7 @@ const DATA = {
     },
     {
      "n": "Thivan, G. (Gunawardana)",
-     "r": 0,
+     "r": 1690,
      "id": 653023,
      "knsb": "9191237"
     }
@@ -3474,6 +3499,19 @@ const DATA = {
    "venueName": "KLUP",
    "players": [
     {
+     "n": "Wagenaar, A.M. (Anne)",
+     "r": 1565,
+     "id": 547720,
+     "knsb": "9079323",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 7,
+      "avg": 4.57,
+      "min": 3,
+      "max": 6
+     }
+    },
+    {
      "n": "Roberts, T. (Tom)",
      "r": 1612,
      "id": 548202,
@@ -3487,6 +3525,19 @@ const DATA = {
      }
     },
     {
+     "n": "Yunusova, D.Y. (Dinara)",
+     "r": 1801,
+     "id": 548203,
+     "knsb": "9083052",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 2,
+      "avg": 2.0,
+      "min": 1,
+      "max": 3
+     }
+    },
+    {
      "n": "Rutten, N. (Nina)",
      "r": 1597,
      "id": 548794,
@@ -3497,6 +3548,32 @@ const DATA = {
       "avg": 7.57,
       "min": 7,
       "max": 8
+     }
+    },
+    {
+     "n": "Helmer, T. (Thor)",
+     "r": 1611,
+     "id": 552854,
+     "knsb": "9130132",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 4,
+      "avg": 7.5,
+      "min": 7,
+      "max": 8
+     }
+    },
+    {
+     "n": "As van, M. (Mathieu)",
+     "r": 1700,
+     "id": 552855,
+     "knsb": "9130143",
+     "last": {
+      "team": "De Queer Schaakclub 2",
+      "games": 6,
+      "avg": 3.33,
+      "min": 3,
+      "max": 4
      }
     },
     {
@@ -3541,58 +3618,6 @@ const DATA = {
      "r": 0,
      "id": 557667,
      "knsb": "9179192"
-    },
-    {
-     "n": "Yunusova, D.Y. (Dinara)",
-     "r": 1801,
-     "id": 548203,
-     "knsb": "9083052",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 2,
-      "avg": 2.0,
-      "min": 1,
-      "max": 3
-     }
-    },
-    {
-     "n": "As van, M. (Mathieu)",
-     "r": 1700,
-     "id": 552855,
-     "knsb": "9130143",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 6,
-      "avg": 3.33,
-      "min": 3,
-      "max": 4
-     }
-    },
-    {
-     "n": "Helmer, T. (Thor)",
-     "r": 1611,
-     "id": 552854,
-     "knsb": "9130132",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 4,
-      "avg": 7.5,
-      "min": 7,
-      "max": 8
-     }
-    },
-    {
-     "n": "Wagenaar, A.M. (Anne)",
-     "r": 1565,
-     "id": 547720,
-     "knsb": "9079323",
-     "last": {
-      "team": "De Queer Schaakclub 2",
-      "games": 7,
-      "avg": 4.57,
-      "min": 3,
-      "max": 6
-     }
     }
    ],
    "observed": [
@@ -3607,6 +3632,19 @@ const DATA = {
       "9088860",
       "9106174",
       "9179192"
+     ]
+    },
+    {
+     "round": 2,
+     "boards": [
+      "9083052",
+      "9017041",
+      "9083041",
+      "9106174",
+      "9130143",
+      "9130132",
+      "9079323",
+      "9179181"
      ]
     }
    ]
@@ -4573,7 +4611,149 @@ const DATA = {
     "date": "2026-11-18",
     "home": false,
     "opp": "de-queer-schaakclub-2",
-    "pairing": 2630
+    "pairing": 2630,
+    "result": {
+     "us": 4.0,
+     "them": 4.0,
+     "boards": [
+      {
+       "o": {
+        "n": "Budarin, K. (Konstantin)",
+        "r": 2001,
+        "id": 550585,
+        "c": "white",
+        "knsb": "9109353"
+       },
+       "t": {
+        "n": "Yunusova, D.Y. (Dinara)",
+        "r": 1801,
+        "id": 548203,
+        "c": "black",
+        "knsb": "9083052"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Rueb, S. (Sebastiaan)",
+        "r": 1798,
+        "id": 554976,
+        "c": "black",
+        "knsb": "9155586"
+       },
+       "t": {
+        "n": "Marczuk, W. (Wojciech)",
+        "r": 1776,
+        "id": 553931,
+        "c": "white",
+        "knsb": "9017041"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Bhadane, S. (Sourbh)",
+        "r": 1741,
+        "id": 547584,
+        "c": "white",
+        "knsb": "9078740"
+       },
+       "t": {
+        "n": "Roberts, T. (Tom)",
+        "r": 1612,
+        "id": 548202,
+        "c": "black",
+        "knsb": "9083041"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Humerczyk, H.H. (Hubert)",
+        "r": 1825,
+        "id": 552213,
+        "c": "black",
+        "knsb": "9093898"
+       },
+       "t": {
+        "n": "Arenas, J. (Joshua)",
+        "r": 0,
+        "id": 555750,
+        "c": "white",
+        "knsb": "9106174"
+       },
+       "p": 0.0
+      },
+      {
+       "o": {
+        "n": "Coorn, W. (Willem Timo)",
+        "r": 1716,
+        "id": 528439,
+        "c": "white",
+        "knsb": "8825597"
+       },
+       "t": {
+        "n": "As van, M. (Mathieu)",
+        "r": 1700,
+        "id": 552855,
+        "c": "black",
+        "knsb": "9130143"
+       },
+       "p": 0.5
+      },
+      {
+       "o": {
+        "n": "Scheltema, J. (Job)",
+        "r": 0,
+        "id": 556731,
+        "c": "black",
+        "knsb": "8386917"
+       },
+       "t": {
+        "n": "Helmer, T. (Thor)",
+        "r": 1611,
+        "id": 552854,
+        "c": "white",
+        "knsb": "9130132"
+       },
+       "p": 1.0
+      },
+      {
+       "o": {
+        "n": "Soest van, W. (Wouter)",
+        "r": 1869,
+        "id": 553020,
+        "c": "white",
+        "knsb": "9131650"
+       },
+       "t": {
+        "n": "Wagenaar, A.M. (Anne)",
+        "r": 1565,
+        "id": 547720,
+        "c": "black",
+        "knsb": "9079323"
+       },
+       "p": 0.5
+      },
+      {
+       "o": {
+        "n": "Alaskari, M. (Mouhanad)",
+        "r": 1583,
+        "id": 553198,
+        "c": "black",
+        "knsb": "9133377"
+       },
+       "t": {
+        "n": "Leveque, L. (Michel-Victor)",
+        "r": 0,
+        "id": 557664,
+        "c": "white",
+        "knsb": "9179181"
+       },
+       "p": 0.0
+      }
+     ]
+    }
    },
    {
     "round": 3,
